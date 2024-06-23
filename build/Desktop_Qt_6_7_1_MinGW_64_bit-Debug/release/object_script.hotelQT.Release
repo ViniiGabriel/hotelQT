@@ -1,0 +1,13 @@
+release/telacliente.o
+release/telalogin.o
+release/cadastroquartos.o
+release/telacolaborador.o
+release/telalogincolaborador.o
+release/main.o
+release/telainicial.o
+release/moc_telacliente.o
+release/moc_telalogin.o
+release/moc_cadastroquartos.o
+release/moc_telacolaborador.o
+release/moc_telalogincolaborador.o
+release/moc_telainicial.o

@@ -1,0 +1,13 @@
+debug/telacliente.o
+debug/telalogin.o
+debug/cadastroquartos.o
+debug/telacolaborador.o
+debug/telalogincolaborador.o
+debug/main.o
+debug/telainicial.o
+debug/moc_telacliente.o
+debug/moc_telalogin.o
+debug/moc_cadastroquartos.o
+debug/moc_telacolaborador.o
+debug/moc_telalogincolaborador.o
+debug/moc_telainicial.o
