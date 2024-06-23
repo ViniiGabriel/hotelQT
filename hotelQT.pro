@@ -12,6 +12,8 @@ SOURCES += \
     clientes/telacliente.cpp \
     clientes/telalogin.cpp \
     colaboradores/cadastroquartos.cpp \
+    colaboradores/listaQuartos/telafiltrar.cpp \
+    colaboradores/listaquartos.cpp \
     colaboradores/telacolaborador.cpp \
     colaboradores/telalogincolaborador.cpp \
     main.cpp \
@@ -21,6 +23,8 @@ HEADERS += \
     clientes/telacliente.h \
     clientes/telalogin.h \
     colaboradores/cadastroquartos.h \
+    colaboradores/listaQuartos/telafiltrar.h \
+    colaboradores/listaquartos.h \
     colaboradores/telacolaborador.h \
     colaboradores/telalogincolaborador.h \
     telainicial.h
@@ -29,6 +33,8 @@ FORMS += \
     clientes/telacliente.ui \
     clientes/telalogin.ui \
     colaboradores/cadastroquartos.ui \
+    colaboradores/listaQuartos/telafiltrar.ui \
+    colaboradores/listaquartos.ui \
     colaboradores/telacolaborador.ui \
     colaboradores/telalogincolaborador.ui \
     telainicial.ui

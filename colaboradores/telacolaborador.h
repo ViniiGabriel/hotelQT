@@ -19,6 +19,8 @@ private slots:
 
     void on_btn_cadastroQuarto_clicked();
 
+    void on_btn_listaQuartos_clicked();
+
 private:
     Ui::telaColaborador *ui;
     QString m_name;
