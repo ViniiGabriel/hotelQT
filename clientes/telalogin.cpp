@@ -1,6 +1,7 @@
 #include "telalogin.h"
 #include "ui_telalogin.h"
 #include "telacliente.h"
+#include "cadastrocliente.h"
 
 telaLogin::telaLogin(QWidget *parent)
     : QDialog(parent)
@@ -9,6 +10,8 @@ telaLogin::telaLogin(QWidget *parent)
     ui->setupUi(this);
     ui->btn_login->setDefault(true);
     ui->label_infoinvalida->setVisible(false);
+    ui->txt_username->setText("jose44");
+    ui->txt_senha->setText("1234");
 }
 
 telaLogin::~telaLogin()
@@ -35,5 +38,13 @@ void telaLogin::on_btn_login_clicked()
     } else {
         ui->label_infoinvalida->setVisible(true);
     }
+}
+
+
+void telaLogin::on_btn_cadastro_clicked()
+{
+    cadastroCliente cadastro;
+    cadastro.setModal(true);
+    cadastro.exec();
 }
 

@@ -210,7 +210,7 @@ public:
         boxTipoQuarto->addItem(QString());
         boxTipoQuarto->addItem(QString());
         boxTipoQuarto->setObjectName("boxTipoQuarto");
-        boxTipoQuarto->setGeometry(QRect(110, 20, 67, 22));
+        boxTipoQuarto->setGeometry(QRect(110, 20, 111, 22));
         label = new QLabel(cadastroQuartos);
         label->setObjectName("label");
         label->setGeometry(QRect(24, 21, 80, 16));

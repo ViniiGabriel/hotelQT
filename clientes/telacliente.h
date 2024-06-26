@@ -15,6 +15,15 @@ public:
     explicit telaCliente(QWidget *parent = nullptr);
     ~telaCliente();
 
+private slots:
+    void on_tb_menu_cellDoubleClicked(int row, int column);
+
+    void on_btn_reservas_clicked();
+
+    void on_btn_notificacoes_clicked();
+
+    void on_btn_avaliacoes_clicked();
+
 private:
     Ui::telaCliente *ui;
 };

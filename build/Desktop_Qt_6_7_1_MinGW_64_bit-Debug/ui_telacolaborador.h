@@ -29,7 +29,7 @@ public:
     QLabel *label;
     QLabel *txt_nome;
     QSpacerItem *horizontalSpacer;
-    QWidget *widget;
+    QWidget *layoutWidget1;
     QVBoxLayout *verticalLayout;
     QPushButton *btn_cadastroQuarto;
     QPushButton *btn_listaQuartos;
@@ -68,13 +68,13 @@ public:
 
         horizontalLayout->addItem(horizontalSpacer);
 
-        widget = new QWidget(telaColaborador);
-        widget->setObjectName("widget");
-        widget->setGeometry(QRect(41, 62, 561, 271));
-        verticalLayout = new QVBoxLayout(widget);
+        layoutWidget1 = new QWidget(telaColaborador);
+        layoutWidget1->setObjectName("layoutWidget1");
+        layoutWidget1->setGeometry(QRect(41, 62, 561, 271));
+        verticalLayout = new QVBoxLayout(layoutWidget1);
         verticalLayout->setObjectName("verticalLayout");
         verticalLayout->setContentsMargins(0, 0, 0, 0);
-        btn_cadastroQuarto = new QPushButton(widget);
+        btn_cadastroQuarto = new QPushButton(layoutWidget1);
         btn_cadastroQuarto->setObjectName("btn_cadastroQuarto");
         QSizePolicy sizePolicy(QSizePolicy::Policy::Minimum, QSizePolicy::Policy::Minimum);
         sizePolicy.setHorizontalStretch(0);
@@ -84,28 +84,28 @@ public:
 
         verticalLayout->addWidget(btn_cadastroQuarto);
 
-        btn_listaQuartos = new QPushButton(widget);
+        btn_listaQuartos = new QPushButton(layoutWidget1);
         btn_listaQuartos->setObjectName("btn_listaQuartos");
         sizePolicy.setHeightForWidth(btn_listaQuartos->sizePolicy().hasHeightForWidth());
         btn_listaQuartos->setSizePolicy(sizePolicy);
 
         verticalLayout->addWidget(btn_listaQuartos);
 
-        btn_reservas = new QPushButton(widget);
+        btn_reservas = new QPushButton(layoutWidget1);
         btn_reservas->setObjectName("btn_reservas");
         sizePolicy.setHeightForWidth(btn_reservas->sizePolicy().hasHeightForWidth());
         btn_reservas->setSizePolicy(sizePolicy);
 
         verticalLayout->addWidget(btn_reservas);
 
-        btn_listaClientes = new QPushButton(widget);
+        btn_listaClientes = new QPushButton(layoutWidget1);
         btn_listaClientes->setObjectName("btn_listaClientes");
         sizePolicy.setHeightForWidth(btn_listaClientes->sizePolicy().hasHeightForWidth());
         btn_listaClientes->setSizePolicy(sizePolicy);
 
         verticalLayout->addWidget(btn_listaClientes);
 
-        btn_cadastrarColaborador = new QPushButton(widget);
+        btn_cadastrarColaborador = new QPushButton(layoutWidget1);
         btn_cadastrarColaborador->setObjectName("btn_cadastrarColaborador");
         sizePolicy.setHeightForWidth(btn_cadastrarColaborador->sizePolicy().hasHeightForWidth());
         btn_cadastrarColaborador->setSizePolicy(sizePolicy);

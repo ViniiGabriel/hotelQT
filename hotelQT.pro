@@ -9,32 +9,56 @@ CONFIG += c++17
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    clientes/cadastrocliente.cpp \
+    clientes/telaavaliacao.cpp \
     clientes/telacliente.cpp \
     clientes/telalogin.cpp \
+    clientes/telanotificacoes.cpp \
+    clientes/telaquarto.cpp \
+    clientes/telareserva.cpp \
+    colaboradores/cadastrocolaborador.cpp \
     colaboradores/cadastroquartos.cpp \
     colaboradores/listaQuartos/telafiltrar.cpp \
+    colaboradores/listaclientes.cpp \
     colaboradores/listaquartos.cpp \
+    colaboradores/reservastela.cpp \
     colaboradores/telacolaborador.cpp \
     colaboradores/telalogincolaborador.cpp \
     main.cpp \
     telainicial.cpp
 
 HEADERS += \
+    clientes/cadastrocliente.h \
+    clientes/telaavaliacao.h \
     clientes/telacliente.h \
     clientes/telalogin.h \
+    clientes/telanotificacoes.h \
+    clientes/telaquarto.h \
+    clientes/telareserva.h \
+    colaboradores/cadastrocolaborador.h \
     colaboradores/cadastroquartos.h \
     colaboradores/listaQuartos/telafiltrar.h \
+    colaboradores/listaclientes.h \
     colaboradores/listaquartos.h \
+    colaboradores/reservastela.h \
     colaboradores/telacolaborador.h \
     colaboradores/telalogincolaborador.h \
     telainicial.h
 
 FORMS += \
+    clientes/cadastrocliente.ui \
+    clientes/telaavaliacao.ui \
     clientes/telacliente.ui \
     clientes/telalogin.ui \
+    clientes/telanotificacoes.ui \
+    clientes/telaquarto.ui \
+    clientes/telareserva.ui \
+    colaboradores/cadastrocolaborador.ui \
     colaboradores/cadastroquartos.ui \
     colaboradores/listaQuartos/telafiltrar.ui \
+    colaboradores/listaclientes.ui \
     colaboradores/listaquartos.ui \
+    colaboradores/reservastela.ui \
     colaboradores/telacolaborador.ui \
     colaboradores/telalogincolaborador.ui \
     telainicial.ui
