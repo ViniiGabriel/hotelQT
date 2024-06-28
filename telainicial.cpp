@@ -3,6 +3,8 @@
 #include "clientes/telalogin.h"
 #include "colaboradores/telalogincolaborador.h"
 
+#include <QMessageBox>
+
 telaInicial::telaInicial(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::telaInicial)
@@ -11,7 +13,10 @@ telaInicial::telaInicial(QWidget *parent)
 
     QSqlDatabase db_hotel = QSqlDatabase::addDatabase("QSQLITE");
     db_hotel.setDatabaseName("../../dataBase/db_hotel");
-    db_hotel.open();
+    if(db_hotel.open())
+    {
+        QMessageBox::warning(this,"Sucesso","Abriu o bd");
+    }
 }
 
 telaInicial::~telaInicial()

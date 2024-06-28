@@ -25,7 +25,7 @@ class Ui_cadastroColaborador
 {
 public:
     QPushButton *pushButton;
-    QWidget *widget;
+    QWidget *layoutWidget;
     QVBoxLayout *verticalLayout;
     QHBoxLayout *horizontalLayout_5;
     QLabel *label;
@@ -47,24 +47,24 @@ public:
     {
         if (cadastroColaborador->objectName().isEmpty())
             cadastroColaborador->setObjectName("cadastroColaborador");
-        cadastroColaborador->resize(461, 211);
+        cadastroColaborador->resize(465, 255);
         pushButton = new QPushButton(cadastroColaborador);
         pushButton->setObjectName("pushButton");
-        pushButton->setGeometry(QRect(130, 170, 201, 31));
-        widget = new QWidget(cadastroColaborador);
-        widget->setObjectName("widget");
-        widget->setGeometry(QRect(10, 10, 441, 146));
-        verticalLayout = new QVBoxLayout(widget);
+        pushButton->setGeometry(QRect(130, 210, 201, 31));
+        layoutWidget = new QWidget(cadastroColaborador);
+        layoutWidget->setObjectName("layoutWidget");
+        layoutWidget->setGeometry(QRect(10, 10, 441, 180));
+        verticalLayout = new QVBoxLayout(layoutWidget);
         verticalLayout->setObjectName("verticalLayout");
         verticalLayout->setContentsMargins(0, 0, 0, 0);
         horizontalLayout_5 = new QHBoxLayout();
         horizontalLayout_5->setObjectName("horizontalLayout_5");
-        label = new QLabel(widget);
+        label = new QLabel(layoutWidget);
         label->setObjectName("label");
 
         horizontalLayout_5->addWidget(label);
 
-        txt_nome = new QLineEdit(widget);
+        txt_nome = new QLineEdit(layoutWidget);
         txt_nome->setObjectName("txt_nome");
 
         horizontalLayout_5->addWidget(txt_nome);
@@ -74,12 +74,12 @@ public:
 
         horizontalLayout_4 = new QHBoxLayout();
         horizontalLayout_4->setObjectName("horizontalLayout_4");
-        label_3 = new QLabel(widget);
+        label_3 = new QLabel(layoutWidget);
         label_3->setObjectName("label_3");
 
         horizontalLayout_4->addWidget(label_3);
 
-        txt_username = new QLineEdit(widget);
+        txt_username = new QLineEdit(layoutWidget);
         txt_username->setObjectName("txt_username");
 
         horizontalLayout_4->addWidget(txt_username);
@@ -89,12 +89,12 @@ public:
 
         horizontalLayout_3 = new QHBoxLayout();
         horizontalLayout_3->setObjectName("horizontalLayout_3");
-        label_4 = new QLabel(widget);
+        label_4 = new QLabel(layoutWidget);
         label_4->setObjectName("label_4");
 
         horizontalLayout_3->addWidget(label_4);
 
-        txt_senha = new QLineEdit(widget);
+        txt_senha = new QLineEdit(layoutWidget);
         txt_senha->setObjectName("txt_senha");
         txt_senha->setEchoMode(QLineEdit::Password);
 
@@ -105,12 +105,12 @@ public:
 
         horizontalLayout_2 = new QHBoxLayout();
         horizontalLayout_2->setObjectName("horizontalLayout_2");
-        label_2 = new QLabel(widget);
+        label_2 = new QLabel(layoutWidget);
         label_2->setObjectName("label_2");
 
         horizontalLayout_2->addWidget(label_2);
 
-        txt_endereco = new QLineEdit(widget);
+        txt_endereco = new QLineEdit(layoutWidget);
         txt_endereco->setObjectName("txt_endereco");
 
         horizontalLayout_2->addWidget(txt_endereco);
@@ -120,12 +120,12 @@ public:
 
         horizontalLayout = new QHBoxLayout();
         horizontalLayout->setObjectName("horizontalLayout");
-        label_5 = new QLabel(widget);
+        label_5 = new QLabel(layoutWidget);
         label_5->setObjectName("label_5");
 
         horizontalLayout->addWidget(label_5);
 
-        txt_cargo = new QLineEdit(widget);
+        txt_cargo = new QLineEdit(layoutWidget);
         txt_cargo->setObjectName("txt_cargo");
 
         horizontalLayout->addWidget(txt_cargo);
