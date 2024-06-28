@@ -15,6 +15,9 @@ public:
     explicit cadastroQuartos(QWidget *parent = nullptr);
     ~cadastroQuartos();
 
+private slots:
+    void on_buttonBox_accepted();
+
 private:
     Ui::cadastroQuartos *ui;
 };

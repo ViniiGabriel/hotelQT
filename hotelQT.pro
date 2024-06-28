@@ -35,6 +35,7 @@ HEADERS += \
     clientes/telanotificacoes.h \
     clientes/telaquarto.h \
     clientes/telareserva.h \
+    colaboradores/Quartos.h \
     colaboradores/cadastrocolaborador.h \
     colaboradores/cadastroquartos.h \
     colaboradores/listaQuartos/telafiltrar.h \

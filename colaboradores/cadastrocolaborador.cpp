@@ -1,11 +1,13 @@
 #include "cadastrocolaborador.h"
 #include "ui_cadastrocolaborador.h"
+#include <QDebug>
 
 cadastroColaborador::cadastroColaborador(QWidget *parent)
     : QDialog(parent)
     , ui(new Ui::cadastroColaborador)
 {
     ui->setupUi(this);
+    ui->txt_nome->setFocus();
 }
 
 cadastroColaborador::~cadastroColaborador()
@@ -31,8 +33,15 @@ void cadastroColaborador::on_pushButton_clicked()
     if(query.exec())
     {
         QMessageBox::information(this,"Sucesso","Cadastro feito com sucesso");
+        ui->txt_nome->setFocus();
+        ui->txt_nome->clear();
+        ui->txt_senha->clear();
+        ui->txt_cargo->clear();
+        ui->txt_endereco->clear();
+        ui->txt_username->clear();
     } else {
         QMessageBox::warning(this,"Erro","Erro ao inserir no banco de dados");
+        qDebug() << query.lastError().text();
     }
     //("insert into tb_clientes (nome,profissao,endereco,renda,tipoConta,limite,saldo) values "
                   //"('"+nome+"','"+profissao+"','"+endereco+"', '"+renda+"','"+tipoConta+"', '"+limite+"', '"+saldo+"')")
