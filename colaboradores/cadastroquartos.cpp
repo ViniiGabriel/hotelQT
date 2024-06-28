@@ -3,7 +3,10 @@
 #include <QDebug>
 #include <QtSql>
 #include <QMessageBox>
-#include "Quartos.h"
+#include "quartos/QuartoSimples.h"
+#include "quartos/QuartoComfort.h"
+#include "quartos/QuartoSuite.h"
+#include "quartos/QuartoMaster.h"
 
 cadastroQuartos::cadastroQuartos(QWidget *parent)
     : QDialog(parent)
@@ -24,19 +27,18 @@ void cadastroQuartos::on_buttonBox_accepted()
     QString descricao = ui->txt_descricao->toPlainText();
     QString valor = ui->txt_valor->text();
     QString wifi, ar, tv, sacada, cofre, banheira, cafe, roupao, higiene, servicoQuarto, bar;
-    std::vector<QString>adicionais;
 
-    wifi = "false";
-    ar = "false";
-    tv = "false";
-    sacada = "false";
-    cofre = "false";
-    banheira = "false";
-    cafe = "false";
-    roupao = "false";
-    higiene = "false";
-    servicoQuarto = "false";
-    bar = "false";
+    wifi = "falso";
+    ar = "falso";
+    tv = "falso";
+    sacada = "falso";
+    cofre = "falso";
+    banheira = "falso";
+    cafe = "falso";
+    roupao = "falso";
+    higiene = "falso";
+    servicoQuarto = "falso";
+    bar = "falso";
 
     if(ui->check_wifi->isChecked()){
         wifi = "true";
@@ -74,7 +76,36 @@ void cadastroQuartos::on_buttonBox_accepted()
 
     if(tipoQuarto == "Simples")
     {
-
+        QuartoSimples quarto(tipoQuarto, titulo, descricao, valor, wifi, tv);
+        if(quarto.codigoQuery()){
+            QMessageBox::information(this,"Sucesso","Quarto cadastrado com sucesso");
+        } else {
+            QMessageBox::warning(this,"Falha","Falha ao cadastrar quarto");
+        }
+    } else if (tipoQuarto == "Comfort")
+    {
+        QuartoComfort quarto(tipoQuarto, titulo, descricao, valor, wifi, tv, ar, sacada, banheira, roupao, higiene);
+        if(quarto.codigoQuery()){
+            QMessageBox::information(this,"Sucesso","Quarto cadastrado com sucesso");
+        } else {
+            QMessageBox::warning(this,"Falha","Falha ao cadastrar quarto");
+        }
+    } else if (tipoQuarto == "Suíte")
+    {
+        QuartoSuite quarto(tipoQuarto, titulo, descricao, valor, wifi, tv, ar, sacada, banheira, roupao, higiene, cafe, servicoQuarto);
+        if(quarto.codigoQuery()){
+            QMessageBox::information(this,"Sucesso","Quarto cadastrado com sucesso");
+        } else {
+            QMessageBox::warning(this,"Falha","Falha ao cadastrar quarto");
+        }
+    }   else if (tipoQuarto == "Master")
+    {
+        QuartoMaster quarto(tipoQuarto, titulo, descricao, valor);
+        if(quarto.codigoQuery()){
+            QMessageBox::information(this,"Sucesso","Quarto cadastrado com sucesso");
+        } else {
+            QMessageBox::warning(this,"Falha","Falha ao cadastrar quarto");
+        }
     }
 
 

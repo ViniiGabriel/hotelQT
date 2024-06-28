@@ -128,6 +128,11 @@ DIST          = dataBase/db_hotel ..\..\clientes\cadastrocliente.h \
 		..\..\colaboradores\listaQuartos\telafiltrar.h \
 		..\..\colaboradores\listaclientes.h \
 		..\..\colaboradores\listaquartos.h \
+		..\..\colaboradores\quartos\QuartoComfort.h \
+		..\..\colaboradores\quartos\QuartoMaster.h \
+		..\..\colaboradores\quartos\QuartoSimples.h \
+		..\..\colaboradores\quartos\QuartoSuite.h \
+		..\..\colaboradores\quartos\Quartos.h \
 		..\..\colaboradores\reservastela.h \
 		..\..\colaboradores\telacolaborador.h \
 		..\..\colaboradores\telalogincolaborador.h \
@@ -167,7 +172,7 @@ qmake: FORCE
 qmake_all: FORCE
 
 dist:
-	$(ZIP) hotelQT.zip $(SOURCES) $(DIST) ..\..\hotelQT.pro C:\Qt\6.7.1\mingw_64\mkspecs\features\spec_pre.prf C:\Qt\6.7.1\mingw_64\mkspecs\features\device_config.prf C:\Qt\6.7.1\mingw_64\mkspecs\common\sanitize.conf C:\Qt\6.7.1\mingw_64\mkspecs\common\gcc-base.conf C:\Qt\6.7.1\mingw_64\mkspecs\common\g++-base.conf C:\Qt\6.7.1\mingw_64\mkspecs\features\win32\windows_vulkan_sdk.prf C:\Qt\6.7.1\mingw_64\mkspecs\common\windows-vulkan.conf C:\Qt\6.7.1\mingw_64\mkspecs\common\g++-win32.conf C:\Qt\6.7.1\mingw_64\mkspecs\common\windows-desktop.conf C:\Qt\6.7.1\mingw_64\mkspecs\qconfig.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_ext_freetype.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_ext_libjpeg.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_ext_libpng.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_charts.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_charts_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_chartsqml.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_chartsqml_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_concurrent.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_concurrent_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_core.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_core_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_dbus.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_dbus_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_designer.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_designer_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_designercomponents_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_devicediscovery_support_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_entrypoint_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_example_icons_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_fb_support_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_freetype_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_gui.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_gui_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_harfbuzz_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_help.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_help_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_jpeg_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_labsanimation.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_labsanimation_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_labsfolderlistmodel.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_labsfolderlistmodel_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_labsqmlmodels.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_labsqmlmodels_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_labssettings.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_labssettings_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_labssharedimage.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_labssharedimage_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_labswavefrontmesh.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_labswavefrontmesh_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_linguist.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_multimedia.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_multimedia_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_multimediaquick_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_multimediawidgets.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_multimediawidgets_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_network.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_network_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_opengl.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_opengl_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_openglwidgets.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_openglwidgets_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_packetprotocol_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_png_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_printsupport.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_printsupport_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_qdoccatch_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_qdoccatchconversions_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_qdoccatchgenerators_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_qml.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_qml_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_qmlbuiltins.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_qmlbuiltins_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_qmlcompiler.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_qmlcompiler_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_qmlcore.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_qmlcore_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_qmldebug_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_qmldom_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_qmlintegration.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_qmlintegration_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_qmllocalstorage.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_qmllocalstorage_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_qmlls_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_qmlmodels.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_qmlmodels_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_qmlnetwork.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_qmlnetwork_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_qmltest.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_qmltest_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_qmltoolingsettings_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_qmltyperegistrar_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_qmlworkerscript.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_qmlworkerscript_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_qmlxmllistmodel.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_qmlxmllistmodel_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_quick.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_quick3d.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_quick3d_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_quick3dassetimport.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_quick3dassetimport_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_quick3dassetutils.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_quick3dassetutils_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_quick3deffects.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_quick3deffects_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_quick3dglslparser_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_quick3dhelpers.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_quick3dhelpers_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_quick3dhelpersimpl.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_quick3dhelpersimpl_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_quick3diblbaker.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_quick3diblbaker_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_quick3dparticleeffects.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_quick3dparticleeffects_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_quick3dparticles.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_quick3dparticles_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_quick3druntimerender.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_quick3druntimerender_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_quick3dspatialaudio_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_quick3dutils.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_quick3dutils_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_quick_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_quickcontrols2.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_quickcontrols2_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_quickcontrols2basic.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_quickcontrols2basic_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_quickcontrols2basicstyleimpl.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_quickcontrols2basicstyleimpl_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_quickcontrols2fusion.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_quickcontrols2fusion_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_quickcontrols2fusionstyleimpl.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_quickcontrols2fusionstyleimpl_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_quickcontrols2imagine.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_quickcontrols2imagine_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_quickcontrols2imaginestyleimpl.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_quickcontrols2imaginestyleimpl_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_quickcontrols2impl.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_quickcontrols2impl_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_quickcontrols2material.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_quickcontrols2material_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_quickcontrols2materialstyleimpl.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_quickcontrols2materialstyleimpl_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_quickcontrols2universal.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_quickcontrols2universal_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_quickcontrols2universalstyleimpl.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_quickcontrols2universalstyleimpl_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_quickcontrols2windowsstyleimpl.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_quickcontrols2windowsstyleimpl_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_quickcontrolstestutilsprivate_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_quickdialogs2.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_quickdialogs2_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_quickdialogs2quickimpl.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_quickdialogs2quickimpl_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_quickdialogs2utils.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_quickdialogs2utils_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_quickeffects_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_quicklayouts.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_quicklayouts_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_quickparticles_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_quickshapes_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_quicktemplates2.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_quicktemplates2_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_quicktestutilsprivate_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_quicktimeline.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_quicktimeline_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_quicktimelineblendtrees.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_quicktimelineblendtrees_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_quickwidgets.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_quickwidgets_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_shadertools.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_shadertools_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_spatialaudio.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_spatialaudio_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_sql.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_sql_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_svg.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_svg_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_svgwidgets.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_svgwidgets_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_testlib.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_testlib_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_tools_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_uiplugin.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_uitools.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_uitools_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_widgets.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_widgets_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_xml.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_xml_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_zlib_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\features\qt_functions.prf C:\Qt\6.7.1\mingw_64\mkspecs\features\qt_config.prf C:\Qt\6.7.1\mingw_64\mkspecs\win32-g++\qmake.conf C:\Qt\6.7.1\mingw_64\mkspecs\features\spec_post.prf .qmake.stash C:\Qt\6.7.1\mingw_64\mkspecs\features\exclusive_builds.prf C:\Qt\6.7.1\mingw_64\mkspecs\features\toolchain.prf C:\Qt\6.7.1\mingw_64\mkspecs\features\default_pre.prf C:\Qt\6.7.1\mingw_64\mkspecs\features\win32\default_pre.prf C:\Qt\6.7.1\mingw_64\mkspecs\features\resolve_config.prf C:\Qt\6.7.1\mingw_64\mkspecs\features\exclusive_builds_post.prf C:\Qt\6.7.1\mingw_64\mkspecs\features\default_post.prf C:\Qt\6.7.1\mingw_64\mkspecs\features\build_pass.prf C:\Qt\6.7.1\mingw_64\mkspecs\features\qml_debug.prf C:\Qt\6.7.1\mingw_64\mkspecs\features\precompile_header.prf C:\Qt\6.7.1\mingw_64\mkspecs\features\warn_on.prf C:\Qt\6.7.1\mingw_64\mkspecs\features\permissions.prf C:\Qt\6.7.1\mingw_64\mkspecs\features\qt.prf C:\Qt\6.7.1\mingw_64\mkspecs\features\resources_functions.prf C:\Qt\6.7.1\mingw_64\mkspecs\features\resources.prf C:\Qt\6.7.1\mingw_64\mkspecs\features\moc.prf C:\Qt\6.7.1\mingw_64\mkspecs\features\win32\opengl.prf C:\Qt\6.7.1\mingw_64\mkspecs\features\uic.prf C:\Qt\6.7.1\mingw_64\mkspecs\features\qmake_use.prf C:\Qt\6.7.1\mingw_64\mkspecs\features\file_copies.prf C:\Qt\6.7.1\mingw_64\mkspecs\features\win32\windows.prf C:\Qt\6.7.1\mingw_64\mkspecs\features\testcase_targets.prf C:\Qt\6.7.1\mingw_64\mkspecs\features\exceptions.prf C:\Qt\6.7.1\mingw_64\mkspecs\features\yacc.prf C:\Qt\6.7.1\mingw_64\mkspecs\features\lex.prf ..\..\hotelQT.pro C:\Qt\6.7.1\mingw_64\lib\Qt6Widgets.prl C:\Qt\6.7.1\mingw_64\lib\Qt6Gui.prl C:\Qt\6.7.1\mingw_64\lib\Qt6Sql.prl C:\Qt\6.7.1\mingw_64\lib\Qt6Core.prl C:\Qt\6.7.1\mingw_64\lib\Qt6EntryPoint.prl    C:\Qt\6.7.1\mingw_64\mkspecs\features\data\dummy.cpp ..\..\clientes\cadastrocliente.h ..\..\clientes\telaavaliacao.h ..\..\clientes\telacliente.h ..\..\clientes\telalogin.h ..\..\clientes\telanotificacoes.h ..\..\clientes\telaquarto.h ..\..\clientes\telareserva.h ..\..\colaboradores\cadastrocolaborador.h ..\..\colaboradores\cadastroquartos.h ..\..\colaboradores\listaQuartos\telafiltrar.h ..\..\colaboradores\listaclientes.h ..\..\colaboradores\listaquartos.h ..\..\colaboradores\reservastela.h ..\..\colaboradores\telacolaborador.h ..\..\colaboradores\telalogincolaborador.h ..\..\telainicial.h  ..\..\clientes\cadastrocliente.cpp ..\..\clientes\telaavaliacao.cpp ..\..\clientes\telacliente.cpp ..\..\clientes\telalogin.cpp ..\..\clientes\telanotificacoes.cpp ..\..\clientes\telaquarto.cpp ..\..\clientes\telareserva.cpp ..\..\colaboradores\cadastrocolaborador.cpp ..\..\colaboradores\cadastroquartos.cpp ..\..\colaboradores\listaQuartos\telafiltrar.cpp ..\..\colaboradores\listaclientes.cpp ..\..\colaboradores\listaquartos.cpp ..\..\colaboradores\reservastela.cpp ..\..\colaboradores\telacolaborador.cpp ..\..\colaboradores\telalogincolaborador.cpp ..\..\main.cpp ..\..\telainicial.cpp ..\..\clientes\cadastrocliente.ui ..\..\clientes\telaavaliacao.ui ..\..\clientes\telacliente.ui ..\..\clientes\telalogin.ui ..\..\clientes\telanotificacoes.ui ..\..\clientes\telaquarto.ui ..\..\clientes\telareserva.ui ..\..\colaboradores\cadastrocolaborador.ui ..\..\colaboradores\cadastroquartos.ui ..\..\colaboradores\listaQuartos\telafiltrar.ui ..\..\colaboradores\listaclientes.ui ..\..\colaboradores\listaquartos.ui ..\..\colaboradores\reservastela.ui ..\..\colaboradores\telacolaborador.ui ..\..\colaboradores\telalogincolaborador.ui ..\..\telainicial.ui    
+	$(ZIP) hotelQT.zip $(SOURCES) $(DIST) ..\..\..\..\hotelQT.pro C:\Qt\6.7.1\mingw_64\mkspecs\features\spec_pre.prf C:\Qt\6.7.1\mingw_64\mkspecs\features\device_config.prf C:\Qt\6.7.1\mingw_64\mkspecs\common\sanitize.conf C:\Qt\6.7.1\mingw_64\mkspecs\common\gcc-base.conf C:\Qt\6.7.1\mingw_64\mkspecs\common\g++-base.conf C:\Qt\6.7.1\mingw_64\mkspecs\features\win32\windows_vulkan_sdk.prf C:\Qt\6.7.1\mingw_64\mkspecs\common\windows-vulkan.conf C:\Qt\6.7.1\mingw_64\mkspecs\common\g++-win32.conf C:\Qt\6.7.1\mingw_64\mkspecs\common\windows-desktop.conf C:\Qt\6.7.1\mingw_64\mkspecs\qconfig.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_ext_freetype.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_ext_libjpeg.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_ext_libpng.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_charts.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_charts_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_chartsqml.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_chartsqml_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_concurrent.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_concurrent_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_core.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_core_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_dbus.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_dbus_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_designer.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_designer_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_designercomponents_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_devicediscovery_support_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_entrypoint_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_example_icons_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_fb_support_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_freetype_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_gui.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_gui_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_harfbuzz_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_help.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_help_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_jpeg_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_labsanimation.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_labsanimation_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_labsfolderlistmodel.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_labsfolderlistmodel_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_labsqmlmodels.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_labsqmlmodels_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_labssettings.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_labssettings_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_labssharedimage.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_labssharedimage_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_labswavefrontmesh.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_labswavefrontmesh_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_linguist.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_multimedia.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_multimedia_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_multimediaquick_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_multimediawidgets.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_multimediawidgets_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_network.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_network_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_opengl.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_opengl_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_openglwidgets.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_openglwidgets_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_packetprotocol_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_png_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_printsupport.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_printsupport_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_qdoccatch_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_qdoccatchconversions_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_qdoccatchgenerators_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_qml.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_qml_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_qmlbuiltins.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_qmlbuiltins_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_qmlcompiler.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_qmlcompiler_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_qmlcore.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_qmlcore_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_qmldebug_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_qmldom_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_qmlintegration.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_qmlintegration_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_qmllocalstorage.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_qmllocalstorage_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_qmlls_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_qmlmodels.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_qmlmodels_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_qmlnetwork.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_qmlnetwork_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_qmltest.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_qmltest_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_qmltoolingsettings_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_qmltyperegistrar_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_qmlworkerscript.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_qmlworkerscript_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_qmlxmllistmodel.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_qmlxmllistmodel_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_quick.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_quick3d.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_quick3d_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_quick3dassetimport.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_quick3dassetimport_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_quick3dassetutils.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_quick3dassetutils_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_quick3deffects.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_quick3deffects_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_quick3dglslparser_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_quick3dhelpers.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_quick3dhelpers_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_quick3dhelpersimpl.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_quick3dhelpersimpl_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_quick3diblbaker.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_quick3diblbaker_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_quick3dparticleeffects.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_quick3dparticleeffects_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_quick3dparticles.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_quick3dparticles_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_quick3druntimerender.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_quick3druntimerender_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_quick3dspatialaudio_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_quick3dutils.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_quick3dutils_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_quick_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_quickcontrols2.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_quickcontrols2_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_quickcontrols2basic.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_quickcontrols2basic_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_quickcontrols2basicstyleimpl.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_quickcontrols2basicstyleimpl_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_quickcontrols2fusion.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_quickcontrols2fusion_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_quickcontrols2fusionstyleimpl.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_quickcontrols2fusionstyleimpl_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_quickcontrols2imagine.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_quickcontrols2imagine_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_quickcontrols2imaginestyleimpl.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_quickcontrols2imaginestyleimpl_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_quickcontrols2impl.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_quickcontrols2impl_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_quickcontrols2material.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_quickcontrols2material_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_quickcontrols2materialstyleimpl.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_quickcontrols2materialstyleimpl_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_quickcontrols2universal.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_quickcontrols2universal_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_quickcontrols2universalstyleimpl.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_quickcontrols2universalstyleimpl_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_quickcontrols2windowsstyleimpl.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_quickcontrols2windowsstyleimpl_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_quickcontrolstestutilsprivate_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_quickdialogs2.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_quickdialogs2_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_quickdialogs2quickimpl.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_quickdialogs2quickimpl_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_quickdialogs2utils.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_quickdialogs2utils_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_quickeffects_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_quicklayouts.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_quicklayouts_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_quickparticles_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_quickshapes_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_quicktemplates2.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_quicktemplates2_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_quicktestutilsprivate_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_quicktimeline.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_quicktimeline_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_quicktimelineblendtrees.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_quicktimelineblendtrees_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_quickwidgets.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_quickwidgets_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_shadertools.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_shadertools_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_spatialaudio.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_spatialaudio_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_sql.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_sql_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_svg.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_svg_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_svgwidgets.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_svgwidgets_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_testlib.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_testlib_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_tools_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_uiplugin.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_uitools.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_uitools_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_widgets.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_widgets_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_xml.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_xml_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\modules\qt_lib_zlib_private.pri C:\Qt\6.7.1\mingw_64\mkspecs\features\qt_functions.prf C:\Qt\6.7.1\mingw_64\mkspecs\features\qt_config.prf C:\Qt\6.7.1\mingw_64\mkspecs\win32-g++\qmake.conf C:\Qt\6.7.1\mingw_64\mkspecs\features\spec_post.prf .qmake.stash C:\Qt\6.7.1\mingw_64\mkspecs\features\exclusive_builds.prf C:\Qt\6.7.1\mingw_64\mkspecs\features\toolchain.prf C:\Qt\6.7.1\mingw_64\mkspecs\features\default_pre.prf C:\Qt\6.7.1\mingw_64\mkspecs\features\win32\default_pre.prf C:\Qt\6.7.1\mingw_64\mkspecs\features\resolve_config.prf C:\Qt\6.7.1\mingw_64\mkspecs\features\exclusive_builds_post.prf C:\Qt\6.7.1\mingw_64\mkspecs\features\default_post.prf C:\Qt\6.7.1\mingw_64\mkspecs\features\build_pass.prf C:\Qt\6.7.1\mingw_64\mkspecs\features\qml_debug.prf C:\Qt\6.7.1\mingw_64\mkspecs\features\precompile_header.prf C:\Qt\6.7.1\mingw_64\mkspecs\features\warn_on.prf C:\Qt\6.7.1\mingw_64\mkspecs\features\permissions.prf C:\Qt\6.7.1\mingw_64\mkspecs\features\qt.prf C:\Qt\6.7.1\mingw_64\mkspecs\features\resources_functions.prf C:\Qt\6.7.1\mingw_64\mkspecs\features\resources.prf C:\Qt\6.7.1\mingw_64\mkspecs\features\moc.prf C:\Qt\6.7.1\mingw_64\mkspecs\features\win32\opengl.prf C:\Qt\6.7.1\mingw_64\mkspecs\features\uic.prf C:\Qt\6.7.1\mingw_64\mkspecs\features\qmake_use.prf C:\Qt\6.7.1\mingw_64\mkspecs\features\file_copies.prf C:\Qt\6.7.1\mingw_64\mkspecs\features\win32\windows.prf C:\Qt\6.7.1\mingw_64\mkspecs\features\testcase_targets.prf C:\Qt\6.7.1\mingw_64\mkspecs\features\exceptions.prf C:\Qt\6.7.1\mingw_64\mkspecs\features\yacc.prf C:\Qt\6.7.1\mingw_64\mkspecs\features\lex.prf ..\..\hotelQT.pro C:\Qt\6.7.1\mingw_64\lib\Qt6Widgets.prl C:\Qt\6.7.1\mingw_64\lib\Qt6Gui.prl C:\Qt\6.7.1\mingw_64\lib\Qt6Sql.prl C:\Qt\6.7.1\mingw_64\lib\Qt6Core.prl C:\Qt\6.7.1\mingw_64\lib\Qt6EntryPoint.prl    C:\Qt\6.7.1\mingw_64\mkspecs\features\data\dummy.cpp ..\..\clientes\cadastrocliente.h ..\..\clientes\telaavaliacao.h ..\..\clientes\telacliente.h ..\..\clientes\telalogin.h ..\..\clientes\telanotificacoes.h ..\..\clientes\telaquarto.h ..\..\clientes\telareserva.h ..\..\colaboradores\cadastrocolaborador.h ..\..\colaboradores\cadastroquartos.h ..\..\colaboradores\listaQuartos\telafiltrar.h ..\..\colaboradores\listaclientes.h ..\..\colaboradores\listaquartos.h ..\..\colaboradores\quartos\QuartoComfort.h ..\..\colaboradores\quartos\QuartoMaster.h ..\..\colaboradores\quartos\QuartoSimples.h ..\..\colaboradores\quartos\QuartoSuite.h ..\..\colaboradores\quartos\Quartos.h ..\..\colaboradores\reservastela.h ..\..\colaboradores\telacolaborador.h ..\..\colaboradores\telalogincolaborador.h ..\..\telainicial.h  ..\..\clientes\cadastrocliente.cpp ..\..\clientes\telaavaliacao.cpp ..\..\clientes\telacliente.cpp ..\..\clientes\telalogin.cpp ..\..\clientes\telanotificacoes.cpp ..\..\clientes\telaquarto.cpp ..\..\clientes\telareserva.cpp ..\..\colaboradores\cadastrocolaborador.cpp ..\..\colaboradores\cadastroquartos.cpp ..\..\colaboradores\listaQuartos\telafiltrar.cpp ..\..\colaboradores\listaclientes.cpp ..\..\colaboradores\listaquartos.cpp ..\..\colaboradores\reservastela.cpp ..\..\colaboradores\telacolaborador.cpp ..\..\colaboradores\telalogincolaborador.cpp ..\..\main.cpp ..\..\telainicial.cpp ..\..\clientes\cadastrocliente.ui ..\..\clientes\telaavaliacao.ui ..\..\clientes\telacliente.ui ..\..\clientes\telalogin.ui ..\..\clientes\telanotificacoes.ui ..\..\clientes\telaquarto.ui ..\..\clientes\telareserva.ui ..\..\colaboradores\cadastrocolaborador.ui ..\..\colaboradores\cadastroquartos.ui ..\..\colaboradores\listaQuartos\telafiltrar.ui ..\..\colaboradores\listaclientes.ui ..\..\colaboradores\listaquartos.ui ..\..\colaboradores\reservastela.ui ..\..\colaboradores\telacolaborador.ui ..\..\colaboradores\telalogincolaborador.ui ..\..\telainicial.ui    
 
 clean: compiler_clean 
 	-$(DEL_FILE) debug\cadastrocliente.o debug\telaavaliacao.o debug\telacliente.o debug\telalogin.o debug\telanotificacoes.o debug\telaquarto.o debug\telareserva.o debug\cadastrocolaborador.o debug\cadastroquartos.o debug\telafiltrar.o debug\listaclientes.o debug\listaquartos.o debug\reservastela.o debug\telacolaborador.o debug\telalogincolaborador.o debug\main.o debug\telainicial.o debug\moc_cadastrocliente.o debug\moc_telaavaliacao.o debug\moc_telacliente.o debug\moc_telalogin.o debug\moc_telanotificacoes.o debug\moc_telaquarto.o debug\moc_telareserva.o debug\moc_cadastrocolaborador.o debug\moc_cadastroquartos.o debug\moc_telafiltrar.o debug\moc_listaclientes.o debug\moc_listaquartos.o debug\moc_reservastela.o debug\moc_telacolaborador.o debug\moc_telalogincolaborador.o debug\moc_telainicial.o
@@ -388,7 +393,7 @@ debug/moc_cadastrocliente.cpp: ../../clientes/cadastrocliente.h \
 		C:/Qt/6.7.1/mingw_64/include/QtGui/qguiapplication_platform.h \
 		debug/moc_predefs.h \
 		C:/Qt/6.7.1/mingw_64/bin/moc.exe
-	C:\Qt\6.7.1\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/Usuario/Documents/GitHub/hotelQT/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/debug/moc_predefs.h -IC:/Qt/6.7.1/mingw_64/mkspecs/win32-g++ -IC:/Users/Usuario/Documents/GitHub/hotelQT -IC:/Qt/6.7.1/mingw_64/include -IC:/Qt/6.7.1/mingw_64/include/QtWidgets -IC:/Qt/6.7.1/mingw_64/include/QtGui -IC:/Qt/6.7.1/mingw_64/include/QtSql -IC:/Qt/6.7.1/mingw_64/include/QtCore -I. -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++ -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed -IC:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include ..\..\clientes\cadastrocliente.h -o debug\moc_cadastrocliente.cpp
+	C:\Qt\6.7.1\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/snowb/OneDrive/Documentos/GitHub/hotelQT/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/debug/moc_predefs.h -IC:/Qt/6.7.1/mingw_64/mkspecs/win32-g++ -IC:/Users/snowb/OneDrive/Documentos/GitHub/hotelQT -IC:/Qt/6.7.1/mingw_64/include -IC:/Qt/6.7.1/mingw_64/include/QtWidgets -IC:/Qt/6.7.1/mingw_64/include/QtGui -IC:/Qt/6.7.1/mingw_64/include/QtSql -IC:/Qt/6.7.1/mingw_64/include/QtCore -I. -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++ -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed -IC:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include ..\..\clientes\cadastrocliente.h -o debug\moc_cadastrocliente.cpp
 
 debug/moc_telaavaliacao.cpp: ../../clientes/telaavaliacao.h \
 		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QDialog \
@@ -580,7 +585,7 @@ debug/moc_telaavaliacao.cpp: ../../clientes/telaavaliacao.h \
 		C:/Qt/6.7.1/mingw_64/include/QtGui/qguiapplication_platform.h \
 		debug/moc_predefs.h \
 		C:/Qt/6.7.1/mingw_64/bin/moc.exe
-	C:\Qt\6.7.1\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/Usuario/Documents/GitHub/hotelQT/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/debug/moc_predefs.h -IC:/Qt/6.7.1/mingw_64/mkspecs/win32-g++ -IC:/Users/Usuario/Documents/GitHub/hotelQT -IC:/Qt/6.7.1/mingw_64/include -IC:/Qt/6.7.1/mingw_64/include/QtWidgets -IC:/Qt/6.7.1/mingw_64/include/QtGui -IC:/Qt/6.7.1/mingw_64/include/QtSql -IC:/Qt/6.7.1/mingw_64/include/QtCore -I. -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++ -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed -IC:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include ..\..\clientes\telaavaliacao.h -o debug\moc_telaavaliacao.cpp
+	C:\Qt\6.7.1\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/snowb/OneDrive/Documentos/GitHub/hotelQT/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/debug/moc_predefs.h -IC:/Qt/6.7.1/mingw_64/mkspecs/win32-g++ -IC:/Users/snowb/OneDrive/Documentos/GitHub/hotelQT -IC:/Qt/6.7.1/mingw_64/include -IC:/Qt/6.7.1/mingw_64/include/QtWidgets -IC:/Qt/6.7.1/mingw_64/include/QtGui -IC:/Qt/6.7.1/mingw_64/include/QtSql -IC:/Qt/6.7.1/mingw_64/include/QtCore -I. -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++ -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed -IC:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include ..\..\clientes\telaavaliacao.h -o debug\moc_telaavaliacao.cpp
 
 debug/moc_telacliente.cpp: ../../clientes/telacliente.h \
 		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QDialog \
@@ -937,7 +942,7 @@ debug/moc_telacliente.cpp: ../../clientes/telacliente.h \
 		C:/Qt/6.7.1/mingw_64/include/QtSql/qtsqlversion.h \
 		debug/moc_predefs.h \
 		C:/Qt/6.7.1/mingw_64/bin/moc.exe
-	C:\Qt\6.7.1\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/Usuario/Documents/GitHub/hotelQT/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/debug/moc_predefs.h -IC:/Qt/6.7.1/mingw_64/mkspecs/win32-g++ -IC:/Users/Usuario/Documents/GitHub/hotelQT -IC:/Qt/6.7.1/mingw_64/include -IC:/Qt/6.7.1/mingw_64/include/QtWidgets -IC:/Qt/6.7.1/mingw_64/include/QtGui -IC:/Qt/6.7.1/mingw_64/include/QtSql -IC:/Qt/6.7.1/mingw_64/include/QtCore -I. -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++ -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed -IC:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include ..\..\clientes\telacliente.h -o debug\moc_telacliente.cpp
+	C:\Qt\6.7.1\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/snowb/OneDrive/Documentos/GitHub/hotelQT/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/debug/moc_predefs.h -IC:/Qt/6.7.1/mingw_64/mkspecs/win32-g++ -IC:/Users/snowb/OneDrive/Documentos/GitHub/hotelQT -IC:/Qt/6.7.1/mingw_64/include -IC:/Qt/6.7.1/mingw_64/include/QtWidgets -IC:/Qt/6.7.1/mingw_64/include/QtGui -IC:/Qt/6.7.1/mingw_64/include/QtSql -IC:/Qt/6.7.1/mingw_64/include/QtCore -I. -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++ -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed -IC:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include ..\..\clientes\telacliente.h -o debug\moc_telacliente.cpp
 
 debug/moc_telalogin.cpp: ../../clientes/telalogin.h \
 		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QDialog \
@@ -1294,7 +1299,7 @@ debug/moc_telalogin.cpp: ../../clientes/telalogin.h \
 		C:/Qt/6.7.1/mingw_64/include/QtSql/qtsqlversion.h \
 		debug/moc_predefs.h \
 		C:/Qt/6.7.1/mingw_64/bin/moc.exe
-	C:\Qt\6.7.1\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/Usuario/Documents/GitHub/hotelQT/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/debug/moc_predefs.h -IC:/Qt/6.7.1/mingw_64/mkspecs/win32-g++ -IC:/Users/Usuario/Documents/GitHub/hotelQT -IC:/Qt/6.7.1/mingw_64/include -IC:/Qt/6.7.1/mingw_64/include/QtWidgets -IC:/Qt/6.7.1/mingw_64/include/QtGui -IC:/Qt/6.7.1/mingw_64/include/QtSql -IC:/Qt/6.7.1/mingw_64/include/QtCore -I. -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++ -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed -IC:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include ..\..\clientes\telalogin.h -o debug\moc_telalogin.cpp
+	C:\Qt\6.7.1\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/snowb/OneDrive/Documentos/GitHub/hotelQT/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/debug/moc_predefs.h -IC:/Qt/6.7.1/mingw_64/mkspecs/win32-g++ -IC:/Users/snowb/OneDrive/Documentos/GitHub/hotelQT -IC:/Qt/6.7.1/mingw_64/include -IC:/Qt/6.7.1/mingw_64/include/QtWidgets -IC:/Qt/6.7.1/mingw_64/include/QtGui -IC:/Qt/6.7.1/mingw_64/include/QtSql -IC:/Qt/6.7.1/mingw_64/include/QtCore -I. -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++ -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed -IC:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include ..\..\clientes\telalogin.h -o debug\moc_telalogin.cpp
 
 debug/moc_telanotificacoes.cpp: ../../clientes/telanotificacoes.h \
 		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QDialog \
@@ -1486,7 +1491,7 @@ debug/moc_telanotificacoes.cpp: ../../clientes/telanotificacoes.h \
 		C:/Qt/6.7.1/mingw_64/include/QtGui/qguiapplication_platform.h \
 		debug/moc_predefs.h \
 		C:/Qt/6.7.1/mingw_64/bin/moc.exe
-	C:\Qt\6.7.1\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/Usuario/Documents/GitHub/hotelQT/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/debug/moc_predefs.h -IC:/Qt/6.7.1/mingw_64/mkspecs/win32-g++ -IC:/Users/Usuario/Documents/GitHub/hotelQT -IC:/Qt/6.7.1/mingw_64/include -IC:/Qt/6.7.1/mingw_64/include/QtWidgets -IC:/Qt/6.7.1/mingw_64/include/QtGui -IC:/Qt/6.7.1/mingw_64/include/QtSql -IC:/Qt/6.7.1/mingw_64/include/QtCore -I. -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++ -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed -IC:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include ..\..\clientes\telanotificacoes.h -o debug\moc_telanotificacoes.cpp
+	C:\Qt\6.7.1\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/snowb/OneDrive/Documentos/GitHub/hotelQT/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/debug/moc_predefs.h -IC:/Qt/6.7.1/mingw_64/mkspecs/win32-g++ -IC:/Users/snowb/OneDrive/Documentos/GitHub/hotelQT -IC:/Qt/6.7.1/mingw_64/include -IC:/Qt/6.7.1/mingw_64/include/QtWidgets -IC:/Qt/6.7.1/mingw_64/include/QtGui -IC:/Qt/6.7.1/mingw_64/include/QtSql -IC:/Qt/6.7.1/mingw_64/include/QtCore -I. -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++ -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed -IC:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include ..\..\clientes\telanotificacoes.h -o debug\moc_telanotificacoes.cpp
 
 debug/moc_telaquarto.cpp: ../../clientes/telaquarto.h \
 		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QDialog \
@@ -1678,7 +1683,7 @@ debug/moc_telaquarto.cpp: ../../clientes/telaquarto.h \
 		C:/Qt/6.7.1/mingw_64/include/QtGui/qguiapplication_platform.h \
 		debug/moc_predefs.h \
 		C:/Qt/6.7.1/mingw_64/bin/moc.exe
-	C:\Qt\6.7.1\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/Usuario/Documents/GitHub/hotelQT/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/debug/moc_predefs.h -IC:/Qt/6.7.1/mingw_64/mkspecs/win32-g++ -IC:/Users/Usuario/Documents/GitHub/hotelQT -IC:/Qt/6.7.1/mingw_64/include -IC:/Qt/6.7.1/mingw_64/include/QtWidgets -IC:/Qt/6.7.1/mingw_64/include/QtGui -IC:/Qt/6.7.1/mingw_64/include/QtSql -IC:/Qt/6.7.1/mingw_64/include/QtCore -I. -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++ -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed -IC:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include ..\..\clientes\telaquarto.h -o debug\moc_telaquarto.cpp
+	C:\Qt\6.7.1\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/snowb/OneDrive/Documentos/GitHub/hotelQT/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/debug/moc_predefs.h -IC:/Qt/6.7.1/mingw_64/mkspecs/win32-g++ -IC:/Users/snowb/OneDrive/Documentos/GitHub/hotelQT -IC:/Qt/6.7.1/mingw_64/include -IC:/Qt/6.7.1/mingw_64/include/QtWidgets -IC:/Qt/6.7.1/mingw_64/include/QtGui -IC:/Qt/6.7.1/mingw_64/include/QtSql -IC:/Qt/6.7.1/mingw_64/include/QtCore -I. -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++ -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed -IC:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include ..\..\clientes\telaquarto.h -o debug\moc_telaquarto.cpp
 
 debug/moc_telareserva.cpp: ../../clientes/telareserva.h \
 		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QDialog \
@@ -1870,7 +1875,7 @@ debug/moc_telareserva.cpp: ../../clientes/telareserva.h \
 		C:/Qt/6.7.1/mingw_64/include/QtGui/qguiapplication_platform.h \
 		debug/moc_predefs.h \
 		C:/Qt/6.7.1/mingw_64/bin/moc.exe
-	C:\Qt\6.7.1\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/Usuario/Documents/GitHub/hotelQT/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/debug/moc_predefs.h -IC:/Qt/6.7.1/mingw_64/mkspecs/win32-g++ -IC:/Users/Usuario/Documents/GitHub/hotelQT -IC:/Qt/6.7.1/mingw_64/include -IC:/Qt/6.7.1/mingw_64/include/QtWidgets -IC:/Qt/6.7.1/mingw_64/include/QtGui -IC:/Qt/6.7.1/mingw_64/include/QtSql -IC:/Qt/6.7.1/mingw_64/include/QtCore -I. -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++ -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed -IC:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include ..\..\clientes\telareserva.h -o debug\moc_telareserva.cpp
+	C:\Qt\6.7.1\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/snowb/OneDrive/Documentos/GitHub/hotelQT/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/debug/moc_predefs.h -IC:/Qt/6.7.1/mingw_64/mkspecs/win32-g++ -IC:/Users/snowb/OneDrive/Documentos/GitHub/hotelQT -IC:/Qt/6.7.1/mingw_64/include -IC:/Qt/6.7.1/mingw_64/include/QtWidgets -IC:/Qt/6.7.1/mingw_64/include/QtGui -IC:/Qt/6.7.1/mingw_64/include/QtSql -IC:/Qt/6.7.1/mingw_64/include/QtCore -I. -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++ -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed -IC:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include ..\..\clientes\telareserva.h -o debug\moc_telareserva.cpp
 
 debug/moc_cadastrocolaborador.cpp: ../../colaboradores/cadastrocolaborador.h \
 		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QDialog \
@@ -2230,7 +2235,7 @@ debug/moc_cadastrocolaborador.cpp: ../../colaboradores/cadastrocolaborador.h \
 		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qdialogbuttonbox.h \
 		debug/moc_predefs.h \
 		C:/Qt/6.7.1/mingw_64/bin/moc.exe
-	C:\Qt\6.7.1\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/Usuario/Documents/GitHub/hotelQT/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/debug/moc_predefs.h -IC:/Qt/6.7.1/mingw_64/mkspecs/win32-g++ -IC:/Users/Usuario/Documents/GitHub/hotelQT -IC:/Qt/6.7.1/mingw_64/include -IC:/Qt/6.7.1/mingw_64/include/QtWidgets -IC:/Qt/6.7.1/mingw_64/include/QtGui -IC:/Qt/6.7.1/mingw_64/include/QtSql -IC:/Qt/6.7.1/mingw_64/include/QtCore -I. -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++ -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed -IC:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include ..\..\colaboradores\cadastrocolaborador.h -o debug\moc_cadastrocolaborador.cpp
+	C:\Qt\6.7.1\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/snowb/OneDrive/Documentos/GitHub/hotelQT/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/debug/moc_predefs.h -IC:/Qt/6.7.1/mingw_64/mkspecs/win32-g++ -IC:/Users/snowb/OneDrive/Documentos/GitHub/hotelQT -IC:/Qt/6.7.1/mingw_64/include -IC:/Qt/6.7.1/mingw_64/include/QtWidgets -IC:/Qt/6.7.1/mingw_64/include/QtGui -IC:/Qt/6.7.1/mingw_64/include/QtSql -IC:/Qt/6.7.1/mingw_64/include/QtCore -I. -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++ -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed -IC:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include ..\..\colaboradores\cadastrocolaborador.h -o debug\moc_cadastrocolaborador.cpp
 
 debug/moc_cadastroquartos.cpp: ../../colaboradores/cadastroquartos.h \
 		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QDialog \
@@ -2422,7 +2427,7 @@ debug/moc_cadastroquartos.cpp: ../../colaboradores/cadastroquartos.h \
 		C:/Qt/6.7.1/mingw_64/include/QtGui/qguiapplication_platform.h \
 		debug/moc_predefs.h \
 		C:/Qt/6.7.1/mingw_64/bin/moc.exe
-	C:\Qt\6.7.1\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/Usuario/Documents/GitHub/hotelQT/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/debug/moc_predefs.h -IC:/Qt/6.7.1/mingw_64/mkspecs/win32-g++ -IC:/Users/Usuario/Documents/GitHub/hotelQT -IC:/Qt/6.7.1/mingw_64/include -IC:/Qt/6.7.1/mingw_64/include/QtWidgets -IC:/Qt/6.7.1/mingw_64/include/QtGui -IC:/Qt/6.7.1/mingw_64/include/QtSql -IC:/Qt/6.7.1/mingw_64/include/QtCore -I. -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++ -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed -IC:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include ..\..\colaboradores\cadastroquartos.h -o debug\moc_cadastroquartos.cpp
+	C:\Qt\6.7.1\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/snowb/OneDrive/Documentos/GitHub/hotelQT/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/debug/moc_predefs.h -IC:/Qt/6.7.1/mingw_64/mkspecs/win32-g++ -IC:/Users/snowb/OneDrive/Documentos/GitHub/hotelQT -IC:/Qt/6.7.1/mingw_64/include -IC:/Qt/6.7.1/mingw_64/include/QtWidgets -IC:/Qt/6.7.1/mingw_64/include/QtGui -IC:/Qt/6.7.1/mingw_64/include/QtSql -IC:/Qt/6.7.1/mingw_64/include/QtCore -I. -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++ -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed -IC:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include ..\..\colaboradores\cadastroquartos.h -o debug\moc_cadastroquartos.cpp
 
 debug/moc_telafiltrar.cpp: ../../colaboradores/listaQuartos/telafiltrar.h \
 		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QDialog \
@@ -2614,7 +2619,7 @@ debug/moc_telafiltrar.cpp: ../../colaboradores/listaQuartos/telafiltrar.h \
 		C:/Qt/6.7.1/mingw_64/include/QtGui/qguiapplication_platform.h \
 		debug/moc_predefs.h \
 		C:/Qt/6.7.1/mingw_64/bin/moc.exe
-	C:\Qt\6.7.1\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/Usuario/Documents/GitHub/hotelQT/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/debug/moc_predefs.h -IC:/Qt/6.7.1/mingw_64/mkspecs/win32-g++ -IC:/Users/Usuario/Documents/GitHub/hotelQT -IC:/Qt/6.7.1/mingw_64/include -IC:/Qt/6.7.1/mingw_64/include/QtWidgets -IC:/Qt/6.7.1/mingw_64/include/QtGui -IC:/Qt/6.7.1/mingw_64/include/QtSql -IC:/Qt/6.7.1/mingw_64/include/QtCore -I. -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++ -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed -IC:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include ..\..\colaboradores\listaQuartos\telafiltrar.h -o debug\moc_telafiltrar.cpp
+	C:\Qt\6.7.1\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/snowb/OneDrive/Documentos/GitHub/hotelQT/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/debug/moc_predefs.h -IC:/Qt/6.7.1/mingw_64/mkspecs/win32-g++ -IC:/Users/snowb/OneDrive/Documentos/GitHub/hotelQT -IC:/Qt/6.7.1/mingw_64/include -IC:/Qt/6.7.1/mingw_64/include/QtWidgets -IC:/Qt/6.7.1/mingw_64/include/QtGui -IC:/Qt/6.7.1/mingw_64/include/QtSql -IC:/Qt/6.7.1/mingw_64/include/QtCore -I. -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++ -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed -IC:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include ..\..\colaboradores\listaQuartos\telafiltrar.h -o debug\moc_telafiltrar.cpp
 
 debug/moc_listaclientes.cpp: ../../colaboradores/listaclientes.h \
 		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QDialog \
@@ -2806,7 +2811,7 @@ debug/moc_listaclientes.cpp: ../../colaboradores/listaclientes.h \
 		C:/Qt/6.7.1/mingw_64/include/QtGui/qguiapplication_platform.h \
 		debug/moc_predefs.h \
 		C:/Qt/6.7.1/mingw_64/bin/moc.exe
-	C:\Qt\6.7.1\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/Usuario/Documents/GitHub/hotelQT/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/debug/moc_predefs.h -IC:/Qt/6.7.1/mingw_64/mkspecs/win32-g++ -IC:/Users/Usuario/Documents/GitHub/hotelQT -IC:/Qt/6.7.1/mingw_64/include -IC:/Qt/6.7.1/mingw_64/include/QtWidgets -IC:/Qt/6.7.1/mingw_64/include/QtGui -IC:/Qt/6.7.1/mingw_64/include/QtSql -IC:/Qt/6.7.1/mingw_64/include/QtCore -I. -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++ -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed -IC:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include ..\..\colaboradores\listaclientes.h -o debug\moc_listaclientes.cpp
+	C:\Qt\6.7.1\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/snowb/OneDrive/Documentos/GitHub/hotelQT/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/debug/moc_predefs.h -IC:/Qt/6.7.1/mingw_64/mkspecs/win32-g++ -IC:/Users/snowb/OneDrive/Documentos/GitHub/hotelQT -IC:/Qt/6.7.1/mingw_64/include -IC:/Qt/6.7.1/mingw_64/include/QtWidgets -IC:/Qt/6.7.1/mingw_64/include/QtGui -IC:/Qt/6.7.1/mingw_64/include/QtSql -IC:/Qt/6.7.1/mingw_64/include/QtCore -I. -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++ -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed -IC:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include ..\..\colaboradores\listaclientes.h -o debug\moc_listaclientes.cpp
 
 debug/moc_listaquartos.cpp: ../../colaboradores/listaquartos.h \
 		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QDialog \
@@ -2998,7 +3003,7 @@ debug/moc_listaquartos.cpp: ../../colaboradores/listaquartos.h \
 		C:/Qt/6.7.1/mingw_64/include/QtGui/qguiapplication_platform.h \
 		debug/moc_predefs.h \
 		C:/Qt/6.7.1/mingw_64/bin/moc.exe
-	C:\Qt\6.7.1\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/Usuario/Documents/GitHub/hotelQT/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/debug/moc_predefs.h -IC:/Qt/6.7.1/mingw_64/mkspecs/win32-g++ -IC:/Users/Usuario/Documents/GitHub/hotelQT -IC:/Qt/6.7.1/mingw_64/include -IC:/Qt/6.7.1/mingw_64/include/QtWidgets -IC:/Qt/6.7.1/mingw_64/include/QtGui -IC:/Qt/6.7.1/mingw_64/include/QtSql -IC:/Qt/6.7.1/mingw_64/include/QtCore -I. -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++ -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed -IC:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include ..\..\colaboradores\listaquartos.h -o debug\moc_listaquartos.cpp
+	C:\Qt\6.7.1\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/snowb/OneDrive/Documentos/GitHub/hotelQT/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/debug/moc_predefs.h -IC:/Qt/6.7.1/mingw_64/mkspecs/win32-g++ -IC:/Users/snowb/OneDrive/Documentos/GitHub/hotelQT -IC:/Qt/6.7.1/mingw_64/include -IC:/Qt/6.7.1/mingw_64/include/QtWidgets -IC:/Qt/6.7.1/mingw_64/include/QtGui -IC:/Qt/6.7.1/mingw_64/include/QtSql -IC:/Qt/6.7.1/mingw_64/include/QtCore -I. -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++ -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed -IC:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include ..\..\colaboradores\listaquartos.h -o debug\moc_listaquartos.cpp
 
 debug/moc_reservastela.cpp: ../../colaboradores/reservastela.h \
 		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QDialog \
@@ -3190,7 +3195,7 @@ debug/moc_reservastela.cpp: ../../colaboradores/reservastela.h \
 		C:/Qt/6.7.1/mingw_64/include/QtGui/qguiapplication_platform.h \
 		debug/moc_predefs.h \
 		C:/Qt/6.7.1/mingw_64/bin/moc.exe
-	C:\Qt\6.7.1\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/Usuario/Documents/GitHub/hotelQT/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/debug/moc_predefs.h -IC:/Qt/6.7.1/mingw_64/mkspecs/win32-g++ -IC:/Users/Usuario/Documents/GitHub/hotelQT -IC:/Qt/6.7.1/mingw_64/include -IC:/Qt/6.7.1/mingw_64/include/QtWidgets -IC:/Qt/6.7.1/mingw_64/include/QtGui -IC:/Qt/6.7.1/mingw_64/include/QtSql -IC:/Qt/6.7.1/mingw_64/include/QtCore -I. -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++ -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed -IC:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include ..\..\colaboradores\reservastela.h -o debug\moc_reservastela.cpp
+	C:\Qt\6.7.1\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/snowb/OneDrive/Documentos/GitHub/hotelQT/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/debug/moc_predefs.h -IC:/Qt/6.7.1/mingw_64/mkspecs/win32-g++ -IC:/Users/snowb/OneDrive/Documentos/GitHub/hotelQT -IC:/Qt/6.7.1/mingw_64/include -IC:/Qt/6.7.1/mingw_64/include/QtWidgets -IC:/Qt/6.7.1/mingw_64/include/QtGui -IC:/Qt/6.7.1/mingw_64/include/QtSql -IC:/Qt/6.7.1/mingw_64/include/QtCore -I. -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++ -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed -IC:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include ..\..\colaboradores\reservastela.h -o debug\moc_reservastela.cpp
 
 debug/moc_telacolaborador.cpp: ../../colaboradores/telacolaborador.h \
 		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QDialog \
@@ -3547,7 +3552,7 @@ debug/moc_telacolaborador.cpp: ../../colaboradores/telacolaborador.h \
 		C:/Qt/6.7.1/mingw_64/include/QtSql/qtsqlversion.h \
 		debug/moc_predefs.h \
 		C:/Qt/6.7.1/mingw_64/bin/moc.exe
-	C:\Qt\6.7.1\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/Usuario/Documents/GitHub/hotelQT/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/debug/moc_predefs.h -IC:/Qt/6.7.1/mingw_64/mkspecs/win32-g++ -IC:/Users/Usuario/Documents/GitHub/hotelQT -IC:/Qt/6.7.1/mingw_64/include -IC:/Qt/6.7.1/mingw_64/include/QtWidgets -IC:/Qt/6.7.1/mingw_64/include/QtGui -IC:/Qt/6.7.1/mingw_64/include/QtSql -IC:/Qt/6.7.1/mingw_64/include/QtCore -I. -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++ -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed -IC:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include ..\..\colaboradores\telacolaborador.h -o debug\moc_telacolaborador.cpp
+	C:\Qt\6.7.1\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/snowb/OneDrive/Documentos/GitHub/hotelQT/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/debug/moc_predefs.h -IC:/Qt/6.7.1/mingw_64/mkspecs/win32-g++ -IC:/Users/snowb/OneDrive/Documentos/GitHub/hotelQT -IC:/Qt/6.7.1/mingw_64/include -IC:/Qt/6.7.1/mingw_64/include/QtWidgets -IC:/Qt/6.7.1/mingw_64/include/QtGui -IC:/Qt/6.7.1/mingw_64/include/QtSql -IC:/Qt/6.7.1/mingw_64/include/QtCore -I. -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++ -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed -IC:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include ..\..\colaboradores\telacolaborador.h -o debug\moc_telacolaborador.cpp
 
 debug/moc_telalogincolaborador.cpp: ../../colaboradores/telalogincolaborador.h \
 		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QDialog \
@@ -3904,7 +3909,7 @@ debug/moc_telalogincolaborador.cpp: ../../colaboradores/telalogincolaborador.h \
 		C:/Qt/6.7.1/mingw_64/include/QtSql/qtsqlversion.h \
 		debug/moc_predefs.h \
 		C:/Qt/6.7.1/mingw_64/bin/moc.exe
-	C:\Qt\6.7.1\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/Usuario/Documents/GitHub/hotelQT/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/debug/moc_predefs.h -IC:/Qt/6.7.1/mingw_64/mkspecs/win32-g++ -IC:/Users/Usuario/Documents/GitHub/hotelQT -IC:/Qt/6.7.1/mingw_64/include -IC:/Qt/6.7.1/mingw_64/include/QtWidgets -IC:/Qt/6.7.1/mingw_64/include/QtGui -IC:/Qt/6.7.1/mingw_64/include/QtSql -IC:/Qt/6.7.1/mingw_64/include/QtCore -I. -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++ -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed -IC:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include ..\..\colaboradores\telalogincolaborador.h -o debug\moc_telalogincolaborador.cpp
+	C:\Qt\6.7.1\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/snowb/OneDrive/Documentos/GitHub/hotelQT/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/debug/moc_predefs.h -IC:/Qt/6.7.1/mingw_64/mkspecs/win32-g++ -IC:/Users/snowb/OneDrive/Documentos/GitHub/hotelQT -IC:/Qt/6.7.1/mingw_64/include -IC:/Qt/6.7.1/mingw_64/include/QtWidgets -IC:/Qt/6.7.1/mingw_64/include/QtGui -IC:/Qt/6.7.1/mingw_64/include/QtSql -IC:/Qt/6.7.1/mingw_64/include/QtCore -I. -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++ -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed -IC:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include ..\..\colaboradores\telalogincolaborador.h -o debug\moc_telalogincolaborador.cpp
 
 debug/moc_telainicial.cpp: ../../telainicial.h \
 		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QMainWindow \
@@ -4261,7 +4266,7 @@ debug/moc_telainicial.cpp: ../../telainicial.h \
 		C:/Qt/6.7.1/mingw_64/include/QtSql/qtsqlversion.h \
 		debug/moc_predefs.h \
 		C:/Qt/6.7.1/mingw_64/bin/moc.exe
-	C:\Qt\6.7.1\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/Usuario/Documents/GitHub/hotelQT/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/debug/moc_predefs.h -IC:/Qt/6.7.1/mingw_64/mkspecs/win32-g++ -IC:/Users/Usuario/Documents/GitHub/hotelQT -IC:/Qt/6.7.1/mingw_64/include -IC:/Qt/6.7.1/mingw_64/include/QtWidgets -IC:/Qt/6.7.1/mingw_64/include/QtGui -IC:/Qt/6.7.1/mingw_64/include/QtSql -IC:/Qt/6.7.1/mingw_64/include/QtCore -I. -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++ -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed -IC:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include ..\..\telainicial.h -o debug\moc_telainicial.cpp
+	C:\Qt\6.7.1\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/snowb/OneDrive/Documentos/GitHub/hotelQT/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/debug/moc_predefs.h -IC:/Qt/6.7.1/mingw_64/mkspecs/win32-g++ -IC:/Users/snowb/OneDrive/Documentos/GitHub/hotelQT -IC:/Qt/6.7.1/mingw_64/include -IC:/Qt/6.7.1/mingw_64/include/QtWidgets -IC:/Qt/6.7.1/mingw_64/include/QtGui -IC:/Qt/6.7.1/mingw_64/include/QtSql -IC:/Qt/6.7.1/mingw_64/include/QtCore -I. -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++ -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed -IC:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include ..\..\telainicial.h -o debug\moc_telainicial.cpp
 
 compiler_moc_objc_header_make_all:
 compiler_moc_objc_header_clean:
@@ -4534,7 +4539,31 @@ debug/cadastrocliente.o: ../../clientes/cadastrocliente.cpp ../../clientes/cadas
 		C:/Qt/6.7.1/mingw_64/include/QtGui/qinputmethod.h \
 		C:/Qt/6.7.1/mingw_64/include/QtCore/qlocale.h \
 		C:/Qt/6.7.1/mingw_64/include/QtGui/qguiapplication_platform.h \
-		ui_cadastrocliente.h
+		ui_cadastrocliente.h \
+		C:/Qt/6.7.1/mingw_64/include/QtCore/QVariant \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QApplication \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qapplication.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QHBoxLayout \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qboxlayout.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qlayout.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qlayoutitem.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qgridlayout.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QLabel \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qlabel.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qframe.h \
+		C:/Qt/6.7.1/mingw_64/include/QtGui/qpicture.h \
+		C:/Qt/6.7.1/mingw_64/include/QtGui/qtextdocument.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QLineEdit \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qlineedit.h \
+		C:/Qt/6.7.1/mingw_64/include/QtGui/qtextcursor.h \
+		C:/Qt/6.7.1/mingw_64/include/QtGui/qtextformat.h \
+		C:/Qt/6.7.1/mingw_64/include/QtGui/qpen.h \
+		C:/Qt/6.7.1/mingw_64/include/QtGui/qtextoption.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QPushButton \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qpushbutton.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qabstractbutton.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QVBoxLayout \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QWidget
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\cadastrocliente.o ..\..\clientes\cadastrocliente.cpp
 
 debug/telaavaliacao.o: ../../clientes/telaavaliacao.cpp ../../clientes/telaavaliacao.h \
@@ -4725,7 +4754,26 @@ debug/telaavaliacao.o: ../../clientes/telaavaliacao.cpp ../../clientes/telaavali
 		C:/Qt/6.7.1/mingw_64/include/QtGui/qinputmethod.h \
 		C:/Qt/6.7.1/mingw_64/include/QtCore/qlocale.h \
 		C:/Qt/6.7.1/mingw_64/include/QtGui/qguiapplication_platform.h \
-		ui_telaavaliacao.h
+		ui_telaavaliacao.h \
+		C:/Qt/6.7.1/mingw_64/include/QtCore/QVariant \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QApplication \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qapplication.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QCheckBox \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qcheckbox.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qabstractbutton.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QHBoxLayout \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qboxlayout.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qlayout.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qlayoutitem.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qgridlayout.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QLabel \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qlabel.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qframe.h \
+		C:/Qt/6.7.1/mingw_64/include/QtGui/qpicture.h \
+		C:/Qt/6.7.1/mingw_64/include/QtGui/qtextdocument.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QPushButton \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qpushbutton.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QWidget
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\telaavaliacao.o ..\..\clientes\telaavaliacao.cpp
 
 debug/telacliente.o: ../../clientes/telacliente.cpp ../../clientes/telacliente.h \
@@ -5082,6 +5130,27 @@ debug/telacliente.o: ../../clientes/telacliente.cpp ../../clientes/telacliente.h
 		C:/Qt/6.7.1/mingw_64/include/QtSql/qsqlresult.h \
 		C:/Qt/6.7.1/mingw_64/include/QtSql/qtsqlversion.h \
 		ui_telacliente.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QApplication \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qapplication.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QHBoxLayout \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qboxlayout.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qlayout.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qlayoutitem.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qgridlayout.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QHeaderView \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qheaderview.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QLabel \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qlabel.h \
+		C:/Qt/6.7.1/mingw_64/include/QtGui/qpicture.h \
+		C:/Qt/6.7.1/mingw_64/include/QtGui/qtextdocument.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QPushButton \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qpushbutton.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qabstractbutton.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QSpacerItem \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QTableWidget \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qtablewidget.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qtableview.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QWidget \
 		../../clientes/telalogin.h \
 		../../clientes/telareserva.h \
 		../../clientes/telanotificacoes.h \
@@ -5443,6 +5512,28 @@ debug/telalogin.o: ../../clientes/telalogin.cpp ../../clientes/telalogin.h \
 		C:/Qt/6.7.1/mingw_64/include/QtSql/qsqlresult.h \
 		C:/Qt/6.7.1/mingw_64/include/QtSql/qtsqlversion.h \
 		ui_telalogin.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QApplication \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qapplication.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QHBoxLayout \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qboxlayout.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qlayout.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qlayoutitem.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qgridlayout.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QLabel \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qlabel.h \
+		C:/Qt/6.7.1/mingw_64/include/QtGui/qpicture.h \
+		C:/Qt/6.7.1/mingw_64/include/QtGui/qtextdocument.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QLineEdit \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qlineedit.h \
+		C:/Qt/6.7.1/mingw_64/include/QtGui/qtextcursor.h \
+		C:/Qt/6.7.1/mingw_64/include/QtGui/qtextformat.h \
+		C:/Qt/6.7.1/mingw_64/include/QtGui/qpen.h \
+		C:/Qt/6.7.1/mingw_64/include/QtGui/qtextoption.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QPushButton \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qpushbutton.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qabstractbutton.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QVBoxLayout \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QWidget \
 		../../clientes/telacliente.h \
 		../../clientes/cadastrocliente.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\telalogin.o ..\..\clientes\telalogin.cpp
@@ -5635,7 +5726,39 @@ debug/telanotificacoes.o: ../../clientes/telanotificacoes.cpp ../../clientes/tel
 		C:/Qt/6.7.1/mingw_64/include/QtGui/qinputmethod.h \
 		C:/Qt/6.7.1/mingw_64/include/QtCore/qlocale.h \
 		C:/Qt/6.7.1/mingw_64/include/QtGui/qguiapplication_platform.h \
-		ui_telanotificacoes.h
+		ui_telanotificacoes.h \
+		C:/Qt/6.7.1/mingw_64/include/QtCore/QVariant \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QAbstractButton \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qabstractbutton.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QApplication \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qapplication.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QDialogButtonBox \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qdialogbuttonbox.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QHeaderView \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qheaderview.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qabstractitemview.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qabstractscrollarea.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qframe.h \
+		C:/Qt/6.7.1/mingw_64/include/QtCore/qabstractitemmodel.h \
+		C:/Qt/6.7.1/mingw_64/include/QtCore/qitemselectionmodel.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qabstractitemdelegate.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qstyleoption.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qabstractspinbox.h \
+		C:/Qt/6.7.1/mingw_64/include/QtGui/qvalidator.h \
+		C:/Qt/6.7.1/mingw_64/include/QtCore/qregularexpression.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qslider.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qabstractslider.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qstyle.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qtabbar.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qtabwidget.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qrubberband.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QLabel \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qlabel.h \
+		C:/Qt/6.7.1/mingw_64/include/QtGui/qpicture.h \
+		C:/Qt/6.7.1/mingw_64/include/QtGui/qtextdocument.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QTableWidget \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qtablewidget.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qtableview.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\telanotificacoes.o ..\..\clientes\telanotificacoes.cpp
 
 debug/telaquarto.o: ../../clientes/telaquarto.cpp ../../clientes/telaquarto.h \
@@ -5826,7 +5949,37 @@ debug/telaquarto.o: ../../clientes/telaquarto.cpp ../../clientes/telaquarto.h \
 		C:/Qt/6.7.1/mingw_64/include/QtGui/qinputmethod.h \
 		C:/Qt/6.7.1/mingw_64/include/QtCore/qlocale.h \
 		C:/Qt/6.7.1/mingw_64/include/QtGui/qguiapplication_platform.h \
-		ui_telaquarto.h
+		ui_telaquarto.h \
+		C:/Qt/6.7.1/mingw_64/include/QtCore/QVariant \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QAbstractButton \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qabstractbutton.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QApplication \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qapplication.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QDialogButtonBox \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qdialogbuttonbox.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QHBoxLayout \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qboxlayout.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qlayout.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qlayoutitem.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qgridlayout.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QLabel \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qlabel.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qframe.h \
+		C:/Qt/6.7.1/mingw_64/include/QtGui/qpicture.h \
+		C:/Qt/6.7.1/mingw_64/include/QtGui/qtextdocument.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QLineEdit \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qlineedit.h \
+		C:/Qt/6.7.1/mingw_64/include/QtGui/qtextcursor.h \
+		C:/Qt/6.7.1/mingw_64/include/QtGui/qtextformat.h \
+		C:/Qt/6.7.1/mingw_64/include/QtGui/qpen.h \
+		C:/Qt/6.7.1/mingw_64/include/QtGui/qtextoption.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QPushButton \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qpushbutton.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QTextEdit \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qtextedit.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qabstractscrollarea.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QVBoxLayout \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QWidget
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\telaquarto.o ..\..\clientes\telaquarto.cpp
 
 debug/telareserva.o: ../../clientes/telareserva.cpp ../../clientes/telareserva.h \
@@ -6017,7 +6170,39 @@ debug/telareserva.o: ../../clientes/telareserva.cpp ../../clientes/telareserva.h
 		C:/Qt/6.7.1/mingw_64/include/QtGui/qinputmethod.h \
 		C:/Qt/6.7.1/mingw_64/include/QtCore/qlocale.h \
 		C:/Qt/6.7.1/mingw_64/include/QtGui/qguiapplication_platform.h \
-		ui_telareserva.h
+		ui_telareserva.h \
+		C:/Qt/6.7.1/mingw_64/include/QtCore/QVariant \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QAbstractButton \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qabstractbutton.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QApplication \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qapplication.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QDialogButtonBox \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qdialogbuttonbox.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QHeaderView \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qheaderview.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qabstractitemview.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qabstractscrollarea.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qframe.h \
+		C:/Qt/6.7.1/mingw_64/include/QtCore/qabstractitemmodel.h \
+		C:/Qt/6.7.1/mingw_64/include/QtCore/qitemselectionmodel.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qabstractitemdelegate.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qstyleoption.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qabstractspinbox.h \
+		C:/Qt/6.7.1/mingw_64/include/QtGui/qvalidator.h \
+		C:/Qt/6.7.1/mingw_64/include/QtCore/qregularexpression.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qslider.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qabstractslider.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qstyle.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qtabbar.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qtabwidget.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qrubberband.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QLabel \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qlabel.h \
+		C:/Qt/6.7.1/mingw_64/include/QtGui/qpicture.h \
+		C:/Qt/6.7.1/mingw_64/include/QtGui/qtextdocument.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QTableWidget \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qtablewidget.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qtableview.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\telareserva.o ..\..\clientes\telareserva.cpp
 
 debug/cadastrocolaborador.o: ../../colaboradores/cadastrocolaborador.cpp ../../colaboradores/cadastrocolaborador.h \
@@ -6376,7 +6561,30 @@ debug/cadastrocolaborador.o: ../../colaboradores/cadastrocolaborador.cpp ../../c
 		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QMessageBox \
 		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qmessagebox.h \
 		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qdialogbuttonbox.h \
-		ui_cadastrocolaborador.h
+		ui_cadastrocolaborador.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QApplication \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qapplication.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QHBoxLayout \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qboxlayout.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qlayout.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qlayoutitem.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qgridlayout.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QLabel \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qlabel.h \
+		C:/Qt/6.7.1/mingw_64/include/QtGui/qpicture.h \
+		C:/Qt/6.7.1/mingw_64/include/QtGui/qtextdocument.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QLineEdit \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qlineedit.h \
+		C:/Qt/6.7.1/mingw_64/include/QtGui/qtextcursor.h \
+		C:/Qt/6.7.1/mingw_64/include/QtGui/qtextformat.h \
+		C:/Qt/6.7.1/mingw_64/include/QtGui/qpen.h \
+		C:/Qt/6.7.1/mingw_64/include/QtGui/qtextoption.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QPushButton \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qpushbutton.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qabstractbutton.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QVBoxLayout \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QWidget \
+		C:/Qt/6.7.1/mingw_64/include/QtCore/QDebug
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\cadastrocolaborador.o ..\..\colaboradores\cadastrocolaborador.cpp
 
 debug/cadastroquartos.o: ../../colaboradores/cadastroquartos.cpp ../../colaboradores/cadastroquartos.h \
@@ -6567,7 +6775,208 @@ debug/cadastroquartos.o: ../../colaboradores/cadastroquartos.cpp ../../colaborad
 		C:/Qt/6.7.1/mingw_64/include/QtGui/qinputmethod.h \
 		C:/Qt/6.7.1/mingw_64/include/QtCore/qlocale.h \
 		C:/Qt/6.7.1/mingw_64/include/QtGui/qguiapplication_platform.h \
-		ui_cadastroquartos.h
+		ui_cadastroquartos.h \
+		C:/Qt/6.7.1/mingw_64/include/QtCore/QVariant \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QAbstractButton \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qabstractbutton.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QApplication \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qapplication.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QCheckBox \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qcheckbox.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QComboBox \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qcombobox.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qabstractitemdelegate.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qstyleoption.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qabstractspinbox.h \
+		C:/Qt/6.7.1/mingw_64/include/QtGui/qvalidator.h \
+		C:/Qt/6.7.1/mingw_64/include/QtCore/qregularexpression.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qslider.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qabstractslider.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qstyle.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qtabbar.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qtabwidget.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qrubberband.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qframe.h \
+		C:/Qt/6.7.1/mingw_64/include/QtCore/qabstractitemmodel.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QDialogButtonBox \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qdialogbuttonbox.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QHBoxLayout \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qboxlayout.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qlayout.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qlayoutitem.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qgridlayout.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QLabel \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qlabel.h \
+		C:/Qt/6.7.1/mingw_64/include/QtGui/qpicture.h \
+		C:/Qt/6.7.1/mingw_64/include/QtGui/qtextdocument.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QLineEdit \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qlineedit.h \
+		C:/Qt/6.7.1/mingw_64/include/QtGui/qtextcursor.h \
+		C:/Qt/6.7.1/mingw_64/include/QtGui/qtextformat.h \
+		C:/Qt/6.7.1/mingw_64/include/QtGui/qpen.h \
+		C:/Qt/6.7.1/mingw_64/include/QtGui/qtextoption.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QTextEdit \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qtextedit.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qabstractscrollarea.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QVBoxLayout \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QWidget \
+		C:/Qt/6.7.1/mingw_64/include/QtCore/QDebug \
+		C:/Qt/6.7.1/mingw_64/include/QtSql/QtSql \
+		C:/Qt/6.7.1/mingw_64/include/QtSql/QtSqlDepends \
+		C:/Qt/6.7.1/mingw_64/include/QtCore/QtCore \
+		C:/Qt/6.7.1/mingw_64/include/QtCore/QtCoreDepends \
+		C:/Qt/6.7.1/mingw_64/include/QtCore/q20algorithm.h \
+		C:/Qt/6.7.1/mingw_64/include/QtCore/q20chrono.h \
+		C:/Qt/6.7.1/mingw_64/include/QtCore/q20iterator.h \
+		C:/Qt/6.7.1/mingw_64/include/QtCore/q20map.h \
+		C:/Qt/6.7.1/mingw_64/include/QtCore/q20vector.h \
+		C:/Qt/6.7.1/mingw_64/include/QtCore/q23functional.h \
+		C:/Qt/6.7.1/mingw_64/include/QtCore/qabstractanimation.h \
+		C:/Qt/6.7.1/mingw_64/include/QtCore/qabstracteventdispatcher.h \
+		C:/Qt/6.7.1/mingw_64/include/QtCore/qabstractnativeeventfilter.h \
+		C:/Qt/6.7.1/mingw_64/include/QtCore/qabstractproxymodel.h \
+		C:/Qt/6.7.1/mingw_64/include/QtCore/qanimationgroup.h \
+		C:/Qt/6.7.1/mingw_64/include/QtCore/qapplicationstatic.h \
+		C:/Qt/6.7.1/mingw_64/include/QtCore/QMutex \
+		C:/Qt/6.7.1/mingw_64/include/QtCore/qassociativeiterable.h \
+		C:/Qt/6.7.1/mingw_64/include/QtCore/qatomicscopedvaluerollback.h \
+		C:/Qt/6.7.1/mingw_64/include/QtCore/qbasictimer.h \
+		C:/Qt/6.7.1/mingw_64/include/QtCore/qbitarray.h \
+		C:/Qt/6.7.1/mingw_64/include/QtCore/qbuffer.h \
+		C:/Qt/6.7.1/mingw_64/include/QtCore/qbytearraymatcher.h \
+		C:/Qt/6.7.1/mingw_64/include/QtCore/qcache.h \
+		C:/Qt/6.7.1/mingw_64/include/QtCore/qcalendar.h \
+		C:/Qt/6.7.1/mingw_64/include/QtCore/qcborarray.h \
+		C:/Qt/6.7.1/mingw_64/include/QtCore/qcborvalue.h \
+		C:/Qt/6.7.1/mingw_64/include/QtCore/qdatetime.h \
+		C:/Qt/6.7.1/mingw_64/include/QtCore/qcborcommon.h \
+		C:/Qt/6.7.1/mingw_64/include/QtCore/quuid.h \
+		C:/Qt/6.7.1/mingw_64/include/QtCore/qcbormap.h \
+		C:/Qt/6.7.1/mingw_64/include/QtCore/qcborstream.h \
+		C:/Qt/6.7.1/mingw_64/include/QtCore/qcborstreamreader.h \
+		C:/Qt/6.7.1/mingw_64/include/QtCore/qcborstreamwriter.h \
+		C:/Qt/6.7.1/mingw_64/include/QtCore/qcollator.h \
+		C:/Qt/6.7.1/mingw_64/include/QtCore/qcommandlineoption.h \
+		C:/Qt/6.7.1/mingw_64/include/QtCore/qcommandlineparser.h \
+		C:/Qt/6.7.1/mingw_64/include/QtCore/qconcatenatetablesproxymodel.h \
+		C:/Qt/6.7.1/mingw_64/include/QtCore/qcryptographichash.h \
+		C:/Qt/6.7.1/mingw_64/include/QtCore/qdir.h \
+		C:/Qt/6.7.1/mingw_64/include/QtCore/qfile.h \
+		C:/Qt/6.7.1/mingw_64/include/QtCore/qfiledevice.h \
+		C:/Qt/6.7.1/mingw_64/include/QtCore/qfileinfo.h \
+		C:/Qt/6.7.1/mingw_64/include/QtCore/qtimezone.h \
+		C:/Qt/6.7.1/mingw_64/include/QtCore/qdiriterator.h \
+		C:/Qt/6.7.1/mingw_64/include/QtCore/qeasingcurve.h \
+		C:/Qt/6.7.1/mingw_64/include/QtCore/qfactoryinterface.h \
+		C:/Qt/6.7.1/mingw_64/include/QtCore/qfileselector.h \
+		C:/Qt/6.7.1/mingw_64/include/QtCore/QStringList \
+		C:/Qt/6.7.1/mingw_64/include/QtCore/qfilesystemwatcher.h \
+		C:/Qt/6.7.1/mingw_64/include/QtCore/qfuturesynchronizer.h \
+		C:/Qt/6.7.1/mingw_64/include/QtCore/qfuturewatcher.h \
+		C:/Qt/6.7.1/mingw_64/include/QtCore/qidentityproxymodel.h \
+		C:/Qt/6.7.1/mingw_64/include/QtCore/qitemselectionmodel.h \
+		C:/Qt/6.7.1/mingw_64/include/QtCore/qjsonarray.h \
+		C:/Qt/6.7.1/mingw_64/include/QtCore/qjsonvalue.h \
+		C:/Qt/6.7.1/mingw_64/include/QtCore/qjsondocument.h \
+		C:/Qt/6.7.1/mingw_64/include/QtCore/qjsonobject.h \
+		C:/Qt/6.7.1/mingw_64/include/QtCore/qlatin1stringmatcher.h \
+		C:/Qt/6.7.1/mingw_64/include/QtCore/qlibrary.h \
+		C:/Qt/6.7.1/mingw_64/include/QtCore/qlibraryinfo.h \
+		C:/Qt/6.7.1/mingw_64/include/QtCore/qversionnumber.h \
+		C:/Qt/6.7.1/mingw_64/include/QtCore/qtyperevision.h \
+		C:/Qt/6.7.1/mingw_64/include/QtCore/qlockfile.h \
+		C:/Qt/6.7.1/mingw_64/include/QtCore/qloggingcategory.h \
+		C:/Qt/6.7.1/mingw_64/include/QtCore/qmessageauthenticationcode.h \
+		C:/Qt/6.7.1/mingw_64/include/QtCore/qmetaobject.h \
+		C:/Qt/6.7.1/mingw_64/include/QtCore/qmimedata.h \
+		C:/Qt/6.7.1/mingw_64/include/QtCore/qmimedatabase.h \
+		C:/Qt/6.7.1/mingw_64/include/QtCore/qmimetype.h \
+		C:/Qt/6.7.1/mingw_64/include/QtCore/qobjectcleanuphandler.h \
+		C:/Qt/6.7.1/mingw_64/include/QtCore/qoperatingsystemversion.h \
+		C:/Qt/6.7.1/mingw_64/include/QtCore/qparallelanimationgroup.h \
+		C:/Qt/6.7.1/mingw_64/include/QtCore/qpauseanimation.h \
+		C:/Qt/6.7.1/mingw_64/include/QtCore/qpermissions.h \
+		C:/Qt/6.7.1/mingw_64/include/QtCore/qplugin.h \
+		C:/Qt/6.7.1/mingw_64/include/QtCore/qpointer.h \
+		C:/Qt/6.7.1/mingw_64/include/QtCore/qpluginloader.h \
+		C:/Qt/6.7.1/mingw_64/include/QtCore/qprocess.h \
+		C:/Qt/6.7.1/mingw_64/include/QtCore/qproperty.h \
+		C:/Qt/6.7.1/mingw_64/include/QtCore/qpropertyprivate.h \
+		C:/Qt/6.7.1/mingw_64/include/QtCore/qpropertyanimation.h \
+		C:/Qt/6.7.1/mingw_64/include/QtCore/qvariantanimation.h \
+		C:/Qt/6.7.1/mingw_64/include/QtCore/qqueue.h \
+		C:/Qt/6.7.1/mingw_64/include/QtCore/qrandom.h \
+		C:/Qt/6.7.1/mingw_64/include/QtCore/qreadwritelock.h \
+		C:/Qt/6.7.1/mingw_64/include/QtCore/qresource.h \
+		C:/Qt/6.7.1/mingw_64/include/QtCore/qsavefile.h \
+		C:/Qt/6.7.1/mingw_64/include/QtCore/qscopedvaluerollback.h \
+		C:/Qt/6.7.1/mingw_64/include/QtCore/qsemaphore.h \
+		C:/Qt/6.7.1/mingw_64/include/QtCore/qsequentialanimationgroup.h \
+		C:/Qt/6.7.1/mingw_64/include/QtCore/qsequentialiterable.h \
+		C:/Qt/6.7.1/mingw_64/include/QtCore/qsettings.h \
+		C:/Qt/6.7.1/mingw_64/include/QtCore/qsharedmemory.h \
+		C:/Qt/6.7.1/mingw_64/include/QtCore/qtipccommon.h \
+		C:/Qt/6.7.1/mingw_64/include/QtCore/qsignalmapper.h \
+		C:/Qt/6.7.1/mingw_64/include/QtCore/qsimd.h \
+		C:/Qt/6.7.1/mingw_64/include/QtCore/qsocketnotifier.h \
+		C:/Qt/6.7.1/mingw_64/include/QtCore/qsortfilterproxymodel.h \
+		C:/Qt/6.7.1/mingw_64/include/QtCore/qspan.h \
+		C:/Qt/6.7.1/mingw_64/include/QtCore/qstack.h \
+		C:/Qt/6.7.1/mingw_64/include/QtCore/qstandardpaths.h \
+		C:/Qt/6.7.1/mingw_64/include/QtCore/qstaticlatin1stringmatcher.h \
+		C:/Qt/6.7.1/mingw_64/include/QtCore/qstorageinfo.h \
+		C:/Qt/6.7.1/mingw_64/include/QtCore/qstringlistmodel.h \
+		C:/Qt/6.7.1/mingw_64/include/QtCore/qsystemsemaphore.h \
+		C:/Qt/6.7.1/mingw_64/include/QtCore/qtcoreversion.h \
+		C:/Qt/6.7.1/mingw_64/include/QtCore/qtemporarydir.h \
+		C:/Qt/6.7.1/mingw_64/include/QtCore/qtemporaryfile.h \
+		C:/Qt/6.7.1/mingw_64/include/QtCore/qtextboundaryfinder.h \
+		C:/Qt/6.7.1/mingw_64/include/QtCore/qthreadstorage.h \
+		C:/Qt/6.7.1/mingw_64/include/QtCore/qtimeline.h \
+		C:/Qt/6.7.1/mingw_64/include/QtCore/qtimer.h \
+		C:/Qt/6.7.1/mingw_64/include/QtCore/qtranslator.h \
+		C:/Qt/6.7.1/mingw_64/include/QtCore/qtransposeproxymodel.h \
+		C:/Qt/6.7.1/mingw_64/include/QtCore/qtsymbolmacros.h \
+		C:/Qt/6.7.1/mingw_64/include/QtCore/qurlquery.h \
+		C:/Qt/6.7.1/mingw_64/include/QtCore/qvarianthash.h \
+		C:/Qt/6.7.1/mingw_64/include/QtCore/QHash \
+		C:/Qt/6.7.1/mingw_64/include/QtCore/QString \
+		C:/Qt/6.7.1/mingw_64/include/QtCore/qvariantlist.h \
+		C:/Qt/6.7.1/mingw_64/include/QtCore/qvariantmap.h \
+		C:/Qt/6.7.1/mingw_64/include/QtCore/QMap \
+		C:/Qt/6.7.1/mingw_64/include/QtCore/qvector.h \
+		C:/Qt/6.7.1/mingw_64/include/QtCore/qwaitcondition.h \
+		C:/Qt/6.7.1/mingw_64/include/QtCore/QDeadlineTimer \
+		C:/Qt/6.7.1/mingw_64/include/QtCore/qwineventnotifier.h \
+		C:/Qt/6.7.1/mingw_64/include/QtCore/qxmlstream.h \
+		C:/Qt/6.7.1/mingw_64/include/QtCore/qxpfunctional.h \
+		C:/Qt/6.7.1/mingw_64/include/QtSql/qtsqlglobal.h \
+		C:/Qt/6.7.1/mingw_64/include/QtSql/qtsql-config.h \
+		C:/Qt/6.7.1/mingw_64/include/QtSql/qtsqlexports.h \
+		C:/Qt/6.7.1/mingw_64/include/QtSql/qsqldatabase.h \
+		C:/Qt/6.7.1/mingw_64/include/QtSql/qsqldriver.h \
+		C:/Qt/6.7.1/mingw_64/include/QtSql/qsqldriverplugin.h \
+		C:/Qt/6.7.1/mingw_64/include/QtSql/qsqlerror.h \
+		C:/Qt/6.7.1/mingw_64/include/QtSql/qsqlfield.h \
+		C:/Qt/6.7.1/mingw_64/include/QtSql/qsqlindex.h \
+		C:/Qt/6.7.1/mingw_64/include/QtSql/qsqlrecord.h \
+		C:/Qt/6.7.1/mingw_64/include/QtSql/qsqlquery.h \
+		C:/Qt/6.7.1/mingw_64/include/QtSql/qsqlquerymodel.h \
+		C:/Qt/6.7.1/mingw_64/include/QtSql/qsqlrelationaldelegate.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qstyleditemdelegate.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qlistview.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qabstractitemview.h \
+		C:/Qt/6.7.1/mingw_64/include/QtSql/qsqlrelationaltablemodel.h \
+		C:/Qt/6.7.1/mingw_64/include/QtSql/qsqltablemodel.h \
+		C:/Qt/6.7.1/mingw_64/include/QtSql/qsqlresult.h \
+		C:/Qt/6.7.1/mingw_64/include/QtSql/qtsqlversion.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QMessageBox \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qmessagebox.h \
+		../../colaboradores/quartos/QuartoSimples.h \
+		../../colaboradores/quartos/Quartos.h \
+		../../colaboradores/quartos/QuartoComfort.h \
+		../../colaboradores/quartos/QuartoSuite.h \
+		../../colaboradores/quartos/QuartoMaster.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\cadastroquartos.o ..\..\colaboradores\cadastroquartos.cpp
 
 debug/telafiltrar.o: ../../colaboradores/listaQuartos/telafiltrar.cpp ../../colaboradores/listaQuartos/telafiltrar.h \
@@ -6758,7 +7167,23 @@ debug/telafiltrar.o: ../../colaboradores/listaQuartos/telafiltrar.cpp ../../cola
 		C:/Qt/6.7.1/mingw_64/include/QtGui/qinputmethod.h \
 		C:/Qt/6.7.1/mingw_64/include/QtCore/qlocale.h \
 		C:/Qt/6.7.1/mingw_64/include/QtGui/qguiapplication_platform.h \
-		ui_telafiltrar.h
+		ui_telafiltrar.h \
+		C:/Qt/6.7.1/mingw_64/include/QtCore/QVariant \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QAbstractButton \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qabstractbutton.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QApplication \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qapplication.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QCheckBox \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qcheckbox.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QDialogButtonBox \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qdialogbuttonbox.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QHBoxLayout \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qboxlayout.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qlayout.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qlayoutitem.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qgridlayout.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QVBoxLayout \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QWidget
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\telafiltrar.o ..\..\colaboradores\listaQuartos\telafiltrar.cpp
 
 debug/listaclientes.o: ../../colaboradores/listaclientes.cpp ../../colaboradores/listaclientes.h \
@@ -6949,7 +7374,47 @@ debug/listaclientes.o: ../../colaboradores/listaclientes.cpp ../../colaboradores
 		C:/Qt/6.7.1/mingw_64/include/QtGui/qinputmethod.h \
 		C:/Qt/6.7.1/mingw_64/include/QtCore/qlocale.h \
 		C:/Qt/6.7.1/mingw_64/include/QtGui/qguiapplication_platform.h \
-		ui_listaclientes.h
+		ui_listaclientes.h \
+		C:/Qt/6.7.1/mingw_64/include/QtCore/QVariant \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QAbstractButton \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qabstractbutton.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QApplication \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qapplication.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QDialogButtonBox \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qdialogbuttonbox.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QHBoxLayout \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qboxlayout.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qlayout.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qlayoutitem.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qgridlayout.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QHeaderView \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qheaderview.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qabstractitemview.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qabstractscrollarea.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qframe.h \
+		C:/Qt/6.7.1/mingw_64/include/QtCore/qabstractitemmodel.h \
+		C:/Qt/6.7.1/mingw_64/include/QtCore/qitemselectionmodel.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qabstractitemdelegate.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qstyleoption.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qabstractspinbox.h \
+		C:/Qt/6.7.1/mingw_64/include/QtGui/qvalidator.h \
+		C:/Qt/6.7.1/mingw_64/include/QtCore/qregularexpression.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qslider.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qabstractslider.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qstyle.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qtabbar.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qtabwidget.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qrubberband.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QLabel \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qlabel.h \
+		C:/Qt/6.7.1/mingw_64/include/QtGui/qpicture.h \
+		C:/Qt/6.7.1/mingw_64/include/QtGui/qtextdocument.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QPushButton \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qpushbutton.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QTableWidget \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qtablewidget.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qtableview.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QWidget
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\listaclientes.o ..\..\colaboradores\listaclientes.cpp
 
 debug/listaquartos.o: ../../colaboradores/listaquartos.cpp ../../colaboradores/listaquartos.h \
@@ -7141,6 +7606,46 @@ debug/listaquartos.o: ../../colaboradores/listaquartos.cpp ../../colaboradores/l
 		C:/Qt/6.7.1/mingw_64/include/QtCore/qlocale.h \
 		C:/Qt/6.7.1/mingw_64/include/QtGui/qguiapplication_platform.h \
 		ui_listaquartos.h \
+		C:/Qt/6.7.1/mingw_64/include/QtCore/QVariant \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QAbstractButton \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qabstractbutton.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QApplication \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qapplication.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QDialogButtonBox \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qdialogbuttonbox.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QHBoxLayout \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qboxlayout.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qlayout.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qlayoutitem.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qgridlayout.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QHeaderView \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qheaderview.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qabstractitemview.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qabstractscrollarea.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qframe.h \
+		C:/Qt/6.7.1/mingw_64/include/QtCore/qabstractitemmodel.h \
+		C:/Qt/6.7.1/mingw_64/include/QtCore/qitemselectionmodel.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qabstractitemdelegate.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qstyleoption.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qabstractspinbox.h \
+		C:/Qt/6.7.1/mingw_64/include/QtGui/qvalidator.h \
+		C:/Qt/6.7.1/mingw_64/include/QtCore/qregularexpression.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qslider.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qabstractslider.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qstyle.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qtabbar.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qtabwidget.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qrubberband.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QLabel \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qlabel.h \
+		C:/Qt/6.7.1/mingw_64/include/QtGui/qpicture.h \
+		C:/Qt/6.7.1/mingw_64/include/QtGui/qtextdocument.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QPushButton \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qpushbutton.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QTableWidget \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qtablewidget.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qtableview.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QWidget \
 		../../colaboradores/listaquartos/telafiltrar.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\listaquartos.o ..\..\colaboradores\listaquartos.cpp
 
@@ -7332,7 +7837,47 @@ debug/reservastela.o: ../../colaboradores/reservastela.cpp ../../colaboradores/r
 		C:/Qt/6.7.1/mingw_64/include/QtGui/qinputmethod.h \
 		C:/Qt/6.7.1/mingw_64/include/QtCore/qlocale.h \
 		C:/Qt/6.7.1/mingw_64/include/QtGui/qguiapplication_platform.h \
-		ui_reservastela.h
+		ui_reservastela.h \
+		C:/Qt/6.7.1/mingw_64/include/QtCore/QVariant \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QAbstractButton \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qabstractbutton.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QApplication \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qapplication.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QDialogButtonBox \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qdialogbuttonbox.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QHBoxLayout \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qboxlayout.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qlayout.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qlayoutitem.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qgridlayout.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QHeaderView \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qheaderview.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qabstractitemview.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qabstractscrollarea.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qframe.h \
+		C:/Qt/6.7.1/mingw_64/include/QtCore/qabstractitemmodel.h \
+		C:/Qt/6.7.1/mingw_64/include/QtCore/qitemselectionmodel.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qabstractitemdelegate.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qstyleoption.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qabstractspinbox.h \
+		C:/Qt/6.7.1/mingw_64/include/QtGui/qvalidator.h \
+		C:/Qt/6.7.1/mingw_64/include/QtCore/qregularexpression.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qslider.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qabstractslider.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qstyle.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qtabbar.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qtabwidget.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qrubberband.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QLabel \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qlabel.h \
+		C:/Qt/6.7.1/mingw_64/include/QtGui/qpicture.h \
+		C:/Qt/6.7.1/mingw_64/include/QtGui/qtextdocument.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QPushButton \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qpushbutton.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QTableWidget \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qtablewidget.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qtableview.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QWidget
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\reservastela.o ..\..\colaboradores\reservastela.cpp
 
 debug/telacolaborador.o: ../../colaboradores/telacolaborador.cpp ../../colaboradores/telacolaborador.h \
@@ -7689,6 +8234,23 @@ debug/telacolaborador.o: ../../colaboradores/telacolaborador.cpp ../../colaborad
 		C:/Qt/6.7.1/mingw_64/include/QtSql/qsqlresult.h \
 		C:/Qt/6.7.1/mingw_64/include/QtSql/qtsqlversion.h \
 		ui_telacolaborador.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QApplication \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qapplication.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QHBoxLayout \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qboxlayout.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qlayout.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qlayoutitem.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qgridlayout.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QLabel \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qlabel.h \
+		C:/Qt/6.7.1/mingw_64/include/QtGui/qpicture.h \
+		C:/Qt/6.7.1/mingw_64/include/QtGui/qtextdocument.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QPushButton \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qpushbutton.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qabstractbutton.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QSpacerItem \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QVBoxLayout \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QWidget \
 		../../colaboradores/cadastroquartos.h \
 		../../colaboradores/listaquartos.h \
 		../../colaboradores/reservastela.h \
@@ -8053,6 +8615,28 @@ debug/telalogincolaborador.o: ../../colaboradores/telalogincolaborador.cpp ../..
 		C:/Qt/6.7.1/mingw_64/include/QtSql/qsqlresult.h \
 		C:/Qt/6.7.1/mingw_64/include/QtSql/qtsqlversion.h \
 		ui_telalogincolaborador.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QApplication \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qapplication.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QHBoxLayout \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qboxlayout.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qlayout.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qlayoutitem.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qgridlayout.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QLabel \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qlabel.h \
+		C:/Qt/6.7.1/mingw_64/include/QtGui/qpicture.h \
+		C:/Qt/6.7.1/mingw_64/include/QtGui/qtextdocument.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QLineEdit \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qlineedit.h \
+		C:/Qt/6.7.1/mingw_64/include/QtGui/qtextcursor.h \
+		C:/Qt/6.7.1/mingw_64/include/QtGui/qtextformat.h \
+		C:/Qt/6.7.1/mingw_64/include/QtGui/qpen.h \
+		C:/Qt/6.7.1/mingw_64/include/QtGui/qtextoption.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QPushButton \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qpushbutton.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qabstractbutton.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QVBoxLayout \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QWidget \
 		../../colaboradores/telacolaborador.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\telalogincolaborador.o ..\..\colaboradores\telalogincolaborador.cpp
 
@@ -8767,6 +9351,21 @@ debug/telainicial.o: ../../telainicial.cpp ../../telainicial.h \
 		C:/Qt/6.7.1/mingw_64/include/QtSql/qsqlresult.h \
 		C:/Qt/6.7.1/mingw_64/include/QtSql/qtsqlversion.h \
 		ui_telainicial.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QApplication \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qapplication.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QLabel \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qlabel.h \
+		C:/Qt/6.7.1/mingw_64/include/QtGui/qpicture.h \
+		C:/Qt/6.7.1/mingw_64/include/QtGui/qtextdocument.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QMenuBar \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qmenubar.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qmenu.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QPushButton \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qpushbutton.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qabstractbutton.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QStatusBar \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qstatusbar.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QWidget \
 		../../clientes/telalogin.h \
 		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QDialog \
 		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qdialog.h \
