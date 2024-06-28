@@ -15,7 +15,7 @@ telaInicial::telaInicial(QWidget *parent)
     db_hotel.setDatabaseName("../../dataBase/db_hotel");
     if(db_hotel.open())
     {
-        QMessageBox::warning(this,"Sucesso","Abriu o bd");
+        qDebug() << "Abriu o bd";
     }
 }
 
