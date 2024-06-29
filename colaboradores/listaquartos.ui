@@ -47,19 +47,6 @@
     <string>Lista de Quartos</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="btn_filtrar">
-   <property name="geometry">
-    <rect>
-     <x>20</x>
-     <y>60</y>
-     <width>75</width>
-     <height>24</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Filtrar</string>
-   </property>
-  </widget>
   <widget class="QTableWidget" name="tb_listaQuartos">
    <property name="geometry">
     <rect>
@@ -96,23 +83,31 @@
     </item>
    </layout>
   </widget>
-  <widget class="QLabel" name="label_2">
+  <widget class="QWidget" name="">
    <property name="geometry">
     <rect>
-     <x>370</x>
-     <y>220</y>
-     <width>281</width>
-     <height>41</height>
+     <x>20</x>
+     <y>60</y>
+     <width>161</width>
+     <height>26</height>
     </rect>
    </property>
-   <property name="font">
-    <font>
-     <pointsize>26</pointsize>
-    </font>
-   </property>
-   <property name="text">
-    <string>Lista de Quartos</string>
-   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_2">
+    <item>
+     <widget class="QPushButton" name="btn_filtrar">
+      <property name="text">
+       <string>Filtrar</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="btn_aplicarfiltros">
+      <property name="text">
+       <string>Aplicar filtros</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
   </widget>
  </widget>
  <resources/>

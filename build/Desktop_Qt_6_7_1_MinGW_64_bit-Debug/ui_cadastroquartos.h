@@ -10,16 +10,16 @@
 #define UI_CADASTROQUARTOS_H
 
 #include <QtCore/QVariant>
-#include <QtWidgets/QAbstractButton>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QCheckBox>
 #include <QtWidgets/QComboBox>
 #include <QtWidgets/QDialog>
-#include <QtWidgets/QDialogButtonBox>
 #include <QtWidgets/QHBoxLayout>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QLineEdit>
+#include <QtWidgets/QPushButton>
 #include <QtWidgets/QTextEdit>
+#include <QtWidgets/QToolButton>
 #include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
 
@@ -28,7 +28,6 @@ QT_BEGIN_NAMESPACE
 class Ui_cadastroQuartos
 {
 public:
-    QDialogButtonBox *buttonBox;
     QWidget *layoutWidget;
     QHBoxLayout *horizontalLayout_3;
     QLabel *label_4;
@@ -60,17 +59,17 @@ public:
     QCheckBox *check_miniBar;
     QComboBox *boxTipoQuarto;
     QLabel *label;
+    QToolButton *btn_imagen;
+    QWidget *widget;
+    QHBoxLayout *horizontalLayout_2;
+    QPushButton *btn_salvar;
+    QPushButton *btn_cancelar;
 
     void setupUi(QDialog *cadastroQuartos)
     {
         if (cadastroQuartos->objectName().isEmpty())
             cadastroQuartos->setObjectName("cadastroQuartos");
         cadastroQuartos->resize(635, 458);
-        buttonBox = new QDialogButtonBox(cadastroQuartos);
-        buttonBox->setObjectName("buttonBox");
-        buttonBox->setGeometry(QRect(290, 420, 341, 32));
-        buttonBox->setOrientation(Qt::Horizontal);
-        buttonBox->setStandardButtons(QDialogButtonBox::Cancel|QDialogButtonBox::Ok);
         layoutWidget = new QWidget(cadastroQuartos);
         layoutWidget->setObjectName("layoutWidget");
         layoutWidget->setGeometry(QRect(20, 310, 234, 24));
@@ -214,10 +213,27 @@ public:
         label = new QLabel(cadastroQuartos);
         label->setObjectName("label");
         label->setGeometry(QRect(24, 21, 80, 16));
+        btn_imagen = new QToolButton(cadastroQuartos);
+        btn_imagen->setObjectName("btn_imagen");
+        btn_imagen->setGeometry(QRect(570, 20, 22, 22));
+        widget = new QWidget(cadastroQuartos);
+        widget->setObjectName("widget");
+        widget->setGeometry(QRect(470, 430, 158, 26));
+        horizontalLayout_2 = new QHBoxLayout(widget);
+        horizontalLayout_2->setObjectName("horizontalLayout_2");
+        horizontalLayout_2->setContentsMargins(0, 0, 0, 0);
+        btn_salvar = new QPushButton(widget);
+        btn_salvar->setObjectName("btn_salvar");
+
+        horizontalLayout_2->addWidget(btn_salvar);
+
+        btn_cancelar = new QPushButton(widget);
+        btn_cancelar->setObjectName("btn_cancelar");
+
+        horizontalLayout_2->addWidget(btn_cancelar);
+
 
         retranslateUi(cadastroQuartos);
-        QObject::connect(buttonBox, &QDialogButtonBox::accepted, cadastroQuartos, qOverload<>(&QDialog::accept));
-        QObject::connect(buttonBox, &QDialogButtonBox::rejected, cadastroQuartos, qOverload<>(&QDialog::reject));
 
         QMetaObject::connectSlotsByName(cadastroQuartos);
     } // setupUi
@@ -246,6 +262,9 @@ public:
         boxTipoQuarto->setItemText(3, QCoreApplication::translate("cadastroQuartos", "Master", nullptr));
 
         label->setText(QCoreApplication::translate("cadastroQuartos", "Tipo de quarto:", nullptr));
+        btn_imagen->setText(QCoreApplication::translate("cadastroQuartos", "...", nullptr));
+        btn_salvar->setText(QCoreApplication::translate("cadastroQuartos", "Salvar", nullptr));
+        btn_cancelar->setText(QCoreApplication::translate("cadastroQuartos", "Cancelar", nullptr));
     } // retranslateUi
 
 };

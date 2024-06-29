@@ -16,7 +16,11 @@ public:
     ~cadastroQuartos();
 
 private slots:
-    void on_buttonBox_accepted();
+    void on_btn_salvar_clicked();
+
+    void on_btn_cancelar_clicked();
+
+    void on_btn_imagen_clicked();
 
 private:
     Ui::cadastroQuartos *ui;

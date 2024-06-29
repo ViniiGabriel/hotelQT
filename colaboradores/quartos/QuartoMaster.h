@@ -19,13 +19,13 @@ private:
 
 
 public:
-    QuartoMaster(QString tipo, QString titulo, QString descricao, QString valor) :
-        Quartos(tipo, titulo, descricao, valor) {};
+    QuartoMaster(QString tipo, QString titulo, QString descricao, QString valor, QString path) :
+        Quartos(tipo, titulo, descricao, valor, path) {};
     ~QuartoMaster() {};
 
     bool codigoQuery(){
-        query.prepare("insert into tb_quartos (tipoQuarto, tituloQuarto, descricaoQuarto, valor, wifi, tv, ar, sacada, banheira, roupao, higiene, cafe, servicoQuarto, cofre, minibar) values"
-                      "(:tipoQuarto, :tituloQuarto, :descricaoQuarto, :valor, :wifi, :tv, :ar, :sacada, :banheira, :roupao, :higiene, :cafe, :servicoQuarto, :cofre, :bar)");
+        query.prepare("insert into tb_quartos (tipoQuarto, tituloQuarto, descricaoQuarto, valor, wifi, tv, ar, sacada, banheira, roupao, higiene, cafe, servicoQuarto, cofre, minibar, caminhoImagem) values"
+                      "(:tipoQuarto, :tituloQuarto, :descricaoQuarto, :valor, :wifi, :tv, :ar, :sacada, :banheira, :roupao, :higiene, :cafe, :servicoQuarto, :cofre, :bar, :path)");
         query.bindValue(":tipoQuarto", m_tipoQuarto);
         query.bindValue(":tituloQuarto", m_tituloQuarto);
         query.bindValue(":descricaoQuarto", m_descricaoQuarto);
@@ -41,6 +41,8 @@ public:
         query.bindValue(":servicoQuarto", m_servicoQuarto);
         query.bindValue(":cofre", m_cofre);
         query.bindValue(":bar", m_bar);
+        query.bindValue(":path", m_imagemPath);
+
         if(query.exec()){
             qDebug() << "Sucesso";
             return true;

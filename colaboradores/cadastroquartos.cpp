@@ -3,10 +3,15 @@
 #include <QDebug>
 #include <QtSql>
 #include <QMessageBox>
+#include <QFileDialog>
+#include <QFile>
+#include <QDir>
 #include "quartos/QuartoSimples.h"
 #include "quartos/QuartoComfort.h"
 #include "quartos/QuartoSuite.h"
 #include "quartos/QuartoMaster.h"
+
+QString destinationPath = "";
 
 cadastroQuartos::cadastroQuartos(QWidget *parent)
     : QDialog(parent)
@@ -20,8 +25,19 @@ cadastroQuartos::~cadastroQuartos()
     delete ui;
 }
 
-void cadastroQuartos::on_buttonBox_accepted()
+void cadastroQuartos::on_btn_salvar_clicked()
 {
+    if(ui->txt_tituloQuarto->text() == "" || ui->txt_descricao->toPlainText() == "" || ui->txt_valor->text() == "")
+    {
+        QMessageBox::warning(this,"Erro","Preencha todos os campos");
+        return;
+    }
+
+    if(destinationPath == ""){
+        QMessageBox::warning(this,"Erro","Adicione uma imagem do quarto");
+        return;
+    }
+
     QString tipoQuarto = ui->boxTipoQuarto->currentText();
     QString titulo = ui->txt_tituloQuarto->text();
     QString descricao = ui->txt_descricao->toPlainText();
@@ -76,7 +92,7 @@ void cadastroQuartos::on_buttonBox_accepted()
 
     if(tipoQuarto == "Simples")
     {
-        QuartoSimples quarto(tipoQuarto, titulo, descricao, valor, wifi, tv);
+        QuartoSimples quarto(tipoQuarto, titulo, descricao, valor, destinationPath, wifi, tv);
         if(quarto.codigoQuery()){
             QMessageBox::information(this,"Sucesso","Quarto cadastrado com sucesso");
         } else {
@@ -84,7 +100,7 @@ void cadastroQuartos::on_buttonBox_accepted()
         }
     } else if (tipoQuarto == "Comfort")
     {
-        QuartoComfort quarto(tipoQuarto, titulo, descricao, valor, wifi, tv, ar, sacada, banheira, roupao, higiene);
+        QuartoComfort quarto(tipoQuarto, titulo, descricao, valor, destinationPath, wifi, tv, ar, sacada, banheira, roupao, higiene);
         if(quarto.codigoQuery()){
             QMessageBox::information(this,"Sucesso","Quarto cadastrado com sucesso");
         } else {
@@ -92,7 +108,7 @@ void cadastroQuartos::on_buttonBox_accepted()
         }
     } else if (tipoQuarto == "Suíte")
     {
-        QuartoSuite quarto(tipoQuarto, titulo, descricao, valor, wifi, tv, ar, sacada, banheira, roupao, higiene, cafe, servicoQuarto);
+        QuartoSuite quarto(tipoQuarto, titulo, descricao, valor, destinationPath, wifi, tv, ar, sacada, banheira, roupao, higiene, cafe, servicoQuarto);
         if(quarto.codigoQuery()){
             QMessageBox::information(this,"Sucesso","Quarto cadastrado com sucesso");
         } else {
@@ -100,44 +116,43 @@ void cadastroQuartos::on_buttonBox_accepted()
         }
     }   else if (tipoQuarto == "Master")
     {
-        QuartoMaster quarto(tipoQuarto, titulo, descricao, valor);
+        QuartoMaster quarto(tipoQuarto, titulo, descricao, destinationPath, valor);
         if(quarto.codigoQuery()){
             QMessageBox::information(this,"Sucesso","Quarto cadastrado com sucesso");
         } else {
             QMessageBox::warning(this,"Falha","Falha ao cadastrar quarto");
         }
     }
-
-
-
-    /*
-    QSqlQuery query;
-    query.prepare("insert into tb_quartos (tipoQuarto, tituloQuarto, "
-                  "descricaoQuarto, wifi, ar, tv, sacada, cofre, banheira, "
-                  "cafe, roupao, higiene, servicoQuarto, minibar) values "
-                  "(:tituloQuarto, :tituloQuarto, :descricaoQuarto, :wifi, "
-                  ":ar, :tv, :sacada, :cofre, :banheira, :cafe, :roupao, "
-                  ":higiene, :servicoQuarto, :minibar)");
-    query.bindValue(":tituloQuarto", titulo);
-    query.bindValue(":descricaoQuarto", descricao);
-    query.bindValue(":tipoQuarto", tipoQuarto);
-    query.bindValue(":wifi", wifi);
-    query.bindValue(":ar", ar);
-    query.bindValue(":tv", tv);
-    query.bindValue(":sacada", sacada);
-    query.bindValue(":cofre", cofre);
-    query.bindValue(":banheira", banheira);
-    query.bindValue(":cafe", cafe);
-    query.bindValue(":roupao", roupao);
-    query.bindValue(":higiene", higiene);
-    query.bindValue(":servicoQuarto", servicoQuarto);
-    query.bindValue(":minibar", bar);
-    if(query.exec()){
-        QMessageBox::information(this, "Sucesso", "Quarto cadastrado com sucesso.");
-    } else {
-        QMessageBox::warning(this, "Erro", query.lastError().text());
-    }
-    */
+    destinationPath = "";
 }
 
+void cadastroQuartos::on_btn_cancelar_clicked()
+{
+    this->close();
+}
+
+void cadastroQuartos::on_btn_imagen_clicked()
+{
+    QString filePath = QFileDialog::getOpenFileName(this, "Selecione uma imagem", "", "Imagens (*.png *.jpg *.jpeg *.bmp)");
+    if (filePath.isEmpty()) {
+        return;
+    }
+
+    QString fileName = QFileInfo(filePath).fileName();
+    QString destinationDir = "../../imagens";
+
+    // Cria o diretório se não existir
+    QDir dir;
+    if (!dir.exists(destinationDir)) {
+        dir.mkpath(destinationDir);
+    }
+
+    destinationPath = destinationDir + "/" + fileName;
+
+    if (QFile::copy(filePath, destinationPath)) {
+        qDebug() << "Imagem copiada para:" << destinationPath;
+    } else {
+        qDebug() << "Falha ao copiar a imagem.";
+    }
+}
 

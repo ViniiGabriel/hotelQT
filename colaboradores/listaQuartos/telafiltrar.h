@@ -15,6 +15,21 @@ public:
     explicit telaFiltrar(QWidget *parent = nullptr);
     ~telaFiltrar();
 
+    bool wifiTrue();
+    bool arTrue();
+    bool tvTrue();
+    bool sacadaTrue();
+    bool roupaoTrue();
+    bool higieneTrue();
+    bool cofreTrue();
+    bool banheiraTrue();
+    bool cafeTrue();
+    bool servicoTrue();
+    bool miniBarTrue();
+
+private slots:
+
+
 private:
     Ui::telaFiltrar *ui;
 };
