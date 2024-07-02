@@ -13,19 +13,19 @@ listaClientes::listaClientes(QWidget *parent)
     query.prepare("select * from tb_clientes");
     if(query.exec())
     {
-        int linha=0;
-        ui->tb_listaClientes->setColumnCount(5);
-        while(query.next())
-        {
-            ui->tb_listaClientes->insertRow(linha);
-            ui->tb_listaClientes->setItem(linha, 0, new QTableWidgetItem(query.value(0).toString()));
-            ui->tb_listaClientes->setItem(linha, 1, new QTableWidgetItem(query.value(1).toString()));
-            ui->tb_listaClientes->setItem(linha, 2, new QTableWidgetItem(query.value(2).toString()));
-            ui->tb_listaClientes->setItem(linha, 3, new QTableWidgetItem(query.value(4).toString()));
-            ui->tb_listaClientes->setItem(linha, 4, new QTableWidgetItem(query.value(5).toString()));
+            int linha=0;
+            ui->tb_listaClientes->setColumnCount(5);
+            while(query.next())
+            {
+                ui->tb_listaClientes->insertRow(linha);
+                ui->tb_listaClientes->setItem(linha, 0, new QTableWidgetItem(query.value(0).toString()));
+                ui->tb_listaClientes->setItem(linha, 1, new QTableWidgetItem(query.value(1).toString()));
+                ui->tb_listaClientes->setItem(linha, 2, new QTableWidgetItem(query.value(2).toString()));
+                ui->tb_listaClientes->setItem(linha, 3, new QTableWidgetItem(query.value(4).toString()));
+                ui->tb_listaClientes->setItem(linha, 4, new QTableWidgetItem(query.value(5).toString()));
 
-            linha++;
-        }
+                linha++;
+            }
 
         ui->tb_listaClientes->setRowHeight(linha, 20);
         ui->tb_listaClientes->setColumnWidth(0,20);

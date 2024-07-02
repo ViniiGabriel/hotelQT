@@ -81,16 +81,6 @@ public:
         horizontalLayout->addWidget(txt_id);
 
         tb_menu = new QTableWidget(telaCliente);
-        if (tb_menu->columnCount() < 1)
-            tb_menu->setColumnCount(1);
-        QTableWidgetItem *__qtablewidgetitem = new QTableWidgetItem();
-        tb_menu->setHorizontalHeaderItem(0, __qtablewidgetitem);
-        if (tb_menu->rowCount() < 1)
-            tb_menu->setRowCount(1);
-        QTableWidgetItem *__qtablewidgetitem1 = new QTableWidgetItem();
-        tb_menu->setVerticalHeaderItem(0, __qtablewidgetitem1);
-        QTableWidgetItem *__qtablewidgetitem2 = new QTableWidgetItem();
-        tb_menu->setItem(0, 0, __qtablewidgetitem2);
         tb_menu->setObjectName("tb_menu");
         tb_menu->setGeometry(QRect(30, 80, 561, 421));
         btn_reservas = new QPushButton(telaCliente);
@@ -115,17 +105,6 @@ public:
         txt_nome->setText(QCoreApplication::translate("telaCliente", "Nome", nullptr));
         label->setText(QCoreApplication::translate("telaCliente", "ID:", nullptr));
         txt_id->setText(QCoreApplication::translate("telaCliente", "Nome", nullptr));
-        QTableWidgetItem *___qtablewidgetitem = tb_menu->horizontalHeaderItem(0);
-        ___qtablewidgetitem->setText(QCoreApplication::translate("telaCliente", "Teste", nullptr));
-        QTableWidgetItem *___qtablewidgetitem1 = tb_menu->verticalHeaderItem(0);
-        ___qtablewidgetitem1->setText(QCoreApplication::translate("telaCliente", "Teste", nullptr));
-
-        const bool __sortingEnabled = tb_menu->isSortingEnabled();
-        tb_menu->setSortingEnabled(false);
-        QTableWidgetItem *___qtablewidgetitem2 = tb_menu->item(0, 0);
-        ___qtablewidgetitem2->setText(QCoreApplication::translate("telaCliente", "tst", nullptr));
-        tb_menu->setSortingEnabled(__sortingEnabled);
-
         btn_reservas->setText(QCoreApplication::translate("telaCliente", "Reservas", nullptr));
         btn_notificacoes->setText(QCoreApplication::translate("telaCliente", "Notifica\303\247\303\265es", nullptr));
         btn_avaliacoes->setText(QCoreApplication::translate("telaCliente", "Avalia\303\247\303\265es", nullptr));

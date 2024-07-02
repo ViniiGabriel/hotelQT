@@ -16,13 +16,13 @@ public:
     ~telaCliente();
 
 private slots:
-    void on_tb_menu_cellDoubleClicked();
-
     void on_btn_reservas_clicked();
 
     void on_btn_notificacoes_clicked();
 
     void on_btn_avaliacoes_clicked();
+
+    void on_tb_menu_cellDoubleClicked();
 
 private:
     Ui::telaCliente *ui;

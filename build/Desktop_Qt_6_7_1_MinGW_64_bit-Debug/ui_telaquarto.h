@@ -18,7 +18,6 @@
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QLineEdit>
 #include <QtWidgets/QPushButton>
-#include <QtWidgets/QTextEdit>
 #include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
 
@@ -28,12 +27,8 @@ class Ui_telaQuarto
 {
 public:
     QDialogButtonBox *buttonBox;
-    QLabel *label;
-    QWidget *widget;
-    QVBoxLayout *verticalLayout;
-    QLabel *label_2;
-    QTextEdit *textEdit;
-    QWidget *widget1;
+    QLabel *foto_pixmap;
+    QWidget *layoutWidget;
     QHBoxLayout *horizontalLayout_2;
     QHBoxLayout *horizontalLayout;
     QLabel *label_3;
@@ -41,6 +36,10 @@ public:
     QLabel *label_4;
     QLineEdit *lineEdit_2;
     QPushButton *pushButton;
+    QWidget *widget;
+    QVBoxLayout *verticalLayout;
+    QLabel *txt_titulo;
+    QLabel *txt_decricao;
 
     void setupUi(QDialog *telaQuarto)
     {
@@ -52,49 +51,34 @@ public:
         buttonBox->setGeometry(QRect(130, 340, 341, 32));
         buttonBox->setOrientation(Qt::Horizontal);
         buttonBox->setStandardButtons(QDialogButtonBox::Cancel|QDialogButtonBox::Ok);
-        label = new QLabel(telaQuarto);
-        label->setObjectName("label");
-        label->setGeometry(QRect(40, 40, 49, 16));
-        widget = new QWidget(telaQuarto);
-        widget->setObjectName("widget");
-        widget->setGeometry(QRect(160, 10, 301, 241));
-        verticalLayout = new QVBoxLayout(widget);
-        verticalLayout->setObjectName("verticalLayout");
-        verticalLayout->setContentsMargins(0, 0, 0, 0);
-        label_2 = new QLabel(widget);
-        label_2->setObjectName("label_2");
-
-        verticalLayout->addWidget(label_2);
-
-        textEdit = new QTextEdit(widget);
-        textEdit->setObjectName("textEdit");
-
-        verticalLayout->addWidget(textEdit);
-
-        widget1 = new QWidget(telaQuarto);
-        widget1->setObjectName("widget1");
-        widget1->setGeometry(QRect(10, 270, 451, 31));
-        horizontalLayout_2 = new QHBoxLayout(widget1);
+        foto_pixmap = new QLabel(telaQuarto);
+        foto_pixmap->setObjectName("foto_pixmap");
+        foto_pixmap->setGeometry(QRect(10, 20, 141, 141));
+        foto_pixmap->setScaledContents(true);
+        layoutWidget = new QWidget(telaQuarto);
+        layoutWidget->setObjectName("layoutWidget");
+        layoutWidget->setGeometry(QRect(10, 270, 451, 31));
+        horizontalLayout_2 = new QHBoxLayout(layoutWidget);
         horizontalLayout_2->setObjectName("horizontalLayout_2");
         horizontalLayout_2->setContentsMargins(0, 0, 0, 0);
         horizontalLayout = new QHBoxLayout();
         horizontalLayout->setObjectName("horizontalLayout");
-        label_3 = new QLabel(widget1);
+        label_3 = new QLabel(layoutWidget);
         label_3->setObjectName("label_3");
 
         horizontalLayout->addWidget(label_3);
 
-        lineEdit = new QLineEdit(widget1);
+        lineEdit = new QLineEdit(layoutWidget);
         lineEdit->setObjectName("lineEdit");
 
         horizontalLayout->addWidget(lineEdit);
 
-        label_4 = new QLabel(widget1);
+        label_4 = new QLabel(layoutWidget);
         label_4->setObjectName("label_4");
 
         horizontalLayout->addWidget(label_4);
 
-        lineEdit_2 = new QLineEdit(widget1);
+        lineEdit_2 = new QLineEdit(layoutWidget);
         lineEdit_2->setObjectName("lineEdit_2");
 
         horizontalLayout->addWidget(lineEdit_2);
@@ -102,10 +86,37 @@ public:
 
         horizontalLayout_2->addLayout(horizontalLayout);
 
-        pushButton = new QPushButton(widget1);
+        pushButton = new QPushButton(layoutWidget);
         pushButton->setObjectName("pushButton");
 
         horizontalLayout_2->addWidget(pushButton);
+
+        widget = new QWidget(telaQuarto);
+        widget->setObjectName("widget");
+        widget->setGeometry(QRect(161, 11, 301, 241));
+        verticalLayout = new QVBoxLayout(widget);
+        verticalLayout->setObjectName("verticalLayout");
+        verticalLayout->setContentsMargins(0, 0, 0, 0);
+        txt_titulo = new QLabel(widget);
+        txt_titulo->setObjectName("txt_titulo");
+        QSizePolicy sizePolicy(QSizePolicy::Policy::Minimum, QSizePolicy::Policy::Maximum);
+        sizePolicy.setHorizontalStretch(0);
+        sizePolicy.setVerticalStretch(0);
+        sizePolicy.setHeightForWidth(txt_titulo->sizePolicy().hasHeightForWidth());
+        txt_titulo->setSizePolicy(sizePolicy);
+
+        verticalLayout->addWidget(txt_titulo);
+
+        txt_decricao = new QLabel(widget);
+        txt_decricao->setObjectName("txt_decricao");
+        QSizePolicy sizePolicy1(QSizePolicy::Policy::Minimum, QSizePolicy::Policy::Minimum);
+        sizePolicy1.setHorizontalStretch(0);
+        sizePolicy1.setVerticalStretch(0);
+        sizePolicy1.setHeightForWidth(txt_decricao->sizePolicy().hasHeightForWidth());
+        txt_decricao->setSizePolicy(sizePolicy1);
+        txt_decricao->setAlignment(Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop);
+
+        verticalLayout->addWidget(txt_decricao);
 
 
         retranslateUi(telaQuarto);
@@ -118,11 +129,12 @@ public:
     void retranslateUi(QDialog *telaQuarto)
     {
         telaQuarto->setWindowTitle(QCoreApplication::translate("telaQuarto", "Dialog", nullptr));
-        label->setText(QCoreApplication::translate("telaQuarto", "foto", nullptr));
-        label_2->setText(QCoreApplication::translate("telaQuarto", "Tipo quarto", nullptr));
+        foto_pixmap->setText(QCoreApplication::translate("telaQuarto", "foto", nullptr));
         label_3->setText(QCoreApplication::translate("telaQuarto", "Dias de estadia:", nullptr));
         label_4->setText(QCoreApplication::translate("telaQuarto", "at\303\251", nullptr));
         pushButton->setText(QCoreApplication::translate("telaQuarto", "Reservar", nullptr));
+        txt_titulo->setText(QCoreApplication::translate("telaQuarto", "Tipo quarto", nullptr));
+        txt_decricao->setText(QCoreApplication::translate("telaQuarto", "TextLabel", nullptr));
     } // retranslateUi
 
 };
