@@ -31,7 +31,8 @@ void telaLogin::on_btn_login_clicked()
     query.exec();
     query.first();
     if(query.value(2) == username && query.value(3) == senha){
-        telaCliente tela;
+        int id = query.value(0).toInt();
+        telaCliente tela(nullptr, id);
         tela.setModal(true);
         this->close();
         tela.exec();

@@ -12,11 +12,11 @@ class telaCliente : public QDialog
     Q_OBJECT
 
 public:
-    explicit telaCliente(QWidget *parent = nullptr);
+    explicit telaCliente(QWidget *parent = nullptr, int id=0);
     ~telaCliente();
 
 private slots:
-    void on_tb_menu_cellDoubleClicked(int row, int column);
+    void on_tb_menu_cellDoubleClicked();
 
     void on_btn_reservas_clicked();
 
@@ -26,6 +26,7 @@ private slots:
 
 private:
     Ui::telaCliente *ui;
+    int m_id;
 };
 
 #endif // TELACLIENTE_H

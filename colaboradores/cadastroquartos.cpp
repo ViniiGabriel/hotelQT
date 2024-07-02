@@ -141,7 +141,6 @@ void cadastroQuartos::on_btn_imagen_clicked()
     QString fileName = QFileInfo(filePath).fileName();
     QString destinationDir = "../../imagens";
 
-    // Cria o diretório se não existir
     QDir dir;
     if (!dir.exists(destinationDir)) {
         dir.mkpath(destinationDir);

@@ -37,6 +37,9 @@ public:
     QLabel *label_3;
     QLineEdit *txt_senha;
     QHBoxLayout *horizontalLayout;
+    QLabel *label_5;
+    QLineEdit *txt_cpf;
+    QHBoxLayout *horizontalLayout_5;
     QLabel *label_4;
     QLineEdit *txt_endereco;
 
@@ -44,13 +47,13 @@ public:
     {
         if (cadastroCliente->objectName().isEmpty())
             cadastroCliente->setObjectName("cadastroCliente");
-        cadastroCliente->resize(437, 207);
+        cadastroCliente->resize(428, 261);
         btn_cadastrar = new QPushButton(cadastroCliente);
         btn_cadastrar->setObjectName("btn_cadastrar");
-        btn_cadastrar->setGeometry(QRect(140, 160, 151, 41));
+        btn_cadastrar->setGeometry(QRect(140, 200, 151, 41));
         widget = new QWidget(cadastroCliente);
         widget->setObjectName("widget");
-        widget->setGeometry(QRect(10, 10, 411, 141));
+        widget->setGeometry(QRect(10, 11, 401, 170));
         verticalLayout = new QVBoxLayout(widget);
         verticalLayout->setObjectName("verticalLayout");
         verticalLayout->setContentsMargins(0, 0, 0, 0);
@@ -102,18 +105,34 @@ public:
 
         horizontalLayout = new QHBoxLayout();
         horizontalLayout->setObjectName("horizontalLayout");
+        label_5 = new QLabel(widget);
+        label_5->setObjectName("label_5");
+
+        horizontalLayout->addWidget(label_5);
+
+        txt_cpf = new QLineEdit(widget);
+        txt_cpf->setObjectName("txt_cpf");
+        txt_cpf->setEchoMode(QLineEdit::Normal);
+
+        horizontalLayout->addWidget(txt_cpf);
+
+
+        verticalLayout->addLayout(horizontalLayout);
+
+        horizontalLayout_5 = new QHBoxLayout();
+        horizontalLayout_5->setObjectName("horizontalLayout_5");
         label_4 = new QLabel(widget);
         label_4->setObjectName("label_4");
 
-        horizontalLayout->addWidget(label_4);
+        horizontalLayout_5->addWidget(label_4);
 
         txt_endereco = new QLineEdit(widget);
         txt_endereco->setObjectName("txt_endereco");
 
-        horizontalLayout->addWidget(txt_endereco);
+        horizontalLayout_5->addWidget(txt_endereco);
 
 
-        verticalLayout->addLayout(horizontalLayout);
+        verticalLayout->addLayout(horizontalLayout_5);
 
 
         retranslateUi(cadastroCliente);
@@ -128,6 +147,8 @@ public:
         label->setText(QCoreApplication::translate("cadastroCliente", "Nome:", nullptr));
         label_2->setText(QCoreApplication::translate("cadastroCliente", "Username:", nullptr));
         label_3->setText(QCoreApplication::translate("cadastroCliente", "Senha:", nullptr));
+        label_5->setText(QCoreApplication::translate("cadastroCliente", "CPF:", nullptr));
+        txt_cpf->setText(QString());
         label_4->setText(QCoreApplication::translate("cadastroCliente", "Endere\303\247o:", nullptr));
     } // retranslateUi
 

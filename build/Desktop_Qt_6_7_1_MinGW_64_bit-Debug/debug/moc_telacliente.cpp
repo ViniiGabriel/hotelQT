@@ -38,8 +38,6 @@ constexpr auto qt_meta_stringdata_CLASStelaClienteENDCLASS = QtMocHelpers::strin
     "telaCliente",
     "on_tb_menu_cellDoubleClicked",
     "",
-    "row",
-    "column",
     "on_btn_reservas_clicked",
     "on_btn_notificacoes_clicked",
     "on_btn_avaliacoes_clicked"
@@ -63,13 +61,13 @@ Q_CONSTINIT static const uint qt_meta_data_CLASStelaClienteENDCLASS[] = {
        0,       // signalCount
 
  // slots: name, argc, parameters, tag, flags, initial metatype offsets
-       1,    2,   38,    2, 0x08,    1 /* Private */,
-       5,    0,   43,    2, 0x08,    4 /* Private */,
-       6,    0,   44,    2, 0x08,    5 /* Private */,
-       7,    0,   45,    2, 0x08,    6 /* Private */,
+       1,    0,   38,    2, 0x08,    1 /* Private */,
+       3,    0,   39,    2, 0x08,    2 /* Private */,
+       4,    0,   40,    2, 0x08,    3 /* Private */,
+       5,    0,   41,    2, 0x08,    4 /* Private */,
 
  // slots: parameters
-    QMetaType::Void, QMetaType::Int, QMetaType::Int,    3,    4,
+    QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
@@ -88,8 +86,6 @@ Q_CONSTINIT const QMetaObject telaCliente::staticMetaObject = { {
         QtPrivate::TypeAndForceComplete<telaCliente, std::true_type>,
         // method 'on_tb_menu_cellDoubleClicked'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        QtPrivate::TypeAndForceComplete<int, std::false_type>,
-        QtPrivate::TypeAndForceComplete<int, std::false_type>,
         // method 'on_btn_reservas_clicked'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         // method 'on_btn_notificacoes_clicked'
@@ -106,13 +102,14 @@ void telaCliente::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id,
         auto *_t = static_cast<telaCliente *>(_o);
         (void)_t;
         switch (_id) {
-        case 0: _t->on_tb_menu_cellDoubleClicked((*reinterpret_cast< std::add_pointer_t<int>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<int>>(_a[2]))); break;
+        case 0: _t->on_tb_menu_cellDoubleClicked(); break;
         case 1: _t->on_btn_reservas_clicked(); break;
         case 2: _t->on_btn_notificacoes_clicked(); break;
         case 3: _t->on_btn_avaliacoes_clicked(); break;
         default: ;
         }
     }
+    (void)_a;
 }
 
 const QMetaObject *telaCliente::metaObject() const

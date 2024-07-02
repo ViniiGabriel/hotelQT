@@ -1,6 +1,5 @@
 #include "telacliente.h"
 #include "ui_telacliente.h"
-#include "telalogin.h"
 #include "telareserva.h"
 #include "telanotificacoes.h"
 #include "telaavaliacao.h"
@@ -8,11 +7,20 @@
 
 
 
-telaCliente::telaCliente(QWidget *parent)
+telaCliente::telaCliente(QWidget *parent, int id)
     : QDialog(parent)
     , ui(new Ui::telaCliente)
+    , m_id(id)
 {
     ui->setupUi(this);
+    QSqlQuery query;
+    query.prepare("select * from tb_clientes where id= :id");
+    query.bindValue(":id", m_id);
+    query.exec();
+    query.first();
+    ui->txt_nome->setText(query.value(1).toString());
+    ui->txt_id->setText(query.value(0).toString());
+
 }
 
 telaCliente::~telaCliente()
@@ -21,7 +29,7 @@ telaCliente::~telaCliente()
 }
 
 
-void telaCliente::on_tb_menu_cellDoubleClicked(int row, int column)
+void telaCliente::on_tb_menu_cellDoubleClicked()
 {
     telaQuarto tela;
     tela.setModal(true);

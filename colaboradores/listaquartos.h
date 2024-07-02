@@ -3,6 +3,7 @@
 
 #include <QDialog>
 #include "listaquartos/telafiltrar.h"
+#include <QtSql>
 
 namespace Ui {
 class listaQuartos;
@@ -25,6 +26,7 @@ private slots:
     void on_btn_aplicarfiltros_clicked();
 
 private:
+    QSqlQuery query;
     Ui::listaQuartos *ui;
     telaFiltrar *tela;
 };

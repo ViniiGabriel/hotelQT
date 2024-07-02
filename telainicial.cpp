@@ -15,7 +15,7 @@ telaInicial::telaInicial(QWidget *parent)
     db_hotel.setDatabaseName("../../dataBase/db_hotel");
     if(db_hotel.open())
     {
-        qDebug() << "Abriu o bd";
+        qDebug() << "Banco de dados aberto!";
     }
 }
 

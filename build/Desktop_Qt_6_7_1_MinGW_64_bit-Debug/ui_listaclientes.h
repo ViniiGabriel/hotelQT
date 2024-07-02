@@ -10,10 +10,8 @@
 #define UI_LISTACLIENTES_H
 
 #include <QtCore/QVariant>
-#include <QtWidgets/QAbstractButton>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QDialog>
-#include <QtWidgets/QDialogButtonBox>
 #include <QtWidgets/QHBoxLayout>
 #include <QtWidgets/QHeaderView>
 #include <QtWidgets/QLabel>
@@ -32,7 +30,7 @@ public:
     QPushButton *btn_editar;
     QPushButton *btn_excluir;
     QTableWidget *tb_listaClientes;
-    QDialogButtonBox *buttonBox;
+    QPushButton *btn_voltar;
 
     void setupUi(QDialog *listaClientes)
     {
@@ -47,7 +45,7 @@ public:
         label->setFont(font);
         layoutWidget = new QWidget(listaClientes);
         layoutWidget->setObjectName("layoutWidget");
-        layoutWidget->setGeometry(QRect(10, 440, 158, 26));
+        layoutWidget->setGeometry(QRect(10, 440, 195, 31));
         horizontalLayout = new QHBoxLayout(layoutWidget);
         horizontalLayout->setObjectName("horizontalLayout");
         horizontalLayout->setContentsMargins(0, 0, 0, 0);
@@ -64,11 +62,9 @@ public:
         tb_listaClientes = new QTableWidget(listaClientes);
         tb_listaClientes->setObjectName("tb_listaClientes");
         tb_listaClientes->setGeometry(QRect(10, 70, 621, 361));
-        buttonBox = new QDialogButtonBox(listaClientes);
-        buttonBox->setObjectName("buttonBox");
-        buttonBox->setGeometry(QRect(310, 490, 341, 32));
-        buttonBox->setOrientation(Qt::Horizontal);
-        buttonBox->setStandardButtons(QDialogButtonBox::Cancel|QDialogButtonBox::Ok);
+        btn_voltar = new QPushButton(listaClientes);
+        btn_voltar->setObjectName("btn_voltar");
+        btn_voltar->setGeometry(QRect(560, 500, 93, 29));
 
         retranslateUi(listaClientes);
 
@@ -81,6 +77,7 @@ public:
         label->setText(QCoreApplication::translate("listaClientes", "Lista de Clientes", nullptr));
         btn_editar->setText(QCoreApplication::translate("listaClientes", "Editar", nullptr));
         btn_excluir->setText(QCoreApplication::translate("listaClientes", "Excluir", nullptr));
+        btn_voltar->setText(QCoreApplication::translate("listaClientes", "Voltar", nullptr));
     } // retranslateUi
 
 };

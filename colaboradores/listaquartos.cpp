@@ -1,6 +1,5 @@
 #include "listaquartos.h"
 #include "ui_listaquartos.h"
-#include <QtSql>
 #include <QMessageBox>
 #include <QDebug>
 
@@ -10,7 +9,6 @@ listaQuartos::listaQuartos(QWidget *parent)
 {
     ui->setupUi(this);
     tela = new telaFiltrar(this);
-    QSqlQuery query;
     query.prepare("select * from tb_quartos");
     if(query.exec())
     {
@@ -52,75 +50,71 @@ listaQuartos::~listaQuartos()
 
 void listaQuartos::on_btn_aplicarfiltros_clicked()
 {
-    QSqlQuery query;
     bool verific = false;
-    QString codigo = "SELECT * FROM tb_quartos WHERE ";
+    QString codigo = "select * from tb_quartos where ";
 
-    // Lista de condições
     QStringList conditions;
-    QString teste = "true";
 
-    // Adiciona condições baseadas nos critérios selecionados
     if (tela->wifiTrue()) {
         conditions << "wifi = :wifi";
-        query.bindValue(":wifi", "trui");
         verific = true;
     }
     if (tela->arTrue()) {
         conditions << "ar = :ar";
-        query.bindValue(":ar", "true");
         verific = true;
     }
     if (tela->tvTrue()) {
         conditions << "tv = :tv";
-        query.bindValue(":tv", "true");
         verific = true;
     }
     if (tela->sacadaTrue()) {
         conditions << "sacada = :sacada";
-        query.bindValue(":sacada", "true");
         verific = true;
     }
     if (tela->cofreTrue()) {
         conditions << "cofre = :cofre";
-        query.bindValue(":cofre", "true");
         verific = true;
     }
     if (tela->cafeTrue()) {
         conditions << "cafe = :cafe";
-        query.bindValue(":cafe", "true");
         verific = true;
     }
     if (tela->roupaoTrue()) {
         conditions << "roupao = :roupao";
-        query.bindValue(":roupao", "true");
         verific = true;
     }
     if (tela->higieneTrue()) {
         conditions << "higiene = :higiene";
-        query.bindValue(":higiene", "true");
         verific = true;
     }
     if (tela->servicoTrue()) {
         conditions << "servicoQuarto = :servico";
-        query.bindValue(":servico", "true");
         verific = true;
     }
     if (tela->miniBarTrue()) {
         conditions << "minibar = :minibar";
-        query.bindValue(":minibar", "true");
+        verific = true;
+    }
+    if (tela->banheiraTrue()) {
+        conditions << "banheira = :banheira";
         verific = true;
     }
 
-    // Adiciona as condições à consulta
-    codigo += conditions.join(" AND ");
-
-    // Verifica se ao menos um critério foi selecionado
+    codigo += conditions.join(" and ");
     if (verific) {
         query.prepare(codigo);
-        qDebug() << codigo;
+        query.bindValue(":wifi", "true");
+        query.bindValue(":ar", "true");
+        query.bindValue(":tv", "true");
+        query.bindValue(":sacada", "true");
+        query.bindValue(":banheira", "true");
+        query.bindValue(":cofre", "true");
+        query.bindValue(":cafe", "true");
+        query.bindValue(":roupao", "true");
+        query.bindValue(":higiene", "true");
+        query.bindValue(":servico", "true");
+        query.bindValue(":minibar", "true");
 
-        // Executa a consulta
         if (!query.exec()) {
             qDebug() << "Erro ao executar a consulta:" << query.lastError().text();
         } else {
@@ -128,9 +122,7 @@ void listaQuartos::on_btn_aplicarfiltros_clicked()
             ui->tb_listaQuartos->setRowCount(0);
             int linha = 0;
             ui->tb_listaQuartos->setColumnCount(5);
-
             while (query.next()) {
-                qDebug() << "Quarto encontrado:";
                 ui->tb_listaQuartos->insertRow(linha);
                 ui->tb_listaQuartos->setItem(linha, 0, new QTableWidgetItem(query.value(0).toString()));
                 ui->tb_listaQuartos->setItem(linha, 1, new QTableWidgetItem(query.value(1).toString()));
@@ -165,8 +157,6 @@ void listaQuartos::on_btn_excluir_clicked()
     int linha=ui->tb_listaQuartos->currentRow();
     int id=ui->tb_listaQuartos->item(linha, 0)->text().toInt();
 
-
-    QSqlQuery query;
     query.prepare("delete from tb_quartos where id="+QString::number(id));
     if(query.exec())
     {

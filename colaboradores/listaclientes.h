@@ -15,6 +15,9 @@ public:
     explicit listaClientes(QWidget *parent = nullptr);
     ~listaClientes();
 
+private slots:
+    void on_btn_voltar_clicked();
+
 private:
     Ui::listaClientes *ui;
 };
