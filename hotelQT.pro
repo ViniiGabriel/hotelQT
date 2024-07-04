@@ -29,6 +29,7 @@ SOURCES += \
 
 HEADERS += \
     clientes/cadastrocliente.h \
+    clientes/reservas/reservas.h \
     clientes/telaavaliacao.h \
     clientes/telacliente.h \
     clientes/telalogin.h \

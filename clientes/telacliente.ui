@@ -103,21 +103,6 @@
      <height>421</height>
     </rect>
    </property>
-   <row>
-    <property name="text">
-     <string>Teste</string>
-    </property>
-   </row>
-   <column>
-    <property name="text">
-     <string>Teste</string>
-    </property>
-   </column>
-   <item row="0" column="0">
-    <property name="text">
-     <string>tst</string>
-    </property>
-   </item>
   </widget>
   <widget class="QPushButton" name="btn_reservas">
    <property name="geometry">

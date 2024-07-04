@@ -147,8 +147,39 @@ void listaQuartos::on_btn_aplicarfiltros_clicked()
             ui->tb_listaQuartos->setStyleSheet("QTableView {selection-background-color:blue}");
         }
     } else {
-        qDebug() << "Nenhum critério de filtragem foi selecionado.";
+        query.prepare("select * from tb_quartos");
+        if(query.exec())
+        {
+            ui->tb_listaQuartos->clear();
+            ui->tb_listaQuartos->setRowCount(0);
+            int linha=0;
+            ui->tb_listaQuartos->setColumnCount(5);
+            while(query.next())
+            {
+                ui->tb_listaQuartos->insertRow(linha);
+                ui->tb_listaQuartos->setItem(linha, 0, new QTableWidgetItem(query.value(0).toString()));
+                ui->tb_listaQuartos->setItem(linha, 1, new QTableWidgetItem(query.value(1).toString()));
+                ui->tb_listaQuartos->setItem(linha, 2, new QTableWidgetItem(query.value(2).toString()));
+                ui->tb_listaQuartos->setItem(linha, 3, new QTableWidgetItem(query.value(3).toString()));
+                ui->tb_listaQuartos->setItem(linha, 4, new QTableWidgetItem(query.value(15).toString()));
+                ui->tb_listaQuartos->setRowHeight(linha, 20);
+                linha++;
+            }
+            ui->tb_listaQuartos->setColumnWidth(0, 20);
+            ui->tb_listaQuartos->setColumnWidth(1, 100);
+            ui->tb_listaQuartos->setColumnWidth(2, 100);
+            ui->tb_listaQuartos->setColumnWidth(3, 200);
+            ui->tb_listaQuartos->setColumnWidth(4, 70);
+
+            QStringList cabecalho = {"ID", "Tipo do Quarto", "Título do Quarto", "Descrição", "Valor"};
+            ui->tb_listaQuartos->setHorizontalHeaderLabels(cabecalho);
+            ui->tb_listaQuartos->setEditTriggers(QAbstractItemView::NoEditTriggers);
+            ui->tb_listaQuartos->setSelectionBehavior(QAbstractItemView::SelectRows);
+            ui->tb_listaQuartos->selectRow(0);
+            ui->tb_listaQuartos->verticalHeader()->setVisible(false);
+            ui->tb_listaQuartos->setStyleSheet("QTableView {selection-background-color:blue}");
     }
+}
 }
 
 

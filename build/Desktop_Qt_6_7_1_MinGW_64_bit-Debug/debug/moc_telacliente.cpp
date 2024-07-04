@@ -36,11 +36,11 @@ namespace {
 struct qt_meta_stringdata_CLASStelaClienteENDCLASS_t {};
 constexpr auto qt_meta_stringdata_CLASStelaClienteENDCLASS = QtMocHelpers::stringData(
     "telaCliente",
-    "on_tb_menu_cellDoubleClicked",
-    "",
     "on_btn_reservas_clicked",
+    "",
     "on_btn_notificacoes_clicked",
-    "on_btn_avaliacoes_clicked"
+    "on_btn_avaliacoes_clicked",
+    "on_tb_menu_cellDoubleClicked"
 );
 #else  // !QT_MOC_HAS_STRINGDATA
 #error "qtmochelpers.h not found or too old."
@@ -84,13 +84,13 @@ Q_CONSTINIT const QMetaObject telaCliente::staticMetaObject = { {
     qt_incomplete_metaTypeArray<qt_meta_stringdata_CLASStelaClienteENDCLASS_t,
         // Q_OBJECT / Q_GADGET
         QtPrivate::TypeAndForceComplete<telaCliente, std::true_type>,
-        // method 'on_tb_menu_cellDoubleClicked'
-        QtPrivate::TypeAndForceComplete<void, std::false_type>,
         // method 'on_btn_reservas_clicked'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         // method 'on_btn_notificacoes_clicked'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         // method 'on_btn_avaliacoes_clicked'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'on_tb_menu_cellDoubleClicked'
         QtPrivate::TypeAndForceComplete<void, std::false_type>
     >,
     nullptr
@@ -102,10 +102,10 @@ void telaCliente::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id,
         auto *_t = static_cast<telaCliente *>(_o);
         (void)_t;
         switch (_id) {
-        case 0: _t->on_tb_menu_cellDoubleClicked(); break;
-        case 1: _t->on_btn_reservas_clicked(); break;
-        case 2: _t->on_btn_notificacoes_clicked(); break;
-        case 3: _t->on_btn_avaliacoes_clicked(); break;
+        case 0: _t->on_btn_reservas_clicked(); break;
+        case 1: _t->on_btn_notificacoes_clicked(); break;
+        case 2: _t->on_btn_avaliacoes_clicked(); break;
+        case 3: _t->on_tb_menu_cellDoubleClicked(); break;
         default: ;
         }
     }

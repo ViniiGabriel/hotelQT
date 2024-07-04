@@ -4,6 +4,8 @@
 #include "telanotificacoes.h"
 #include "telaavaliacao.h"
 #include "telaquarto.h"
+#include <QPixmap>
+#include <QLabel>
 
 
 
@@ -21,6 +23,36 @@ telaCliente::telaCliente(QWidget *parent, int id)
     ui->txt_nome->setText(query.value(1).toString());
     ui->txt_id->setText(query.value(0).toString());
 
+    query.prepare("select * from tb_quartos");
+    query.exec();
+    int linha=0;
+    ui->tb_menu->setColumnCount(3);
+    while(query.next())
+    {
+        ui->tb_menu->insertRow(linha);
+        ui->tb_menu->setItem(linha, 0, new QTableWidgetItem(query.value(0).toString()));
+        QString text = query.value(2).toString() + "\n\n" + query.value(3).toString();
+        ui->tb_menu->setItem(linha, 1, new QTableWidgetItem(text));
+        ui->tb_menu->setRowHeight(linha, 40);
+
+
+        QString textValue = "Diária: R$" + query.value(15).toString();
+        ui->tb_menu->setItem(linha, 2, new QTableWidgetItem(textValue));
+        linha++;
+    }
+
+    ui->tb_menu->setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
+    ui->tb_menu->verticalHeader()->setSectionResizeMode(QHeaderView::ResizeToContents);
+    ui->tb_menu->verticalHeader()->setVisible(false);
+    ui->tb_menu->horizontalHeader()->setVisible(false);
+    ui->tb_menu->setColumnWidth(0, 0);
+    ui->tb_menu->setColumnWidth(1, 490);
+    ui->tb_menu->setColumnWidth(2, 70);
+    ui->tb_menu->setEditTriggers(QAbstractItemView::NoEditTriggers);
+    ui->tb_menu->setSelectionBehavior(QAbstractItemView::SelectRows);
+    ui->tb_menu->selectRow(0);
+
+
 }
 
 telaCliente::~telaCliente()
@@ -31,7 +63,9 @@ telaCliente::~telaCliente()
 
 void telaCliente::on_tb_menu_cellDoubleClicked()
 {
-    telaQuarto tela;
+    int m_row = ui->tb_menu->currentRow();
+    int id = ui->tb_menu->item(m_row , 0)->text().toInt();
+    telaQuarto tela(nullptr, id);
     tela.setModal(true);
     tela.exec();
 }
