@@ -6,6 +6,7 @@
 #include "telaquarto.h"
 #include <QPixmap>
 #include <QLabel>
+#include <QMessageBox>
 
 
 
@@ -16,6 +17,29 @@ telaCliente::telaCliente(QWidget *parent, int id)
 {
     ui->setupUi(this);
     QSqlQuery query;
+
+    query.prepare("select * from tb_reservas where idCliente= :id");
+    query.bindValue(":id", m_id);
+    query.exec();
+    while(query.next())
+    {
+        if(query.value(8).toString() == "nao")
+        {
+            telaAvaliacao tela(nullptr, query.value(0).toInt());
+            tela.setModal(true);
+            tela.exec();
+            query.prepare("update tb_reservas set avaliado = :s where idCliente= :id");
+            query.bindValue(":s", "sim");
+            query.bindValue(":id", m_id);
+            if(!query.exec())
+            {
+                QMessageBox::warning(this,"Erro", "erro");
+        }
+    }
+    }
+
+
+
     query.prepare("select * from tb_clientes where id= :id");
     query.bindValue(":id", m_id);
     query.exec();
@@ -89,8 +113,6 @@ void telaCliente::on_btn_notificacoes_clicked()
 
 void telaCliente::on_btn_avaliacoes_clicked()
 {
-    telaAvaliacao tela;
-    tela.setModal(true);
-    tela.exec();
+
 }
 
