@@ -29,19 +29,20 @@ public:
     QLabel *label;
     QLabel *txt_nome;
     QSpacerItem *horizontalSpacer;
-    QWidget *layoutWidget1;
+    QWidget *widget;
     QVBoxLayout *verticalLayout;
     QPushButton *btn_cadastroQuarto;
     QPushButton *btn_listaQuartos;
     QPushButton *btn_reservas;
     QPushButton *btn_listaClientes;
     QPushButton *btn_cadastrarColaborador;
+    QPushButton *btn_notificacoes;
 
     void setupUi(QDialog *telaColaborador)
     {
         if (telaColaborador->objectName().isEmpty())
             telaColaborador->setObjectName("telaColaborador");
-        telaColaborador->resize(649, 359);
+        telaColaborador->resize(649, 403);
         layoutWidget = new QWidget(telaColaborador);
         layoutWidget->setObjectName("layoutWidget");
         layoutWidget->setGeometry(QRect(40, 20, 561, 35));
@@ -68,13 +69,13 @@ public:
 
         horizontalLayout->addItem(horizontalSpacer);
 
-        layoutWidget1 = new QWidget(telaColaborador);
-        layoutWidget1->setObjectName("layoutWidget1");
-        layoutWidget1->setGeometry(QRect(41, 62, 561, 271));
-        verticalLayout = new QVBoxLayout(layoutWidget1);
+        widget = new QWidget(telaColaborador);
+        widget->setObjectName("widget");
+        widget->setGeometry(QRect(20, 63, 601, 321));
+        verticalLayout = new QVBoxLayout(widget);
         verticalLayout->setObjectName("verticalLayout");
         verticalLayout->setContentsMargins(0, 0, 0, 0);
-        btn_cadastroQuarto = new QPushButton(layoutWidget1);
+        btn_cadastroQuarto = new QPushButton(widget);
         btn_cadastroQuarto->setObjectName("btn_cadastroQuarto");
         QSizePolicy sizePolicy(QSizePolicy::Policy::Minimum, QSizePolicy::Policy::Minimum);
         sizePolicy.setHorizontalStretch(0);
@@ -84,33 +85,40 @@ public:
 
         verticalLayout->addWidget(btn_cadastroQuarto);
 
-        btn_listaQuartos = new QPushButton(layoutWidget1);
+        btn_listaQuartos = new QPushButton(widget);
         btn_listaQuartos->setObjectName("btn_listaQuartos");
         sizePolicy.setHeightForWidth(btn_listaQuartos->sizePolicy().hasHeightForWidth());
         btn_listaQuartos->setSizePolicy(sizePolicy);
 
         verticalLayout->addWidget(btn_listaQuartos);
 
-        btn_reservas = new QPushButton(layoutWidget1);
+        btn_reservas = new QPushButton(widget);
         btn_reservas->setObjectName("btn_reservas");
         sizePolicy.setHeightForWidth(btn_reservas->sizePolicy().hasHeightForWidth());
         btn_reservas->setSizePolicy(sizePolicy);
 
         verticalLayout->addWidget(btn_reservas);
 
-        btn_listaClientes = new QPushButton(layoutWidget1);
+        btn_listaClientes = new QPushButton(widget);
         btn_listaClientes->setObjectName("btn_listaClientes");
         sizePolicy.setHeightForWidth(btn_listaClientes->sizePolicy().hasHeightForWidth());
         btn_listaClientes->setSizePolicy(sizePolicy);
 
         verticalLayout->addWidget(btn_listaClientes);
 
-        btn_cadastrarColaborador = new QPushButton(layoutWidget1);
+        btn_cadastrarColaborador = new QPushButton(widget);
         btn_cadastrarColaborador->setObjectName("btn_cadastrarColaborador");
         sizePolicy.setHeightForWidth(btn_cadastrarColaborador->sizePolicy().hasHeightForWidth());
         btn_cadastrarColaborador->setSizePolicy(sizePolicy);
 
         verticalLayout->addWidget(btn_cadastrarColaborador);
+
+        btn_notificacoes = new QPushButton(widget);
+        btn_notificacoes->setObjectName("btn_notificacoes");
+        sizePolicy.setHeightForWidth(btn_notificacoes->sizePolicy().hasHeightForWidth());
+        btn_notificacoes->setSizePolicy(sizePolicy);
+
+        verticalLayout->addWidget(btn_notificacoes);
 
 
         retranslateUi(telaColaborador);
@@ -128,6 +136,7 @@ public:
         btn_reservas->setText(QCoreApplication::translate("telaColaborador", "Reservas", nullptr));
         btn_listaClientes->setText(QCoreApplication::translate("telaColaborador", "Lista de clientes", nullptr));
         btn_cadastrarColaborador->setText(QCoreApplication::translate("telaColaborador", "Cadastrar novo colaborador", nullptr));
+        btn_notificacoes->setText(QCoreApplication::translate("telaColaborador", "Notifica\303\247\303\265es", nullptr));
     } // retranslateUi
 
 };

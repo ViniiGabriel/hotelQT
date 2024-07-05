@@ -27,6 +27,8 @@ private slots:
 
     void on_btn_cadastrarColaborador_clicked();
 
+    void on_btn_notificacoes_clicked();
+
 private:
     Ui::telaColaborador *ui;
     QString m_name;

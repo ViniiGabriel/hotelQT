@@ -24,7 +24,7 @@ class Ui_telaNotificacoes
 {
 public:
     QDialogButtonBox *buttonBox;
-    QTableWidget *tb_reservas;
+    QTableWidget *tb_notificacoes;
     QLabel *label;
 
     void setupUi(QDialog *telaNotificacoes)
@@ -37,9 +37,9 @@ public:
         buttonBox->setGeometry(QRect(300, 310, 341, 32));
         buttonBox->setOrientation(Qt::Horizontal);
         buttonBox->setStandardButtons(QDialogButtonBox::Cancel|QDialogButtonBox::Ok);
-        tb_reservas = new QTableWidget(telaNotificacoes);
-        tb_reservas->setObjectName("tb_reservas");
-        tb_reservas->setGeometry(QRect(10, 50, 631, 251));
+        tb_notificacoes = new QTableWidget(telaNotificacoes);
+        tb_notificacoes->setObjectName("tb_notificacoes");
+        tb_notificacoes->setGeometry(QRect(10, 50, 631, 251));
         label = new QLabel(telaNotificacoes);
         label->setObjectName("label");
         label->setGeometry(QRect(10, 0, 281, 41));

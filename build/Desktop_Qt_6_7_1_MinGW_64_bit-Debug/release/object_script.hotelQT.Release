@@ -13,6 +13,7 @@ release/listaquartos.o
 release/reservastela.o
 release/telacolaborador.o
 release/telalogincolaborador.o
+release/telanotificacoescolaborador.o
 release/main.o
 release/telainicial.o
 release/moc_cadastrocliente.o
@@ -30,4 +31,5 @@ release/moc_listaquartos.o
 release/moc_reservastela.o
 release/moc_telacolaborador.o
 release/moc_telalogincolaborador.o
+release/moc_telanotificacoescolaborador.o
 release/moc_telainicial.o

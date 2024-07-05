@@ -5,6 +5,7 @@
 #include "reservastela.h"
 #include "listaclientes.h"
 #include "cadastrocolaborador.h"
+#include "telanotificacoescolaborador.h"
 
 telaColaborador::telaColaborador(QWidget *parent, QString nome)
     : QDialog(parent)
@@ -59,5 +60,13 @@ void telaColaborador::on_btn_cadastrarColaborador_clicked()
     cadastroColaborador cadastro;
     cadastro.setModal(true);
     cadastro.exec();
+}
+
+
+void telaColaborador::on_btn_notificacoes_clicked()
+{
+    telaNotificacoesColaborador tela;
+    tela.setModal(true);
+    tela.exec();
 }
 

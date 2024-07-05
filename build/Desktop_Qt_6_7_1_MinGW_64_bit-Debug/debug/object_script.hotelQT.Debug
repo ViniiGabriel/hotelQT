@@ -13,6 +13,7 @@ debug/listaquartos.o
 debug/reservastela.o
 debug/telacolaborador.o
 debug/telalogincolaborador.o
+debug/telanotificacoescolaborador.o
 debug/main.o
 debug/telainicial.o
 debug/moc_cadastrocliente.o
@@ -30,4 +31,5 @@ debug/moc_listaquartos.o
 debug/moc_reservastela.o
 debug/moc_telacolaborador.o
 debug/moc_telalogincolaborador.o
+debug/moc_telanotificacoescolaborador.o
 debug/moc_telainicial.o

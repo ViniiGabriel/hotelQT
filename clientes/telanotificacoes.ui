@@ -29,7 +29,7 @@
     <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
    </property>
   </widget>
-  <widget class="QTableWidget" name="tb_reservas">
+  <widget class="QTableWidget" name="tb_notificacoes">
    <property name="geometry">
     <rect>
      <x>10</x>
