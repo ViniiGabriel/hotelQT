@@ -2,6 +2,7 @@
 #define TELAQUARTO_H
 
 #include <QDialog>
+#include "telaPagamento/pagamentotela.h"
 
 namespace Ui {
 class telaQuarto;
@@ -23,6 +24,7 @@ private:
     Ui::telaQuarto *ui;
     int m_id;
     int m_idCliente;
+    pagamentoTela *tela;
 };
 
 #endif // TELAQUARTO_H

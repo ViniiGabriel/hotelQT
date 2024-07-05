@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Dialog</string>
+   <string>Cadastro de quartos</string>
   </property>
   <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
@@ -19,7 +19,7 @@
      <x>20</x>
      <y>310</y>
      <width>234</width>
-     <height>24</height>
+     <height>28</height>
     </rect>
    </property>
    <layout class="QHBoxLayout" name="horizontalLayout_3">
@@ -80,8 +80,8 @@
     <rect>
      <x>20</x>
      <y>340</y>
-     <width>524</width>
-     <height>76</height>
+     <width>641</width>
+     <height>90</height>
     </rect>
    </property>
    <layout class="QVBoxLayout" name="verticalLayout_4">
@@ -239,13 +239,13 @@
     <string>...</string>
    </property>
   </widget>
-  <widget class="QWidget" name="">
+  <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
      <x>470</x>
      <y>430</y>
-     <width>158</width>
-     <height>26</height>
+     <width>195</width>
+     <height>31</height>
     </rect>
    </property>
    <layout class="QHBoxLayout" name="horizontalLayout_2">

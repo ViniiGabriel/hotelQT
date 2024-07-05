@@ -10,8 +10,11 @@
     <height>353</height>
    </rect>
   </property>
+  <property name="acceptDrops">
+   <bool>false</bool>
+  </property>
   <property name="windowTitle">
-   <string>Dialog</string>
+   <string>Notificações</string>
   </property>
   <widget class="QDialogButtonBox" name="buttonBox">
    <property name="geometry">

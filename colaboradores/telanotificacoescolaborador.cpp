@@ -9,21 +9,15 @@ telaNotificacoesColaborador::telaNotificacoesColaborador(QWidget *parent)
     ui->setupUi(this);
 
     QSqlQuery query;
-    query.prepare("select * from tb_notificacoesColaborador");
+    query.prepare("select * from tb_notificacoesColaborador order by idNotif desc");
     if(query.exec())
     {
         int linha=0;
-        QString ultimaString = query.value(0).toString();
         ui->tb_notificacoes->setColumnCount(1);
         while(query.next())
         {
             ui->tb_notificacoes->insertRow(linha);
-            {
-                ui->tb_notificacoes->setItem(linha, 0, new QTableWidgetItem(ultimaString));
-                ultimaString = query.value(0).toString();
-            }
-            ui->tb_notificacoes->setItem(0, 0, new QTableWidgetItem(query.value(0).toString()));
-
+            ui->tb_notificacoes->setItem(linha, 0, new QTableWidgetItem(query.value(0).toString()));
             linha++;
         }
 
@@ -33,8 +27,7 @@ telaNotificacoesColaborador::telaNotificacoesColaborador(QWidget *parent)
         ui->tb_notificacoes->setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
         ui->tb_notificacoes->verticalHeader()->setSectionResizeMode(QHeaderView::ResizeToContents);
 
-        QStringList cabecalho = {"Notificação"};
-        ui->tb_notificacoes->setHorizontalHeaderLabels(cabecalho);
+        ui->tb_notificacoes->horizontalHeader()->setVisible(false);
         ui->tb_notificacoes->setEditTriggers(QAbstractItemView::NoEditTriggers);
         ui->tb_notificacoes->setSelectionBehavior(QAbstractItemView::SelectRows);
         ui->tb_notificacoes->selectRow(0);

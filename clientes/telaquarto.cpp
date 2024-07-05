@@ -11,6 +11,7 @@ telaQuarto::telaQuarto(QWidget *parent, int id, int idCliente)
     ,m_id(id)
     ,m_idCliente(idCliente)
 {
+    tela = new pagamentoTela(this);
     ui->setupUi(this);
     QSqlQuery query;
     query.prepare("select * from tb_quartos where id="+QString::number(m_id));
@@ -27,6 +28,7 @@ telaQuarto::telaQuarto(QWidget *parent, int id, int idCliente)
 telaQuarto::~telaQuarto()
 {
     delete ui;
+    delete tela;
 }
 
 
@@ -48,6 +50,9 @@ void telaQuarto::on_btn_reserva_clicked()
         ui->txt_avisoData->setVisible(true);
         ui->txt_avisoData->setText("Data indisponivel");
     } else {
+        tela->setModal(true);
+        tela->exec();
+        if(tela->getVerifPagamento()){
         QSqlQuery query;
         query.prepare("insert into tb_reservas (idQuarto, diaInicial, mesInicial, anoInicial, diaFinal,"
                       "mesFinal, anoFinal, idCliente) values (:idQuarto, :diaInicial, :mesInicial,"
@@ -62,10 +67,14 @@ void telaQuarto::on_btn_reserva_clicked()
         query.bindValue(":idCliente", m_idCliente);
         if(query.exec()){
             QMessageBox::information(this,"Sucesso","Reservado com sucesso!");
+            ui->txt_avisoData->setVisible(false);
         } else {
             QMessageBox::warning(this,"Falha","Falha ao inserir no banco de dados");
             qDebug() << query.lastError().text();
             ui->txt_avisoData->setVisible(false);
+        }
+        } else {
+            QMessageBox::warning(this,"Falha","Falha no pagamento");
         }
     }
 }

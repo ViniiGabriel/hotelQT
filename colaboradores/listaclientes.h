@@ -18,6 +18,10 @@ public:
 private slots:
     void on_btn_voltar_clicked();
 
+    void on_btn_editar_clicked();
+
+    void on_btn_excluir_clicked();
+
 private:
     Ui::listaClientes *ui;
 };

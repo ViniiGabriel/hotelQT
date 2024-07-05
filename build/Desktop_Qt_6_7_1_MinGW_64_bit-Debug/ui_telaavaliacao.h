@@ -54,7 +54,7 @@ public:
         btn_enviar->setGeometry(QRect(100, 160, 171, 31));
         layoutWidget = new QWidget(telaAvaliacao);
         layoutWidget->setObjectName("layoutWidget");
-        layoutWidget->setGeometry(QRect(90, 110, 221, 20));
+        layoutWidget->setGeometry(QRect(90, 110, 221, 22));
         horizontalLayout_2 = new QHBoxLayout(layoutWidget);
         horizontalLayout_2->setObjectName("horizontalLayout_2");
         horizontalLayout_2->setContentsMargins(0, 0, 0, 0);
@@ -106,7 +106,7 @@ public:
 
     void retranslateUi(QDialog *telaAvaliacao)
     {
-        telaAvaliacao->setWindowTitle(QCoreApplication::translate("telaAvaliacao", "Dialog", nullptr));
+        telaAvaliacao->setWindowTitle(QCoreApplication::translate("telaAvaliacao", "Avalie sua estadia", nullptr));
         label_2->setText(QCoreApplication::translate("telaAvaliacao", "Avalie sua estadia:", nullptr));
         btn_enviar->setText(QCoreApplication::translate("telaAvaliacao", "Enviar Avalia\303\247\303\243o", nullptr));
         label->setText(QCoreApplication::translate("telaAvaliacao", "1", nullptr));
