@@ -8,16 +8,16 @@
 class Reservas{
 private:
     int m_id;
-    QString DiaInicialReserva;
-    QString MesInicialReserva;
-    QString AnoInicialReserva;
-    QString DiaFinalReserva;
-    QString MesFinalReserva;
-    QString AnoFinalReserva;
+    int DiaInicialReserva;
+    int MesInicialReserva;
+    int AnoInicialReserva;
+    int DiaFinalReserva;
+    int MesFinalReserva;
+    int AnoFinalReserva;
 
 
 public:
-    Reservas(int id, QString diaI, QString mesI, QString anoI, QString diaF, QString mesF, QString anoF) : m_id(id), DiaInicialReserva(diaI),
+    Reservas(int id, int diaI, int mesI, int anoI, int diaF, int mesF, int anoF) : m_id(id), DiaInicialReserva(diaI),
         MesInicialReserva(mesI), AnoInicialReserva(anoI), DiaFinalReserva(diaF), MesFinalReserva(mesF), AnoFinalReserva(anoF) {}
 
 
@@ -32,85 +32,83 @@ public:
         } else {
         while(query.next())
         {
-            QString DiaInicialExistente = query.value(1).toString();
-            QString MesInicialExistente = query.value(2).toString();
-            QString AnoInicialExistente = query.value(3).toString();
-            QString DiaFinalExistente = query.value(4).toString();
-            QString MesFinalExistente = query.value(5).toString();
-            QString AnoFinalExistente = query.value(6).toString();
-            /*
-            if (AnoInicialReserva <= AnoInicialExistente && AnoFinalReserva >= AnoFinalExistente &&
-                MesInicialReserva <= MesInicialExistente && MesFinalReserva >= MesFinalExistente &&
-                DiaInicialReserva <= DiaInicialExistente && DiaFinalReserva >= DiaFinalExistente) {
-                qDebug() << "P1";
-                return 1;
-            }
+            int DiaInicialExistente = query.value(1).toInt();
+            int MesInicialExistente = query.value(2).toInt();
+            int AnoInicialExistente = query.value(3).toInt();
+            int DiaFinalExistente = query.value(4).toInt();
+            int MesFinalExistente = query.value(5).toInt();
+            int AnoFinalExistente = query.value(6).toInt();
 
-            if ((AnoInicialReserva > AnoInicialExistente ||
-                 (AnoInicialReserva == AnoInicialExistente && MesInicialReserva > MesInicialExistente) ||
-                 (AnoInicialReserva == AnoInicialExistente && MesInicialReserva == MesInicialExistente && DiaInicialReserva > DiaInicialExistente)) &&
-                (AnoFinalReserva > AnoFinalExistente ||
-                 (AnoFinalReserva == AnoFinalExistente && MesFinalReserva > MesFinalExistente) ||
-                 (AnoFinalReserva == AnoFinalExistente && MesFinalReserva == MesFinalExistente && DiaFinalReserva >= DiaFinalExistente))) {
-                qDebug() << "P2";
-                return 1;
-            }
-
-            if ((AnoInicialReserva < AnoInicialExistente ||
-                 (AnoInicialReserva == AnoInicialExistente && MesInicialReserva < MesInicialExistente) ||
-                 (AnoInicialReserva == AnoInicialExistente && MesInicialReserva == MesInicialExistente && DiaInicialReserva <= DiaInicialExistente)) &&
-                (AnoFinalReserva < AnoFinalExistente ||
-                 (AnoFinalReserva == AnoFinalExistente && MesFinalReserva < MesFinalExistente) ||
-                 (AnoFinalReserva == AnoFinalExistente && MesFinalReserva == MesFinalExistente && DiaFinalReserva <= DiaFinalExistente))) {
-
-                qDebug() << "P3";
-                return 1;
-            }
-
-            if ((AnoInicialReserva >= AnoInicialExistente && AnoInicialReserva <= AnoFinalExistente) &&
-                (AnoFinalReserva >= AnoInicialExistente && AnoFinalReserva <= AnoFinalExistente) &&
-                (MesInicialReserva >= MesInicialExistente && MesInicialReserva <= MesFinalExistente) &&
-                (MesFinalReserva >= MesInicialExistente && MesFinalReserva <= MesFinalExistente) &&
-                (DiaInicialReserva >= DiaInicialExistente && DiaInicialReserva <= DiaFinalExistente) &&
-                (DiaFinalReserva >= DiaInicialExistente && DiaFinalReserva <= DiaFinalExistente)) {
-                qDebug() << "P4";
-                return 1;
-            }
-
-            if ((AnoInicialExistente >= AnoInicialReserva && AnoInicialExistente <= AnoFinalReserva) &&
-                (AnoFinalExistente >= AnoInicialReserva && AnoFinalExistente <= AnoFinalReserva) &&
-                (MesInicialExistente >= MesInicialReserva && MesInicialExistente <= MesFinalReserva) &&
-                (MesFinalExistente >= MesInicialReserva && MesFinalExistente <= MesFinalReserva) &&
-                (DiaInicialExistente >= DiaInicialReserva && DiaInicialExistente <= DiaFinalReserva) &&
-                (DiaFinalExistente >= DiaInicialReserva && DiaFinalExistente <= DiaFinalReserva)) {
-                qDebug() << "P5";
-                return 1;
-            }
-
-            if ((AnoInicialExistente <= AnoInicialReserva && AnoFinalExistente >= AnoFinalReserva) &&
-                (MesInicialExistente <= MesInicialReserva && MesFinalExistente >= MesFinalReserva) &&
-                (DiaInicialExistente <= DiaInicialReserva && DiaFinalExistente >= DiaFinalReserva)) {
-                qDebug() << "P6";
-                return 1;
-            }
-
-            if (!(AnoFinalReserva < AnoInicialExistente || AnoInicialReserva > AnoFinalExistente ||
-                  (AnoFinalReserva == AnoInicialExistente && MesFinalReserva < MesInicialExistente) ||
-                  (AnoInicialReserva == AnoFinalExistente && MesInicialReserva > MesFinalExistente) ||
-                  (AnoFinalReserva == AnoInicialExistente && MesFinalReserva == MesInicialExistente && DiaFinalReserva < DiaInicialExistente) ||
-                  (AnoInicialReserva == AnoFinalExistente && MesInicialReserva == MesFinalExistente && DiaInicialReserva > DiaFinalExistente))) {
-                qDebug() << "P7";
-                return 1;
-            }
-            */
-            if(MesInicialReserva <= MesInicialExistente && MesFinalReserva >= MesFinalExistente &&
-                DiaFinalReserva <= DiaFinalExistente && DiaInicialReserva >= DiaInicialExistente)
+            if(AnoInicialReserva >= AnoInicialExistente && AnoFinalReserva <= AnoFinalExistente){
+            if(MesInicialReserva == MesInicialExistente && MesFinalReserva == MesInicialExistente && DiaFinalReserva < DiaInicialExistente)
             {
                 qDebug() << "P1";
-                return 1;
+                return 0;
+            } else if (MesInicialReserva == MesFinalExistente && MesFinalReserva == MesFinalExistente && DiaInicialReserva > DiaFinalExistente)
+            {
+                qDebug() << "P2";
+                return 0;
+            } else if (MesInicialReserva < MesInicialExistente && MesFinalReserva == MesInicialExistente && DiaFinalReserva < DiaInicialExistente)
+            {
+                qDebug() << "P3";
+                return 0;
+            } else if (MesInicialReserva == MesFinalExistente && MesFinalReserva > MesFinalExistente && DiaInicialReserva > DiaFinalExistente)
+            {
+                qDebug() << "P4";
+                return 0;
+            } else if (MesFinalReserva < MesInicialExistente)
+            {
+                qDebug() << "P5";
+                return 0;
+            } else if (MesInicialReserva > MesFinalExistente)
+            {
+                qDebug() << "P6";
+                return 0;
             }
+            }
+
+            if(AnoInicialReserva < AnoInicialExistente && AnoFinalReserva == AnoInicialExistente && MesFinalReserva == MesInicialExistente && DiaFinalReserva < DiaInicialExistente)
+            {
+                qDebug() << "P7";
+                return 0;
+            }
+
+            if(AnoFinalReserva < AnoInicialExistente){
+                qDebug() << "P8";
+                return 0;
+            }
+            if(AnoInicialReserva == AnoFinalExistente && AnoFinalReserva > AnoFinalExistente && MesInicialReserva == MesFinalExistente && DiaInicialReserva > DiaFinalExistente)
+            {
+                qDebug() << "P9";
+                return 0;
+            }
+            if (AnoInicialReserva > AnoFinalExistente)
+            {
+                qDebug() << "P10";
+                return 0;
+            }
+            if(AnoInicialReserva == AnoFinalExistente && MesInicialReserva == MesFinalExistente && DiaInicialReserva > DiaFinalExistente)
+            {
+                qDebug() << "P11";
+                return 0;
+            }
+            if(AnoFinalReserva == AnoInicialExistente && MesFinalReserva == MesInicialExistente && DiaFinalReserva < DiaInicialExistente)
+            {
+                qDebug() << "P12";
+                return 0;
+            }
+            if(AnoInicialReserva == AnoFinalExistente && MesInicialReserva > MesFinalExistente)
+            {
+                qDebug() << "P13";
+                return 0;
+            }
+            if(AnoFinalReserva == AnoInicialExistente && MesFinalReserva < MesInicialExistente){
+                qDebug() << "P14";
+                return 0;
+            }
+
         }
-        return 0;
+        return 1;
         }
     }
 

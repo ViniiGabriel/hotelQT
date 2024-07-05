@@ -30,7 +30,6 @@ telaQuarto::~telaQuarto()
 
 void telaQuarto::on_btn_reserva_clicked()
 {
-    int verif = 3;
     QString dInicial = ui->txt_diaInicial->text();
     QString mInicial = ui->txt_mesInicial->text();
     QString yInicial = ui->txt_anoInicial->text();
@@ -39,7 +38,7 @@ void telaQuarto::on_btn_reserva_clicked()
     QString mFinal = ui->txt_mesFinal->text();
     QString yFinal = ui->txt_anoFinal->text();
 
-    Reservas reserva(m_id, dInicial, mInicial, yInicial, dFinal, mFinal, yFinal);
+    Reservas reserva(m_id, dInicial.toInt(), mInicial.toInt(), yInicial.toInt(), dFinal.toInt(), mFinal.toInt(), yFinal.toInt());
     qDebug() << reserva.verifConflito();
 
     if(reserva.verifConflito() == 1){

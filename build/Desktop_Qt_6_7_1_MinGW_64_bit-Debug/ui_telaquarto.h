@@ -46,7 +46,7 @@ public:
     {
         if (telaQuarto->objectName().isEmpty())
             telaQuarto->setObjectName("telaQuarto");
-        telaQuarto->resize(475, 378);
+        telaQuarto->resize(488, 410);
         buttonBox = new QDialogButtonBox(telaQuarto);
         buttonBox->setObjectName("buttonBox");
         buttonBox->setGeometry(QRect(130, 340, 341, 32));
