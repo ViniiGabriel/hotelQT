@@ -65,7 +65,7 @@ void telaCliente::on_tb_menu_cellDoubleClicked()
 {
     int m_row = ui->tb_menu->currentRow();
     int id = ui->tb_menu->item(m_row , 0)->text().toInt();
-    telaQuarto tela(nullptr, id);
+    telaQuarto tela(nullptr, id, m_id);
     tela.setModal(true);
     tela.exec();
 }
@@ -73,7 +73,7 @@ void telaCliente::on_tb_menu_cellDoubleClicked()
 
 void telaCliente::on_btn_reservas_clicked()
 {
-    telaReserva tela;
+    telaReserva tela(nullptr, m_id);
     tela.setModal(true);
     tela.exec();
 }

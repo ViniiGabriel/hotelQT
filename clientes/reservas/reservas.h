@@ -23,6 +23,7 @@ public:
 
     int verifConflito()
     {
+        int cont = 0;
         QSqlQuery query;
         query.prepare("select * from tb_reservas where idQuarto = :id");
         query.bindValue(":id", QString::number(m_id));
@@ -32,6 +33,7 @@ public:
         } else {
         while(query.next())
         {
+                cont++;
             int DiaInicialExistente = query.value(1).toInt();
             int MesInicialExistente = query.value(2).toInt();
             int AnoInicialExistente = query.value(3).toInt();
@@ -108,7 +110,11 @@ public:
             }
 
         }
+        if(cont!=0){
         return 1;
+        } else {
+            return 0;
+        }
         }
     }
 

@@ -3,11 +3,13 @@
 #include <QtSql>
 #include <QPixmap>
 #include "reservas/reservas.h"
+#include <QMessageBox>
 
-telaQuarto::telaQuarto(QWidget *parent, int id)
+telaQuarto::telaQuarto(QWidget *parent, int id, int idCliente)
     : QDialog(parent)
     , ui(new Ui::telaQuarto)
     ,m_id(id)
+    ,m_idCliente(idCliente)
 {
     ui->setupUi(this);
     QSqlQuery query;
@@ -17,6 +19,7 @@ telaQuarto::telaQuarto(QWidget *parent, int id)
     ui->txt_titulo->setText(query.value(2).toString());
     ui->txt_decricao->setText(query.value(3).toString());
     ui->txt_decricao->setWordWrap(true);
+    ui->txt_avisoData->setVisible(false);
     QPixmap pixmap(query.value(16).toString());
     ui->foto_pixmap->setPixmap(pixmap);
 }
@@ -42,11 +45,28 @@ void telaQuarto::on_btn_reserva_clicked()
     qDebug() << reserva.verifConflito();
 
     if(reserva.verifConflito() == 1){
+        ui->txt_avisoData->setVisible(true);
         ui->txt_avisoData->setText("Data indisponivel");
     } else {
-        ui->txt_avisoData->setText("vapo");
+        QSqlQuery query;
+        query.prepare("insert into tb_reservas (idQuarto, diaInicial, mesInicial, anoInicial, diaFinal,"
+                      "mesFinal, anoFinal, idCliente) values (:idQuarto, :diaInicial, :mesInicial,"
+                      ":anoInicial, :diaFinal, :mesFinal, :anoFinal, :idCliente)");
+        query.bindValue(":idQuarto", m_id);
+        query.bindValue(":diaInicial", dInicial);
+        query.bindValue(":mesInicial", mInicial);
+        query.bindValue(":anoInicial", yInicial);
+        query.bindValue(":diaFinal", dFinal);
+        query.bindValue(":mesFinal", mFinal);
+        query.bindValue(":anoFinal", yFinal);
+        query.bindValue(":idCliente", m_idCliente);
+        if(query.exec()){
+            QMessageBox::information(this,"Sucesso","Reservado com sucesso!");
+        } else {
+            QMessageBox::warning(this,"Falha","Falha ao inserir no banco de dados");
+            qDebug() << query.lastError().text();
+            ui->txt_avisoData->setVisible(false);
+        }
     }
-
-
 }
 
