@@ -12,11 +12,15 @@ class telaAvaliacao : public QDialog
     Q_OBJECT
 
 public:
-    explicit telaAvaliacao(QWidget *parent = nullptr);
+    explicit telaAvaliacao(QWidget *parent = nullptr, int id=0);
     ~telaAvaliacao();
+
+private slots:
+    void on_btn_enviar_clicked();
 
 private:
     Ui::telaAvaliacao *ui;
+    int m_id;
 };
 
 #endif // TELAAVALIACAO_H

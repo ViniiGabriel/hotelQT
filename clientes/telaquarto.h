@@ -12,7 +12,7 @@ class telaQuarto : public QDialog
     Q_OBJECT
 
 public:
-    explicit telaQuarto(QWidget *parent = nullptr, int id = 0);
+    explicit telaQuarto(QWidget *parent = nullptr, int id = 0, int idCliente = 0);
     ~telaQuarto();
 
 private slots:
@@ -22,6 +22,7 @@ private slots:
 private:
     Ui::telaQuarto *ui;
     int m_id;
+    int m_idCliente;
 };
 
 #endif // TELAQUARTO_H

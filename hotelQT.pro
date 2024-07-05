@@ -24,6 +24,7 @@ SOURCES += \
     colaboradores/reservastela.cpp \
     colaboradores/telacolaborador.cpp \
     colaboradores/telalogincolaborador.cpp \
+    colaboradores/telanotificacoescolaborador.cpp \
     main.cpp \
     telainicial.cpp
 
@@ -49,6 +50,7 @@ HEADERS += \
     colaboradores/reservastela.h \
     colaboradores/telacolaborador.h \
     colaboradores/telalogincolaborador.h \
+    colaboradores/telanotificacoescolaborador.h \
     telainicial.h
 
 FORMS += \
@@ -67,6 +69,7 @@ FORMS += \
     colaboradores/reservastela.ui \
     colaboradores/telacolaborador.ui \
     colaboradores/telalogincolaborador.ui \
+    colaboradores/telanotificacoescolaborador.ui \
     telainicial.ui
 
 # Default rules for deployment.

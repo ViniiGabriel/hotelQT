@@ -6,6 +6,7 @@
 #include "telaquarto.h"
 #include <QPixmap>
 #include <QLabel>
+#include <QMessageBox>
 
 
 
@@ -16,6 +17,29 @@ telaCliente::telaCliente(QWidget *parent, int id)
 {
     ui->setupUi(this);
     QSqlQuery query;
+
+    query.prepare("select * from tb_reservas where idCliente= :id");
+    query.bindValue(":id", m_id);
+    query.exec();
+    while(query.next())
+    {
+        if(query.value(8).toString() == "nao")
+        {
+            telaAvaliacao tela(nullptr, query.value(0).toInt());
+            tela.setModal(true);
+            tela.exec();
+            query.prepare("update tb_reservas set avaliado = :s where idCliente= :id");
+            query.bindValue(":s", "sim");
+            query.bindValue(":id", m_id);
+            if(!query.exec())
+            {
+                QMessageBox::warning(this,"Erro", "erro");
+        }
+    }
+    }
+
+
+
     query.prepare("select * from tb_clientes where id= :id");
     query.bindValue(":id", m_id);
     query.exec();
@@ -65,7 +89,7 @@ void telaCliente::on_tb_menu_cellDoubleClicked()
 {
     int m_row = ui->tb_menu->currentRow();
     int id = ui->tb_menu->item(m_row , 0)->text().toInt();
-    telaQuarto tela(nullptr, id);
+    telaQuarto tela(nullptr, id, m_id);
     tela.setModal(true);
     tela.exec();
 }
@@ -73,7 +97,7 @@ void telaCliente::on_tb_menu_cellDoubleClicked()
 
 void telaCliente::on_btn_reservas_clicked()
 {
-    telaReserva tela;
+    telaReserva tela(nullptr, m_id);
     tela.setModal(true);
     tela.exec();
 }
@@ -89,8 +113,6 @@ void telaCliente::on_btn_notificacoes_clicked()
 
 void telaCliente::on_btn_avaliacoes_clicked()
 {
-    telaAvaliacao tela;
-    tela.setModal(true);
-    tela.exec();
+
 }
 
