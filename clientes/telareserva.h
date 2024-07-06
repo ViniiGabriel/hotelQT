@@ -15,6 +15,9 @@ public:
     explicit telaReserva(QWidget *parent = nullptr, int id = 0);
     ~telaReserva();
 
+private slots:
+    void on_pushButton_clicked();
+
 private:
     Ui::telaReserva *ui;
     int m_id;

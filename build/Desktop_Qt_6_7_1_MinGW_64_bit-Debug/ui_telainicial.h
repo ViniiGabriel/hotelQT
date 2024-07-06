@@ -48,6 +48,10 @@ public:
 "	font-size: 16px;\n"
 "}\n"
 "\n"
+"QPushButton::hover{\n"
+"	background-color: #b9faf4;\n"
+"}\n"
+"\n"
 "\n"
 "QLabel{\n"
 "	color: #3d5557;\n"
@@ -79,7 +83,7 @@ public:
         telaInicial->setCentralWidget(centralwidget);
         menubar = new QMenuBar(telaInicial);
         menubar->setObjectName("menubar");
-        menubar->setGeometry(QRect(0, 0, 578, 22));
+        menubar->setGeometry(QRect(0, 0, 578, 26));
         telaInicial->setMenuBar(menubar);
         statusbar = new QStatusBar(telaInicial);
         statusbar->setObjectName("statusbar");

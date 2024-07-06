@@ -10,12 +10,11 @@
 #define UI_TELAFILTRAR_H
 
 #include <QtCore/QVariant>
-#include <QtWidgets/QAbstractButton>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QCheckBox>
 #include <QtWidgets/QDialog>
-#include <QtWidgets/QDialogButtonBox>
 #include <QtWidgets/QHBoxLayout>
+#include <QtWidgets/QPushButton>
 #include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
 
@@ -24,7 +23,6 @@ QT_BEGIN_NAMESPACE
 class Ui_telaFiltrar
 {
 public:
-    QDialogButtonBox *buttonBox;
     QWidget *layoutWidget;
     QVBoxLayout *verticalLayout;
     QHBoxLayout *horizontalLayout;
@@ -42,17 +40,13 @@ public:
     QHBoxLayout *horizontalLayout_4;
     QCheckBox *check_servico;
     QCheckBox *check_miniBar;
+    QPushButton *pushButton;
 
     void setupUi(QDialog *telaFiltrar)
     {
         if (telaFiltrar->objectName().isEmpty())
             telaFiltrar->setObjectName("telaFiltrar");
         telaFiltrar->resize(361, 184);
-        buttonBox = new QDialogButtonBox(telaFiltrar);
-        buttonBox->setObjectName("buttonBox");
-        buttonBox->setGeometry(QRect(170, 150, 181, 32));
-        buttonBox->setOrientation(Qt::Horizontal);
-        buttonBox->setStandardButtons(QDialogButtonBox::Cancel|QDialogButtonBox::Ok);
         layoutWidget = new QWidget(telaFiltrar);
         layoutWidget->setObjectName("layoutWidget");
         layoutWidget->setGeometry(QRect(10, 10, 343, 127));
@@ -134,10 +128,11 @@ public:
 
         verticalLayout->addLayout(horizontalLayout_4);
 
+        pushButton = new QPushButton(telaFiltrar);
+        pushButton->setObjectName("pushButton");
+        pushButton->setGeometry(QRect(260, 150, 93, 29));
 
         retranslateUi(telaFiltrar);
-        QObject::connect(buttonBox, &QDialogButtonBox::accepted, telaFiltrar, qOverload<>(&QDialog::accept));
-        QObject::connect(buttonBox, &QDialogButtonBox::rejected, telaFiltrar, qOverload<>(&QDialog::reject));
 
         QMetaObject::connectSlotsByName(telaFiltrar);
     } // setupUi
@@ -156,6 +151,7 @@ public:
         check_cafe->setText(QCoreApplication::translate("telaFiltrar", "Caf\303\251 da manh\303\243", nullptr));
         check_servico->setText(QCoreApplication::translate("telaFiltrar", "Servi\303\247o de quarto", nullptr));
         check_miniBar->setText(QCoreApplication::translate("telaFiltrar", "Mini bar", nullptr));
+        pushButton->setText(QCoreApplication::translate("telaFiltrar", "Voltar", nullptr));
     } // retranslateUi
 
 };

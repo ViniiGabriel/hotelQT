@@ -43,9 +43,29 @@ public:
         if (telaColaborador->objectName().isEmpty())
             telaColaborador->setObjectName("telaColaborador");
         telaColaborador->resize(649, 403);
+        telaColaborador->setStyleSheet(QString::fromUtf8("#telaColaborador{\n"
+"	background-color: #cffdff;\n"
+"}\n"
+"\n"
+"QPushButton{\n"
+"	background-color: #afdcde;\n"
+"	border-radius: 14px;\n"
+"	border: 2px solid #3d5557;\n"
+"	color: #3d5557;\n"
+"	font-size: 16px;\n"
+"}\n"
+"\n"
+"QPushButton::hover{\n"
+"	background-color: #b9faf4;\n"
+"}\n"
+"\n"
+"QLabel{\n"
+"	color: #3d5557;\n"
+"}\n"
+""));
         layoutWidget = new QWidget(telaColaborador);
         layoutWidget->setObjectName("layoutWidget");
-        layoutWidget->setGeometry(QRect(40, 20, 561, 35));
+        layoutWidget->setGeometry(QRect(20, 20, 561, 35));
         horizontalLayout = new QHBoxLayout(layoutWidget);
         horizontalLayout->setObjectName("horizontalLayout");
         horizontalLayout->setContentsMargins(0, 0, 0, 0);

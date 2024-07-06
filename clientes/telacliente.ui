@@ -13,6 +13,33 @@
   <property name="windowTitle">
    <string>Tela Inicial</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">QDialog{
+	background-color: #cffdff;
+}
+
+QPushButton{
+	background-color: #afdcde;
+	border-radius: 14px;
+	border: 2px solid #3d5557;
+	color: #3d5557;
+	font-size: 16px;
+}
+
+QPushButton::hover{
+	background-color: #b9faf4;
+}
+
+QLabel{
+	color: #3d5557;
+}
+
+QTableWidget {
+	background-color: #ebfffd;
+	border: 1px solid #3d5557;
+}
+</string>
+  </property>
   <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
@@ -143,7 +170,7 @@
     <string>Pedir serviço de limpeza</string>
    </property>
   </widget>
-  <widget class="QWidget" name="">
+  <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
      <x>30</x>

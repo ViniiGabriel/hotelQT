@@ -42,7 +42,7 @@ void telaQuarto::on_btn_reserva_clicked()
     QString dFinal = ui->txt_diaFinal->text();
     QString mFinal = ui->txt_mesFinal->text();
     QString yFinal = ui->txt_anoFinal->text();
-
+    if(!dInicial.isEmpty() && !mInicial.isEmpty() && !yInicial.isEmpty() && !dFinal.isEmpty() && !mFinal.isEmpty() && !yFinal.isEmpty()){
     Reservas reserva(m_id, dInicial.toInt(), mInicial.toInt(), yInicial.toInt(), dFinal.toInt(), mFinal.toInt(), yFinal.toInt());
     qDebug() << reserva.verifConflito();
 
@@ -68,6 +68,12 @@ void telaQuarto::on_btn_reserva_clicked()
         if(query.exec()){
             QMessageBox::information(this,"Sucesso","Reservado com sucesso!");
             ui->txt_avisoData->setVisible(false);
+            ui->txt_diaInicial->clear();
+            ui->txt_mesInicial->clear();
+            ui->txt_anoInicial->clear();
+            ui->txt_diaFinal->clear();
+            ui->txt_mesFinal->clear();
+            ui->txt_anoFinal->clear();
         } else {
             QMessageBox::warning(this,"Falha","Falha ao inserir no banco de dados");
             qDebug() << query.lastError().text();
@@ -76,6 +82,16 @@ void telaQuarto::on_btn_reserva_clicked()
         } else {
             QMessageBox::warning(this,"Falha","Falha no pagamento");
         }
+
     }
+    } else {
+        QMessageBox::warning(this,"Erro","Preencha todos os campos.");
+    }
+}
+
+
+void telaQuarto::on_btn_voltar_clicked()
+{
+    this->close();
 }
 

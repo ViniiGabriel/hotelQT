@@ -20,6 +20,8 @@ private slots:
 
     void on_btn_reserva_clicked();
 
+    void on_btn_voltar_clicked();
+
 private:
     Ui::telaQuarto *ui;
     int m_id;

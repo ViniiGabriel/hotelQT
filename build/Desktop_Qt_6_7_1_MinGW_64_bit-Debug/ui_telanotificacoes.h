@@ -10,12 +10,11 @@
 #define UI_TELANOTIFICACOES_H
 
 #include <QtCore/QVariant>
-#include <QtWidgets/QAbstractButton>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QDialog>
-#include <QtWidgets/QDialogButtonBox>
 #include <QtWidgets/QHeaderView>
 #include <QtWidgets/QLabel>
+#include <QtWidgets/QPushButton>
 #include <QtWidgets/QTableWidget>
 
 QT_BEGIN_NAMESPACE
@@ -23,20 +22,46 @@ QT_BEGIN_NAMESPACE
 class Ui_telaNotificacoes
 {
 public:
-    QDialogButtonBox *buttonBox;
     QTableWidget *tb_notificacoes;
     QLabel *label;
+    QPushButton *btn_voltar;
 
     void setupUi(QDialog *telaNotificacoes)
     {
         if (telaNotificacoes->objectName().isEmpty())
             telaNotificacoes->setObjectName("telaNotificacoes");
         telaNotificacoes->resize(653, 348);
-        buttonBox = new QDialogButtonBox(telaNotificacoes);
-        buttonBox->setObjectName("buttonBox");
-        buttonBox->setGeometry(QRect(300, 310, 341, 32));
-        buttonBox->setOrientation(Qt::Horizontal);
-        buttonBox->setStandardButtons(QDialogButtonBox::Cancel|QDialogButtonBox::Ok);
+        telaNotificacoes->setStyleSheet(QString::fromUtf8("QDialog{\n"
+"	background-color: #cffdff;\n"
+"}\n"
+"\n"
+"QPushButton{\n"
+"	background-color: #afdcde;\n"
+"	border-radius: 14px;\n"
+"	border: 2px solid #3d5557;\n"
+"	color: #3d5557;\n"
+"	font-size: 16px;\n"
+"}\n"
+"\n"
+"QPushButton::hover{\n"
+"	background-color: #b9faf4;\n"
+"}\n"
+"\n"
+"\n"
+"QLabel{\n"
+"	color: #3d5557;\n"
+"	font-weight:bold;\n"
+"}\n"
+"\n"
+"QTableWidget {\n"
+"	background-color: #ebfffd;\n"
+"	border: 1px solid #3d5557;\n"
+"}\n"
+"\n"
+"QHeaderView::section{\n"
+"	background-color: #9db3b1;\n"
+"	font-weight: bold;\n"
+"}"));
         tb_notificacoes = new QTableWidget(telaNotificacoes);
         tb_notificacoes->setObjectName("tb_notificacoes");
         tb_notificacoes->setGeometry(QRect(10, 50, 631, 251));
@@ -45,11 +70,13 @@ public:
         label->setGeometry(QRect(10, 0, 281, 41));
         QFont font;
         font.setPointSize(26);
+        font.setBold(true);
         label->setFont(font);
+        btn_voltar = new QPushButton(telaNotificacoes);
+        btn_voltar->setObjectName("btn_voltar");
+        btn_voltar->setGeometry(QRect(522, 310, 121, 29));
 
         retranslateUi(telaNotificacoes);
-        QObject::connect(buttonBox, &QDialogButtonBox::accepted, telaNotificacoes, qOverload<>(&QDialog::accept));
-        QObject::connect(buttonBox, &QDialogButtonBox::rejected, telaNotificacoes, qOverload<>(&QDialog::reject));
 
         QMetaObject::connectSlotsByName(telaNotificacoes);
     } // setupUi
@@ -58,6 +85,7 @@ public:
     {
         telaNotificacoes->setWindowTitle(QCoreApplication::translate("telaNotificacoes", "Notifica\303\247\303\265es", nullptr));
         label->setText(QCoreApplication::translate("telaNotificacoes", "Notifica\303\247\303\265es", nullptr));
+        btn_voltar->setText(QCoreApplication::translate("telaNotificacoes", "Voltar", nullptr));
     } // retranslateUi
 
 };

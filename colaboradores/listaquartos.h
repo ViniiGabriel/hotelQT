@@ -25,6 +25,8 @@ private slots:
 
     void on_btn_aplicarfiltros_clicked();
 
+    void on_pushButton_clicked();
+
 private:
     QSqlQuery query;
     Ui::listaQuartos *ui;

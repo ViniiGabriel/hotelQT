@@ -10,12 +10,11 @@
 #define UI_TELARESERVA_H
 
 #include <QtCore/QVariant>
-#include <QtWidgets/QAbstractButton>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QDialog>
-#include <QtWidgets/QDialogButtonBox>
 #include <QtWidgets/QHeaderView>
 #include <QtWidgets/QLabel>
+#include <QtWidgets/QPushButton>
 #include <QtWidgets/QTableWidget>
 
 QT_BEGIN_NAMESPACE
@@ -23,20 +22,46 @@ QT_BEGIN_NAMESPACE
 class Ui_telaReserva
 {
 public:
-    QDialogButtonBox *buttonBox;
     QTableWidget *tb_reservas;
     QLabel *label;
+    QPushButton *pushButton;
 
     void setupUi(QDialog *telaReserva)
     {
         if (telaReserva->objectName().isEmpty())
             telaReserva->setObjectName("telaReserva");
         telaReserva->resize(676, 461);
-        buttonBox = new QDialogButtonBox(telaReserva);
-        buttonBox->setObjectName("buttonBox");
-        buttonBox->setGeometry(QRect(320, 420, 341, 32));
-        buttonBox->setOrientation(Qt::Horizontal);
-        buttonBox->setStandardButtons(QDialogButtonBox::Cancel|QDialogButtonBox::Ok);
+        telaReserva->setStyleSheet(QString::fromUtf8("QDialog{\n"
+"	background-color: #cffdff;\n"
+"}\n"
+"\n"
+"QPushButton{\n"
+"	background-color: #afdcde;\n"
+"	border-radius: 14px;\n"
+"	border: 2px solid #3d5557;\n"
+"	color: #3d5557;\n"
+"	font-size: 16px;\n"
+"}\n"
+"\n"
+"QPushButton::hover{\n"
+"	background-color: #b9faf4;\n"
+"}\n"
+"\n"
+"\n"
+"QLabel{\n"
+"	color: #3d5557;\n"
+"	font-weight:bold;\n"
+"}\n"
+"\n"
+"QTableWidget {\n"
+"	background-color: #ebfffd;\n"
+"	border: 1px solid #3d5557;\n"
+"}\n"
+"\n"
+"QHeaderView::section{\n"
+"	background-color: #9db3b1;\n"
+"	font-weight: bold;\n"
+"}"));
         tb_reservas = new QTableWidget(telaReserva);
         tb_reservas->setObjectName("tb_reservas");
         tb_reservas->setGeometry(QRect(10, 50, 651, 361));
@@ -45,11 +70,13 @@ public:
         label->setGeometry(QRect(10, 0, 281, 41));
         QFont font;
         font.setPointSize(26);
+        font.setBold(true);
         label->setFont(font);
+        pushButton = new QPushButton(telaReserva);
+        pushButton->setObjectName("pushButton");
+        pushButton->setGeometry(QRect(532, 420, 131, 29));
 
         retranslateUi(telaReserva);
-        QObject::connect(buttonBox, &QDialogButtonBox::accepted, telaReserva, qOverload<>(&QDialog::accept));
-        QObject::connect(buttonBox, &QDialogButtonBox::rejected, telaReserva, qOverload<>(&QDialog::reject));
 
         QMetaObject::connectSlotsByName(telaReserva);
     } // setupUi
@@ -58,6 +85,7 @@ public:
     {
         telaReserva->setWindowTitle(QCoreApplication::translate("telaReserva", "Reservas", nullptr));
         label->setText(QCoreApplication::translate("telaReserva", "Lista de Reservas", nullptr));
+        pushButton->setText(QCoreApplication::translate("telaReserva", "Voltar", nullptr));
     } // retranslateUi
 
 };

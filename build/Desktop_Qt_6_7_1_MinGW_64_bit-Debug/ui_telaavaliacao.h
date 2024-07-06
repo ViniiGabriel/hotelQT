@@ -43,11 +43,38 @@ public:
         if (telaAvaliacao->objectName().isEmpty())
             telaAvaliacao->setObjectName("telaAvaliacao");
         telaAvaliacao->resize(381, 206);
+        telaAvaliacao->setStyleSheet(QString::fromUtf8("QDialog{\n"
+"	background-color: #cffdff;\n"
+"}\n"
+"\n"
+"QPushButton{\n"
+"	background-color: #afdcde;\n"
+"	border-radius: 14px;\n"
+"	border: 2px solid #3d5557;\n"
+"	color: #3d5557;\n"
+"	font-size: 16px;\n"
+"}\n"
+"\n"
+"QPushButton::hover{\n"
+"	background-color: #b9faf4;\n"
+"}\n"
+"\n"
+"QLabel{\n"
+"	color: #3d5557;\n"
+"	font-weight:bold;\n"
+"}\n"
+"\n"
+"QLineEdit {\n"
+"	border-radius: 4px;\n"
+"	border: 1px solid #3d5557\n"
+"}\n"
+""));
         label_2 = new QLabel(telaAvaliacao);
         label_2->setObjectName("label_2");
         label_2->setGeometry(QRect(80, 20, 231, 51));
         QFont font;
         font.setPointSize(21);
+        font.setBold(true);
         label_2->setFont(font);
         btn_enviar = new QPushButton(telaAvaliacao);
         btn_enviar->setObjectName("btn_enviar");

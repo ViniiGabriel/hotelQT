@@ -13,22 +13,47 @@
   <property name="windowTitle">
    <string>Quarto</string>
   </property>
-  <widget class="QDialogButtonBox" name="buttonBox">
-   <property name="geometry">
-    <rect>
-     <x>130</x>
-     <y>340</y>
-     <width>341</width>
-     <height>32</height>
-    </rect>
-   </property>
-   <property name="orientation">
-    <enum>Qt::Horizontal</enum>
-   </property>
-   <property name="standardButtons">
-    <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
-   </property>
-  </widget>
+  <property name="styleSheet">
+   <string notr="true">QDialog{
+	background-color: #cffdff;
+}
+
+QPushButton, QToolButton{
+	background-color: #afdcde;
+	border-radius: 14px;
+	border: 2px solid #3d5557;
+	color: #3d5557;
+	font-size: 16px;
+}
+
+QPushButton::hover, QToolButton::hover{
+	background-color: #b9faf4;
+}
+
+QLineEdit, QTextEdit {
+	border-radius: 4px;
+	border: 1px solid #3d5557
+}
+
+QLabel{
+	color: #3d5557;
+	font-weight: bold;
+}
+
+
+#txt_decricao{
+	color: #3d5557;
+	font-weight: normal;
+}
+
+QComboBox {
+	background-color: #afdcde;
+	border-radius: 14px;
+	border: 2px solid #3d5557;
+	color: #3d5557;
+}
+</string>
+  </property>
   <widget class="QLabel" name="foto_pixmap">
    <property name="geometry">
     <rect>
@@ -37,6 +62,9 @@
      <width>141</width>
      <height>141</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
    </property>
    <property name="text">
     <string>foto</string>
@@ -63,6 +91,12 @@
         <verstretch>0</verstretch>
        </sizepolicy>
       </property>
+      <property name="font">
+       <font>
+        <pointsize>17</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
       <property name="text">
        <string>Tipo quarto</string>
       </property>
@@ -75,6 +109,11 @@
         <horstretch>0</horstretch>
         <verstretch>0</verstretch>
        </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <bold>false</bold>
+       </font>
       </property>
       <property name="text">
        <string>TextLabel</string>
@@ -177,10 +216,10 @@
   <widget class="QLabel" name="label_4">
    <property name="geometry">
     <rect>
-     <x>230</x>
+     <x>225</x>
      <y>270</y>
-     <width>16</width>
-     <height>16</height>
+     <width>21</width>
+     <height>20</height>
     </rect>
    </property>
    <property name="text">
@@ -213,40 +252,20 @@
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
+  <widget class="QPushButton" name="btn_voltar">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>370</y>
+     <width>93</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Voltar</string>
+   </property>
+  </widget>
  </widget>
  <resources/>
- <connections>
-  <connection>
-   <sender>buttonBox</sender>
-   <signal>accepted()</signal>
-   <receiver>telaQuarto</receiver>
-   <slot>accept()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>248</x>
-     <y>254</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>157</x>
-     <y>274</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>buttonBox</sender>
-   <signal>rejected()</signal>
-   <receiver>telaQuarto</receiver>
-   <slot>reject()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>316</x>
-     <y>260</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>286</x>
-     <y>274</y>
-    </hint>
-   </hints>
-  </connection>
- </connections>
+ <connections/>
 </ui>

@@ -10,10 +10,8 @@
 #define UI_TELAQUARTO_H
 
 #include <QtCore/QVariant>
-#include <QtWidgets/QAbstractButton>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QDialog>
-#include <QtWidgets/QDialogButtonBox>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QLineEdit>
 #include <QtWidgets/QPushButton>
@@ -25,7 +23,6 @@ QT_BEGIN_NAMESPACE
 class Ui_telaQuarto
 {
 public:
-    QDialogButtonBox *buttonBox;
     QLabel *foto_pixmap;
     QWidget *layoutWidget;
     QVBoxLayout *verticalLayout;
@@ -41,20 +38,56 @@ public:
     QLabel *label_4;
     QLineEdit *txt_diaInicial;
     QLabel *txt_avisoData;
+    QPushButton *btn_voltar;
 
     void setupUi(QDialog *telaQuarto)
     {
         if (telaQuarto->objectName().isEmpty())
             telaQuarto->setObjectName("telaQuarto");
         telaQuarto->resize(488, 410);
-        buttonBox = new QDialogButtonBox(telaQuarto);
-        buttonBox->setObjectName("buttonBox");
-        buttonBox->setGeometry(QRect(130, 340, 341, 32));
-        buttonBox->setOrientation(Qt::Horizontal);
-        buttonBox->setStandardButtons(QDialogButtonBox::Cancel|QDialogButtonBox::Ok);
+        telaQuarto->setStyleSheet(QString::fromUtf8("QDialog{\n"
+"	background-color: #cffdff;\n"
+"}\n"
+"\n"
+"QPushButton, QToolButton{\n"
+"	background-color: #afdcde;\n"
+"	border-radius: 14px;\n"
+"	border: 2px solid #3d5557;\n"
+"	color: #3d5557;\n"
+"	font-size: 16px;\n"
+"}\n"
+"\n"
+"QPushButton::hover, QToolButton::hover{\n"
+"	background-color: #b9faf4;\n"
+"}\n"
+"\n"
+"QLineEdit, QTextEdit {\n"
+"	border-radius: 4px;\n"
+"	border: 1px solid #3d5557\n"
+"}\n"
+"\n"
+"QLabel{\n"
+"	color: #3d5557;\n"
+"	font-weight: bold;\n"
+"}\n"
+"\n"
+"\n"
+"#txt_decricao{\n"
+"	color: #3d5557;\n"
+"	font-weight: normal;\n"
+"}\n"
+"\n"
+"QComboBox {\n"
+"	background-color: #afdcde;\n"
+"	border-radius: 14px;\n"
+"	border: 2px solid #3d5557;\n"
+"	color: #3d5557;\n"
+"}\n"
+""));
         foto_pixmap = new QLabel(telaQuarto);
         foto_pixmap->setObjectName("foto_pixmap");
         foto_pixmap->setGeometry(QRect(10, 20, 141, 141));
+        foto_pixmap->setStyleSheet(QString::fromUtf8(""));
         foto_pixmap->setScaledContents(true);
         layoutWidget = new QWidget(telaQuarto);
         layoutWidget->setObjectName("layoutWidget");
@@ -69,6 +102,10 @@ public:
         sizePolicy.setVerticalStretch(0);
         sizePolicy.setHeightForWidth(txt_titulo->sizePolicy().hasHeightForWidth());
         txt_titulo->setSizePolicy(sizePolicy);
+        QFont font;
+        font.setPointSize(17);
+        font.setBold(true);
+        txt_titulo->setFont(font);
 
         verticalLayout->addWidget(txt_titulo);
 
@@ -79,6 +116,9 @@ public:
         sizePolicy1.setVerticalStretch(0);
         sizePolicy1.setHeightForWidth(txt_decricao->sizePolicy().hasHeightForWidth());
         txt_decricao->setSizePolicy(sizePolicy1);
+        QFont font1;
+        font1.setBold(false);
+        txt_decricao->setFont(font1);
         txt_decricao->setAlignment(Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop);
 
         verticalLayout->addWidget(txt_decricao);
@@ -113,7 +153,7 @@ public:
         label_3->setGeometry(QRect(12, 272, 81, 16));
         label_4 = new QLabel(telaQuarto);
         label_4->setObjectName("label_4");
-        label_4->setGeometry(QRect(230, 270, 16, 16));
+        label_4->setGeometry(QRect(225, 270, 21, 20));
         txt_diaInicial = new QLineEdit(telaQuarto);
         txt_diaInicial->setObjectName("txt_diaInicial");
         txt_diaInicial->setGeometry(QRect(100, 270, 31, 21));
@@ -121,10 +161,11 @@ public:
         txt_avisoData->setObjectName("txt_avisoData");
         txt_avisoData->setGeometry(QRect(130, 310, 211, 16));
         txt_avisoData->setAlignment(Qt::AlignCenter);
+        btn_voltar = new QPushButton(telaQuarto);
+        btn_voltar->setObjectName("btn_voltar");
+        btn_voltar->setGeometry(QRect(380, 370, 93, 29));
 
         retranslateUi(telaQuarto);
-        QObject::connect(buttonBox, &QDialogButtonBox::accepted, telaQuarto, qOverload<>(&QDialog::accept));
-        QObject::connect(buttonBox, &QDialogButtonBox::rejected, telaQuarto, qOverload<>(&QDialog::reject));
 
         QMetaObject::connectSlotsByName(telaQuarto);
     } // setupUi
@@ -139,6 +180,7 @@ public:
         label_3->setText(QCoreApplication::translate("telaQuarto", "Dias de estadia:", nullptr));
         label_4->setText(QCoreApplication::translate("telaQuarto", "at\303\251", nullptr));
         txt_avisoData->setText(QCoreApplication::translate("telaQuarto", "TextLabel", nullptr));
+        btn_voltar->setText(QCoreApplication::translate("telaQuarto", "Voltar", nullptr));
     } // retranslateUi
 
 };

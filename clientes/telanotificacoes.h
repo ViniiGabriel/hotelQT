@@ -15,6 +15,9 @@ public:
     explicit telaNotificacoes(QWidget *parent = nullptr, int = 0);
     ~telaNotificacoes();
 
+private slots:
+    void on_btn_voltar_clicked();
+
 private:
     Ui::telaNotificacoes *ui;
     int m_id;

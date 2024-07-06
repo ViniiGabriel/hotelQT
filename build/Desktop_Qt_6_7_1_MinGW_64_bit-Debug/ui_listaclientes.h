@@ -37,11 +37,43 @@ public:
         if (listaClientes->objectName().isEmpty())
             listaClientes->setObjectName("listaClientes");
         listaClientes->resize(662, 530);
+        listaClientes->setStyleSheet(QString::fromUtf8("QDialog{\n"
+"	background-color: #cffdff;\n"
+"}\n"
+"\n"
+"QPushButton{\n"
+"	background-color: #afdcde;\n"
+"	border-radius: 14px;\n"
+"	border: 2px solid #3d5557;\n"
+"	color: #3d5557;\n"
+"	font-size: 16px;\n"
+"}\n"
+"\n"
+"QPushButton::hover{\n"
+"	background-color: #b9faf4;\n"
+"}\n"
+"\n"
+"\n"
+"QLabel{\n"
+"	color: #3d5557;\n"
+"	font-weight:bold;\n"
+"}\n"
+"\n"
+"QTableWidget {\n"
+"	background-color: #ebfffd;\n"
+"	border: 1px solid #3d5557;\n"
+"}\n"
+"\n"
+"QHeaderView::section{\n"
+"	background-color: #9db3b1;\n"
+"	font-weight: bold;\n"
+"}"));
         label = new QLabel(listaClientes);
         label->setObjectName("label");
         label->setGeometry(QRect(10, 0, 281, 41));
         QFont font;
         font.setPointSize(26);
+        font.setBold(true);
         label->setFont(font);
         layoutWidget = new QWidget(listaClientes);
         layoutWidget->setObjectName("layoutWidget");

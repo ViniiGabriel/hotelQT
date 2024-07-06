@@ -48,6 +48,32 @@ public:
         if (cadastroCliente->objectName().isEmpty())
             cadastroCliente->setObjectName("cadastroCliente");
         cadastroCliente->resize(428, 261);
+        cadastroCliente->setStyleSheet(QString::fromUtf8("QDialog{\n"
+"	background-color: #cffdff;\n"
+"}\n"
+"\n"
+"QPushButton{\n"
+"	background-color: #afdcde;\n"
+"	border-radius: 14px;\n"
+"	border: 2px solid #3d5557;\n"
+"	color: #3d5557;\n"
+"	font-size: 16px;\n"
+"}\n"
+"\n"
+"QPushButton::hover{\n"
+"	background-color: #b9faf4;\n"
+"}\n"
+"\n"
+"QLabel{\n"
+"	color: #3d5557;\n"
+"	font-weight: bold;\n"
+"}\n"
+"\n"
+"QLineEdit {\n"
+"	border-radius: 4px;\n"
+"	border: 1px solid #3d5557\n"
+"}\n"
+""));
         btn_cadastrar = new QPushButton(cadastroCliente);
         btn_cadastrar->setObjectName("btn_cadastrar");
         btn_cadastrar->setGeometry(QRect(140, 200, 151, 41));

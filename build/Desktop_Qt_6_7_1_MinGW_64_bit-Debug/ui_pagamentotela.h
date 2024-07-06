@@ -47,6 +47,32 @@ public:
         if (pagamentoTela->objectName().isEmpty())
             pagamentoTela->setObjectName("pagamentoTela");
         pagamentoTela->resize(540, 273);
+        pagamentoTela->setStyleSheet(QString::fromUtf8("QDialog{\n"
+"	background-color: #cffdff;\n"
+"}\n"
+"\n"
+"QPushButton{\n"
+"	background-color: #afdcde;\n"
+"	border-radius: 14px;\n"
+"	border: 2px solid #3d5557;\n"
+"	color: #3d5557;\n"
+"	font-size: 16px;\n"
+"}\n"
+"\n"
+"QPushButton::hover{\n"
+"	background-color: #b9faf4;\n"
+"}\n"
+"\n"
+"QLabel{\n"
+"	color: #3d5557;\n"
+"	font-weight: bold;\n"
+"}\n"
+"\n"
+"QLineEdit {\n"
+"	border-radius: 4px;\n"
+"	border: 1px solid #3d5557\n"
+"}\n"
+""));
         label = new QLabel(pagamentoTela);
         label->setObjectName("label");
         label->setGeometry(QRect(60, 20, 431, 41));

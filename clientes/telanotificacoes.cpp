@@ -41,3 +41,9 @@ telaNotificacoes::~telaNotificacoes()
 {
     delete ui;
 }
+
+void telaNotificacoes::on_btn_voltar_clicked()
+{
+    this->close();
+}
+

@@ -18,6 +18,17 @@ cadastroQuartos::cadastroQuartos(QWidget *parent)
     , ui(new Ui::cadastroQuartos)
 {
     ui->setupUi(this);
+    ui->check_wifi->setEnabled(true);
+    ui->check_ar->setEnabled(false);
+    ui->check_tv->setEnabled(true);
+    ui->check_sacada->setEnabled(false);
+    ui->check_cofre->setEnabled(false);
+    ui->check_banheira->setEnabled(false);
+    ui->check_cafe->setEnabled(false);
+    ui->check_roupao->setEnabled(false);
+    ui->check_higiene->setEnabled(false);
+    ui->check_servico->setEnabled(false);
+    ui->check_miniBar->setEnabled(false);
 }
 
 cadastroQuartos::~cadastroQuartos()
@@ -152,6 +163,62 @@ void cadastroQuartos::on_btn_imagen_clicked()
         qDebug() << "Imagem copiada para:" << destinationPath;
     } else {
         qDebug() << "Falha ao copiar a imagem.";
+    }
+}
+
+
+void cadastroQuartos::on_boxTipoQuarto_currentTextChanged()
+{
+    if(ui->boxTipoQuarto->currentText() == "Simples"){
+        ui->check_wifi->setEnabled(true);
+        ui->check_ar->setEnabled(false);
+        ui->check_tv->setEnabled(true);
+        ui->check_sacada->setEnabled(false);
+        ui->check_cofre->setEnabled(false);
+        ui->check_banheira->setEnabled(false);
+        ui->check_cafe->setEnabled(false);
+        ui->check_roupao->setEnabled(false);
+        ui->check_higiene->setEnabled(false);
+        ui->check_servico->setEnabled(false);
+        ui->check_miniBar->setEnabled(false);
+    } else  if(ui->boxTipoQuarto->currentText() == "Comfort"){
+        ui->check_wifi->setEnabled(true);
+        ui->check_ar->setEnabled(true);
+        ui->check_tv->setEnabled(true);
+        ui->check_sacada->setEnabled(true);
+        ui->check_cofre->setEnabled(false);
+        ui->check_banheira->setEnabled(true);
+        ui->check_cafe->setEnabled(false);
+        ui->check_roupao->setEnabled(true);
+        ui->check_higiene->setEnabled(true);
+        ui->check_servico->setEnabled(false);
+        ui->check_miniBar->setEnabled(false);
+
+    } else  if(ui->boxTipoQuarto->currentText() == "Suíte"){
+        ui->check_wifi->setEnabled(true);
+        ui->check_ar->setEnabled(true);
+        ui->check_tv->setEnabled(true);
+        ui->check_sacada->setEnabled(true);
+        ui->check_cofre->setEnabled(false);
+        ui->check_banheira->setEnabled(true);
+        ui->check_cafe->setEnabled(true);
+        ui->check_roupao->setEnabled(true);
+        ui->check_higiene->setEnabled(true);
+        ui->check_servico->setEnabled(false);
+        ui->check_miniBar->setEnabled(false);
+
+    } else if(ui->boxTipoQuarto->currentText() == "Master"){
+        ui->check_wifi->setEnabled(true);
+        ui->check_ar->setEnabled(true);
+        ui->check_tv->setEnabled(true);
+        ui->check_sacada->setEnabled(true);
+        ui->check_cofre->setEnabled(true);
+        ui->check_banheira->setEnabled(true);
+        ui->check_cafe->setEnabled(true);
+        ui->check_roupao->setEnabled(true);
+        ui->check_higiene->setEnabled(true);
+        ui->check_servico->setEnabled(true);
+        ui->check_miniBar->setEnabled(true);
     }
 }
 

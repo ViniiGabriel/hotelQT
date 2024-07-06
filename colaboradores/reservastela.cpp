@@ -140,3 +140,9 @@ void reservasTela::on_btn_checkout_clicked()
     query.exec();
 }
 
+
+void reservasTela::on_btn_voltar_clicked()
+{
+    this->close();
+}
+

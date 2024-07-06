@@ -64,12 +64,56 @@ public:
     QHBoxLayout *horizontalLayout_2;
     QPushButton *btn_salvar;
     QPushButton *btn_cancelar;
+    QLabel *label_6;
 
     void setupUi(QDialog *cadastroQuartos)
     {
         if (cadastroQuartos->objectName().isEmpty())
             cadastroQuartos->setObjectName("cadastroQuartos");
-        cadastroQuartos->resize(635, 458);
+        cadastroQuartos->resize(679, 465);
+        cadastroQuartos->setStyleSheet(QString::fromUtf8("#cadastroQuartos{\n"
+"	background-color: #cffdff;\n"
+"}\n"
+"\n"
+"QPushButton, QToolButton{\n"
+"	background-color: #afdcde;\n"
+"	border-radius: 14px;\n"
+"	border: 2px solid #3d5557;\n"
+"	color: #3d5557;\n"
+"	font-size: 16px;\n"
+"}\n"
+"\n"
+"QPushButton::hover, QToolButton::hover{\n"
+"	background-color: #b9faf4;\n"
+"}\n"
+"\n"
+"QCheckBox{\n"
+"	color: #3d5557;\n"
+"	font-weight: bold;\n"
+"}\n"
+"\n"
+"QCheckBox:disabled{\n"
+"	color: #78acb0;\n"
+"	font-weight: normal;\n"
+"}\n"
+"\n"
+"QLineEdit, QTextEdit {\n"
+"	border-radius: 4px;\n"
+"	border: 1px solid #3d5557\n"
+"}\n"
+"\n"
+"QLabel{\n"
+"	color: #3d5557;\n"
+"	font-weight: bold;\n"
+"}\n"
+"\n"
+"QComboBox {\n"
+"	background-color: #afdcde;\n"
+"	border-radius: 14px;\n"
+"	border: 2px solid #3d5557;\n"
+"	color: #3d5557;\n"
+"}\n"
+""));
         layoutWidget = new QWidget(cadastroQuartos);
         layoutWidget->setObjectName("layoutWidget");
         layoutWidget->setGeometry(QRect(20, 310, 234, 28));
@@ -88,7 +132,7 @@ public:
 
         layoutWidget1 = new QWidget(cadastroQuartos);
         layoutWidget1->setObjectName("layoutWidget1");
-        layoutWidget1->setGeometry(QRect(23, 47, 581, 248));
+        layoutWidget1->setGeometry(QRect(23, 47, 641, 248));
         verticalLayout_2 = new QVBoxLayout(layoutWidget1);
         verticalLayout_2->setObjectName("verticalLayout_2");
         verticalLayout_2->setContentsMargins(0, 0, 0, 0);
@@ -124,7 +168,7 @@ public:
 
         layoutWidget2 = new QWidget(cadastroQuartos);
         layoutWidget2->setObjectName("layoutWidget2");
-        layoutWidget2->setGeometry(QRect(20, 340, 641, 90));
+        layoutWidget2->setGeometry(QRect(20, 340, 659, 90));
         verticalLayout_4 = new QVBoxLayout(layoutWidget2);
         verticalLayout_4->setObjectName("verticalLayout_4");
         verticalLayout_4->setContentsMargins(0, 0, 0, 0);
@@ -209,13 +253,13 @@ public:
         boxTipoQuarto->addItem(QString());
         boxTipoQuarto->addItem(QString());
         boxTipoQuarto->setObjectName("boxTipoQuarto");
-        boxTipoQuarto->setGeometry(QRect(110, 20, 111, 22));
+        boxTipoQuarto->setGeometry(QRect(140, 20, 111, 22));
         label = new QLabel(cadastroQuartos);
         label->setObjectName("label");
-        label->setGeometry(QRect(24, 21, 80, 16));
+        label->setGeometry(QRect(24, 21, 111, 16));
         btn_imagen = new QToolButton(cadastroQuartos);
         btn_imagen->setObjectName("btn_imagen");
-        btn_imagen->setGeometry(QRect(570, 20, 22, 22));
+        btn_imagen->setGeometry(QRect(621, 20, 41, 22));
         layoutWidget3 = new QWidget(cadastroQuartos);
         layoutWidget3->setObjectName("layoutWidget3");
         layoutWidget3->setGeometry(QRect(470, 430, 195, 31));
@@ -232,6 +276,9 @@ public:
 
         horizontalLayout_2->addWidget(btn_cancelar);
 
+        label_6 = new QLabel(cadastroQuartos);
+        label_6->setObjectName("label_6");
+        label_6->setGeometry(QRect(450, 20, 171, 20));
 
         retranslateUi(cadastroQuartos);
 
@@ -265,6 +312,7 @@ public:
         btn_imagen->setText(QCoreApplication::translate("cadastroQuartos", "...", nullptr));
         btn_salvar->setText(QCoreApplication::translate("cadastroQuartos", "Salvar", nullptr));
         btn_cancelar->setText(QCoreApplication::translate("cadastroQuartos", "Cancelar", nullptr));
+        label_6->setText(QCoreApplication::translate("cadastroQuartos", "Selecione uma imagem:", nullptr));
     } // retranslateUi
 
 };

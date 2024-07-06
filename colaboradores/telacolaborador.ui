@@ -13,10 +13,32 @@
   <property name="windowTitle">
    <string>Tela Inicial</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">#telaColaborador{
+	background-color: #cffdff;
+}
+
+QPushButton{
+	background-color: #afdcde;
+	border-radius: 14px;
+	border: 2px solid #3d5557;
+	color: #3d5557;
+	font-size: 16px;
+}
+
+QPushButton::hover{
+	background-color: #b9faf4;
+}
+
+QLabel{
+	color: #3d5557;
+}
+</string>
+  </property>
   <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
-     <x>40</x>
+     <x>20</x>
      <y>20</y>
      <width>561</width>
      <height>35</height>

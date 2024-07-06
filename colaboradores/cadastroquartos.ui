@@ -6,12 +6,57 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>635</width>
-    <height>458</height>
+    <width>679</width>
+    <height>465</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Cadastro de quartos</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#cadastroQuartos{
+	background-color: #cffdff;
+}
+
+QPushButton, QToolButton{
+	background-color: #afdcde;
+	border-radius: 14px;
+	border: 2px solid #3d5557;
+	color: #3d5557;
+	font-size: 16px;
+}
+
+QPushButton::hover, QToolButton::hover{
+	background-color: #b9faf4;
+}
+
+QCheckBox{
+	color: #3d5557;
+	font-weight: bold;
+}
+
+QCheckBox:disabled{
+	color: #78acb0;
+	font-weight: normal;
+}
+
+QLineEdit, QTextEdit {
+	border-radius: 4px;
+	border: 1px solid #3d5557
+}
+
+QLabel{
+	color: #3d5557;
+	font-weight: bold;
+}
+
+QComboBox {
+	background-color: #afdcde;
+	border-radius: 14px;
+	border: 2px solid #3d5557;
+	color: #3d5557;
+}
+</string>
   </property>
   <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
@@ -40,7 +85,7 @@
     <rect>
      <x>23</x>
      <y>47</y>
-     <width>581</width>
+     <width>641</width>
      <height>248</height>
     </rect>
    </property>
@@ -80,7 +125,7 @@
     <rect>
      <x>20</x>
      <y>340</y>
-     <width>641</width>
+     <width>659</width>
      <height>90</height>
     </rect>
    </property>
@@ -186,7 +231,7 @@
   <widget class="QComboBox" name="boxTipoQuarto">
    <property name="geometry">
     <rect>
-     <x>110</x>
+     <x>140</x>
      <y>20</y>
      <width>111</width>
      <height>22</height>
@@ -218,7 +263,7 @@
     <rect>
      <x>24</x>
      <y>21</y>
-     <width>80</width>
+     <width>111</width>
      <height>16</height>
     </rect>
    </property>
@@ -229,9 +274,9 @@
   <widget class="QToolButton" name="btn_imagen">
    <property name="geometry">
     <rect>
-     <x>570</x>
+     <x>621</x>
      <y>20</y>
-     <width>22</width>
+     <width>41</width>
      <height>22</height>
     </rect>
    </property>
@@ -264,6 +309,19 @@
      </widget>
     </item>
    </layout>
+  </widget>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>450</x>
+     <y>20</y>
+     <width>171</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Selecione uma imagem:</string>
+   </property>
   </widget>
  </widget>
  <resources/>

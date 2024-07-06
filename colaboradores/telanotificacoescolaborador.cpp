@@ -40,3 +40,9 @@ telaNotificacoesColaborador::~telaNotificacoesColaborador()
 {
     delete ui;
 }
+
+void telaNotificacoesColaborador::on_pushButton_clicked()
+{
+    this->close();
+}
+

@@ -22,6 +22,8 @@ private slots:
 
     void on_btn_imagen_clicked();
 
+    void on_boxTipoQuarto_currentTextChanged();
+
 private:
     Ui::cadastroQuartos *ui;
 };

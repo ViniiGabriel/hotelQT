@@ -16,6 +16,34 @@
   <property name="windowTitle">
    <string>Login</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">#telaLoginColaborador{
+	background-color: #cffdff;
+}
+
+QPushButton{
+	background-color: #afdcde;
+	border-radius: 14px;
+	border: 2px solid #3d5557;
+	color: #3d5557;
+	font-size: 16px;
+}
+
+QPushButton::hover{
+	background-color: #b9faf4;
+}
+
+QLabel{
+	color: #3d5557;
+	font-weight:bold;
+}
+
+QLineEdit {
+	border-radius: 4px;
+	border: 1px solid #3d5557
+}
+</string>
+  </property>
   <widget class="QLabel" name="label_infoinvalida">
    <property name="geometry">
     <rect>
@@ -85,6 +113,11 @@
         <horstretch>0</horstretch>
         <verstretch>0</verstretch>
        </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#btn_login{
+border-radius: 14px;
+}</string>
       </property>
       <property name="text">
        <string>Login</string>

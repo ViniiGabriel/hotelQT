@@ -15,6 +15,9 @@ public:
     explicit telaNotificacoesColaborador(QWidget *parent = nullptr);
     ~telaNotificacoesColaborador();
 
+private slots:
+    void on_pushButton_clicked();
+
 private:
     Ui::telaNotificacoesColaborador *ui;
 };

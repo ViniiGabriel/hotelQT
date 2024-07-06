@@ -27,8 +27,8 @@ listaQuartos::listaQuartos(QWidget *parent)
         }
         ui->tb_listaQuartos->setColumnWidth(0, 20);
         ui->tb_listaQuartos->setColumnWidth(1, 100);
-        ui->tb_listaQuartos->setColumnWidth(2, 100);
-        ui->tb_listaQuartos->setColumnWidth(3, 200);
+        ui->tb_listaQuartos->setColumnWidth(2, 105);
+        ui->tb_listaQuartos->setColumnWidth(3, 310);
         ui->tb_listaQuartos->setColumnWidth(4, 70);
 
         QStringList cabecalho = {"ID","Tipo do Quarto","Título do Quarto","Descrição","Valor"};
@@ -134,8 +134,8 @@ void listaQuartos::on_btn_aplicarfiltros_clicked()
             }
             ui->tb_listaQuartos->setColumnWidth(0, 20);
             ui->tb_listaQuartos->setColumnWidth(1, 100);
-            ui->tb_listaQuartos->setColumnWidth(2, 100);
-            ui->tb_listaQuartos->setColumnWidth(3, 200);
+            ui->tb_listaQuartos->setColumnWidth(2, 105);
+            ui->tb_listaQuartos->setColumnWidth(3, 310);
             ui->tb_listaQuartos->setColumnWidth(4, 70);
 
             QStringList cabecalho = {"ID", "Tipo do Quarto", "Título do Quarto", "Descrição", "Valor"};
@@ -167,8 +167,8 @@ void listaQuartos::on_btn_aplicarfiltros_clicked()
             }
             ui->tb_listaQuartos->setColumnWidth(0, 20);
             ui->tb_listaQuartos->setColumnWidth(1, 100);
-            ui->tb_listaQuartos->setColumnWidth(2, 100);
-            ui->tb_listaQuartos->setColumnWidth(3, 200);
+            ui->tb_listaQuartos->setColumnWidth(2, 105);
+            ui->tb_listaQuartos->setColumnWidth(3, 310);
             ui->tb_listaQuartos->setColumnWidth(4, 70);
 
             QStringList cabecalho = {"ID", "Tipo do Quarto", "Título do Quarto", "Descrição", "Valor"};
@@ -202,5 +202,11 @@ void listaQuartos::on_btn_excluir_clicked()
 void listaQuartos::on_btn_filtrar_clicked()
 {
     tela->show();
+}
+
+
+void listaQuartos::on_pushButton_clicked()
+{
+    this->close();
 }
 

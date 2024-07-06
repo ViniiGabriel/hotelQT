@@ -42,6 +42,32 @@ public:
             telaLoginColaborador->setObjectName("telaLoginColaborador");
         telaLoginColaborador->resize(494, 204);
         telaLoginColaborador->setAcceptDrops(false);
+        telaLoginColaborador->setStyleSheet(QString::fromUtf8("#telaLoginColaborador{\n"
+"	background-color: #cffdff;\n"
+"}\n"
+"\n"
+"QPushButton{\n"
+"	background-color: #afdcde;\n"
+"	border-radius: 14px;\n"
+"	border: 2px solid #3d5557;\n"
+"	color: #3d5557;\n"
+"	font-size: 16px;\n"
+"}\n"
+"\n"
+"QPushButton::hover{\n"
+"	background-color: #b9faf4;\n"
+"}\n"
+"\n"
+"QLabel{\n"
+"	color: #3d5557;\n"
+"	font-weight:bold;\n"
+"}\n"
+"\n"
+"QLineEdit {\n"
+"	border-radius: 4px;\n"
+"	border: 1px solid #3d5557\n"
+"}\n"
+""));
         label_infoinvalida = new QLabel(telaLoginColaborador);
         label_infoinvalida->setObjectName("label_infoinvalida");
         label_infoinvalida->setGeometry(QRect(150, 170, 201, 21));
@@ -95,6 +121,9 @@ public:
         sizePolicy.setVerticalStretch(0);
         sizePolicy.setHeightForWidth(btn_login->sizePolicy().hasHeightForWidth());
         btn_login->setSizePolicy(sizePolicy);
+        btn_login->setStyleSheet(QString::fromUtf8("#btn_login{\n"
+"border-radius: 14px;\n"
+"}"));
 
         verticalLayout_2->addWidget(btn_login);
 

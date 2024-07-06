@@ -84,3 +84,9 @@ telaReserva::~telaReserva()
 {
     delete ui;
 }
+
+void telaReserva::on_pushButton_clicked()
+{
+    this->close();
+}
+

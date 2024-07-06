@@ -36,7 +36,7 @@ public:
     QPushButton *btn_reservas;
     QPushButton *btn_notificacoes;
     QPushButton *btn_servico;
-    QWidget *widget;
+    QWidget *layoutWidget1;
     QHBoxLayout *horizontalLayout_2;
     QPushButton *btn_filtrar;
     QPushButton *btn_aplicarFiltros;
@@ -46,6 +46,31 @@ public:
         if (telaCliente->objectName().isEmpty())
             telaCliente->setObjectName("telaCliente");
         telaCliente->resize(804, 551);
+        telaCliente->setStyleSheet(QString::fromUtf8("QDialog{\n"
+"	background-color: #cffdff;\n"
+"}\n"
+"\n"
+"QPushButton{\n"
+"	background-color: #afdcde;\n"
+"	border-radius: 14px;\n"
+"	border: 2px solid #3d5557;\n"
+"	color: #3d5557;\n"
+"	font-size: 16px;\n"
+"}\n"
+"\n"
+"QPushButton::hover{\n"
+"	background-color: #b9faf4;\n"
+"}\n"
+"\n"
+"QLabel{\n"
+"	color: #3d5557;\n"
+"}\n"
+"\n"
+"QTableWidget {\n"
+"	background-color: #ebfffd;\n"
+"	border: 1px solid #3d5557;\n"
+"}\n"
+""));
         layoutWidget = new QWidget(telaCliente);
         layoutWidget->setObjectName("layoutWidget");
         layoutWidget->setGeometry(QRect(29, 28, 761, 35));
@@ -96,18 +121,18 @@ public:
         btn_servico = new QPushButton(telaCliente);
         btn_servico->setObjectName("btn_servico");
         btn_servico->setGeometry(QRect(600, 200, 191, 51));
-        widget = new QWidget(telaCliente);
-        widget->setObjectName("widget");
-        widget->setGeometry(QRect(30, 500, 202, 31));
-        horizontalLayout_2 = new QHBoxLayout(widget);
+        layoutWidget1 = new QWidget(telaCliente);
+        layoutWidget1->setObjectName("layoutWidget1");
+        layoutWidget1->setGeometry(QRect(30, 500, 202, 31));
+        horizontalLayout_2 = new QHBoxLayout(layoutWidget1);
         horizontalLayout_2->setObjectName("horizontalLayout_2");
         horizontalLayout_2->setContentsMargins(0, 0, 0, 0);
-        btn_filtrar = new QPushButton(widget);
+        btn_filtrar = new QPushButton(layoutWidget1);
         btn_filtrar->setObjectName("btn_filtrar");
 
         horizontalLayout_2->addWidget(btn_filtrar);
 
-        btn_aplicarFiltros = new QPushButton(widget);
+        btn_aplicarFiltros = new QPushButton(layoutWidget1);
         btn_aplicarFiltros->setObjectName("btn_aplicarFiltros");
 
         horizontalLayout_2->addWidget(btn_aplicarFiltros);

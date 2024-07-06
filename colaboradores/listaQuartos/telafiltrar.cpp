@@ -103,3 +103,9 @@ bool telaFiltrar::miniBarTrue()
     return false;
 }
 
+
+void telaFiltrar::on_pushButton_clicked()
+{
+    this->close();
+}
+
