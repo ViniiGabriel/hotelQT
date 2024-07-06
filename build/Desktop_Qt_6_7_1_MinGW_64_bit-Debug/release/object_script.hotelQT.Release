@@ -1,4 +1,5 @@
 release/cadastrocliente.o
+release/pagamentotela.o
 release/telaavaliacao.o
 release/telacliente.o
 release/telalogin.o
@@ -7,6 +8,7 @@ release/telaquarto.o
 release/telareserva.o
 release/cadastrocolaborador.o
 release/cadastroquartos.o
+release/editarcliente.o
 release/telafiltrar.o
 release/listaclientes.o
 release/listaquartos.o
@@ -17,6 +19,7 @@ release/telanotificacoescolaborador.o
 release/main.o
 release/telainicial.o
 release/moc_cadastrocliente.o
+release/moc_pagamentotela.o
 release/moc_telaavaliacao.o
 release/moc_telacliente.o
 release/moc_telalogin.o
@@ -25,6 +28,7 @@ release/moc_telaquarto.o
 release/moc_telareserva.o
 release/moc_cadastrocolaborador.o
 release/moc_cadastroquartos.o
+release/moc_editarcliente.o
 release/moc_telafiltrar.o
 release/moc_listaclientes.o
 release/moc_listaquartos.o

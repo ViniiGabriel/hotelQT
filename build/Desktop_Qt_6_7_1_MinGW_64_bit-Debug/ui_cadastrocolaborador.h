@@ -141,7 +141,7 @@ public:
 
     void retranslateUi(QDialog *cadastroColaborador)
     {
-        cadastroColaborador->setWindowTitle(QCoreApplication::translate("cadastroColaborador", "Dialog", nullptr));
+        cadastroColaborador->setWindowTitle(QCoreApplication::translate("cadastroColaborador", "Cadastro de Colaborador", nullptr));
         pushButton->setText(QCoreApplication::translate("cadastroColaborador", "Cadastrar", nullptr));
         label->setText(QCoreApplication::translate("cadastroColaborador", "Nome:", nullptr));
         label_3->setText(QCoreApplication::translate("cadastroColaborador", "Username:", nullptr));

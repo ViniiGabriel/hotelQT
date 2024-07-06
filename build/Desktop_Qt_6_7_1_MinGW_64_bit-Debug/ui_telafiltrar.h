@@ -25,7 +25,7 @@ class Ui_telaFiltrar
 {
 public:
     QDialogButtonBox *buttonBox;
-    QWidget *widget;
+    QWidget *layoutWidget;
     QVBoxLayout *verticalLayout;
     QHBoxLayout *horizontalLayout;
     QCheckBox *check_wifi;
@@ -47,36 +47,36 @@ public:
     {
         if (telaFiltrar->objectName().isEmpty())
             telaFiltrar->setObjectName("telaFiltrar");
-        telaFiltrar->resize(297, 158);
+        telaFiltrar->resize(361, 184);
         buttonBox = new QDialogButtonBox(telaFiltrar);
         buttonBox->setObjectName("buttonBox");
-        buttonBox->setGeometry(QRect(110, 120, 181, 32));
+        buttonBox->setGeometry(QRect(170, 150, 181, 32));
         buttonBox->setOrientation(Qt::Horizontal);
         buttonBox->setStandardButtons(QDialogButtonBox::Cancel|QDialogButtonBox::Ok);
-        widget = new QWidget(telaFiltrar);
-        widget->setObjectName("widget");
-        widget->setGeometry(QRect(10, 10, 280, 108));
-        verticalLayout = new QVBoxLayout(widget);
+        layoutWidget = new QWidget(telaFiltrar);
+        layoutWidget->setObjectName("layoutWidget");
+        layoutWidget->setGeometry(QRect(10, 10, 343, 127));
+        verticalLayout = new QVBoxLayout(layoutWidget);
         verticalLayout->setObjectName("verticalLayout");
         verticalLayout->setContentsMargins(0, 0, 0, 0);
         horizontalLayout = new QHBoxLayout();
         horizontalLayout->setObjectName("horizontalLayout");
-        check_wifi = new QCheckBox(widget);
+        check_wifi = new QCheckBox(layoutWidget);
         check_wifi->setObjectName("check_wifi");
 
         horizontalLayout->addWidget(check_wifi);
 
-        check_ar = new QCheckBox(widget);
+        check_ar = new QCheckBox(layoutWidget);
         check_ar->setObjectName("check_ar");
 
         horizontalLayout->addWidget(check_ar);
 
-        check_tv = new QCheckBox(widget);
+        check_tv = new QCheckBox(layoutWidget);
         check_tv->setObjectName("check_tv");
 
         horizontalLayout->addWidget(check_tv);
 
-        check_sacada = new QCheckBox(widget);
+        check_sacada = new QCheckBox(layoutWidget);
         check_sacada->setObjectName("check_sacada");
 
         horizontalLayout->addWidget(check_sacada);
@@ -86,12 +86,12 @@ public:
 
         horizontalLayout_2 = new QHBoxLayout();
         horizontalLayout_2->setObjectName("horizontalLayout_2");
-        check_roupao = new QCheckBox(widget);
+        check_roupao = new QCheckBox(layoutWidget);
         check_roupao->setObjectName("check_roupao");
 
         horizontalLayout_2->addWidget(check_roupao);
 
-        check_higiene = new QCheckBox(widget);
+        check_higiene = new QCheckBox(layoutWidget);
         check_higiene->setObjectName("check_higiene");
 
         horizontalLayout_2->addWidget(check_higiene);
@@ -101,17 +101,17 @@ public:
 
         horizontalLayout_3 = new QHBoxLayout();
         horizontalLayout_3->setObjectName("horizontalLayout_3");
-        check_cofre = new QCheckBox(widget);
+        check_cofre = new QCheckBox(layoutWidget);
         check_cofre->setObjectName("check_cofre");
 
         horizontalLayout_3->addWidget(check_cofre);
 
-        check_banheira = new QCheckBox(widget);
+        check_banheira = new QCheckBox(layoutWidget);
         check_banheira->setObjectName("check_banheira");
 
         horizontalLayout_3->addWidget(check_banheira);
 
-        check_cafe = new QCheckBox(widget);
+        check_cafe = new QCheckBox(layoutWidget);
         check_cafe->setObjectName("check_cafe");
 
         horizontalLayout_3->addWidget(check_cafe);
@@ -121,12 +121,12 @@ public:
 
         horizontalLayout_4 = new QHBoxLayout();
         horizontalLayout_4->setObjectName("horizontalLayout_4");
-        check_servico = new QCheckBox(widget);
+        check_servico = new QCheckBox(layoutWidget);
         check_servico->setObjectName("check_servico");
 
         horizontalLayout_4->addWidget(check_servico);
 
-        check_miniBar = new QCheckBox(widget);
+        check_miniBar = new QCheckBox(layoutWidget);
         check_miniBar->setObjectName("check_miniBar");
 
         horizontalLayout_4->addWidget(check_miniBar);
@@ -144,7 +144,7 @@ public:
 
     void retranslateUi(QDialog *telaFiltrar)
     {
-        telaFiltrar->setWindowTitle(QCoreApplication::translate("telaFiltrar", "Dialog", nullptr));
+        telaFiltrar->setWindowTitle(QCoreApplication::translate("telaFiltrar", "Filtrar", nullptr));
         check_wifi->setText(QCoreApplication::translate("telaFiltrar", "Wi-Fi", nullptr));
         check_ar->setText(QCoreApplication::translate("telaFiltrar", "Ar condicionado", nullptr));
         check_tv->setText(QCoreApplication::translate("telaFiltrar", "TV", nullptr));

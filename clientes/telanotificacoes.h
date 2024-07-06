@@ -12,11 +12,12 @@ class telaNotificacoes : public QDialog
     Q_OBJECT
 
 public:
-    explicit telaNotificacoes(QWidget *parent = nullptr);
+    explicit telaNotificacoes(QWidget *parent = nullptr, int = 0);
     ~telaNotificacoes();
 
 private:
     Ui::telaNotificacoes *ui;
+    int m_id;
 };
 
 #endif // TELANOTIFICACOES_H

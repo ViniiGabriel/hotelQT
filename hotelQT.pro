@@ -10,6 +10,7 @@ CONFIG += c++17
 
 SOURCES += \
     clientes/cadastrocliente.cpp \
+    clientes/telaPagamento/pagamentotela.cpp \
     clientes/telaavaliacao.cpp \
     clientes/telacliente.cpp \
     clientes/telalogin.cpp \
@@ -18,6 +19,7 @@ SOURCES += \
     clientes/telareserva.cpp \
     colaboradores/cadastrocolaborador.cpp \
     colaboradores/cadastroquartos.cpp \
+    colaboradores/editarcliente.cpp \
     colaboradores/listaQuartos/telafiltrar.cpp \
     colaboradores/listaclientes.cpp \
     colaboradores/listaquartos.cpp \
@@ -31,6 +33,7 @@ SOURCES += \
 HEADERS += \
     clientes/cadastrocliente.h \
     clientes/reservas/reservas.h \
+    clientes/telaPagamento/pagamentotela.h \
     clientes/telaavaliacao.h \
     clientes/telacliente.h \
     clientes/telalogin.h \
@@ -39,6 +42,7 @@ HEADERS += \
     clientes/telareserva.h \
     colaboradores/cadastrocolaborador.h \
     colaboradores/cadastroquartos.h \
+    colaboradores/editarcliente.h \
     colaboradores/listaQuartos/telafiltrar.h \
     colaboradores/listaclientes.h \
     colaboradores/listaquartos.h \
@@ -55,6 +59,7 @@ HEADERS += \
 
 FORMS += \
     clientes/cadastrocliente.ui \
+    clientes/telaPagamento/pagamentotela.ui \
     clientes/telaavaliacao.ui \
     clientes/telacliente.ui \
     clientes/telalogin.ui \
@@ -63,6 +68,7 @@ FORMS += \
     clientes/telareserva.ui \
     colaboradores/cadastrocolaborador.ui \
     colaboradores/cadastroquartos.ui \
+    colaboradores/editarcliente.ui \
     colaboradores/listaQuartos/telafiltrar.ui \
     colaboradores/listaclientes.ui \
     colaboradores/listaquartos.ui \

@@ -35,13 +35,17 @@ public:
     QTableWidget *tb_menu;
     QPushButton *btn_reservas;
     QPushButton *btn_notificacoes;
-    QPushButton *btn_avaliacoes;
+    QPushButton *btn_servico;
+    QWidget *widget;
+    QHBoxLayout *horizontalLayout_2;
+    QPushButton *btn_filtrar;
+    QPushButton *btn_aplicarFiltros;
 
     void setupUi(QDialog *telaCliente)
     {
         if (telaCliente->objectName().isEmpty())
             telaCliente->setObjectName("telaCliente");
-        telaCliente->resize(804, 535);
+        telaCliente->resize(804, 551);
         layoutWidget = new QWidget(telaCliente);
         layoutWidget->setObjectName("layoutWidget");
         layoutWidget->setGeometry(QRect(29, 28, 761, 35));
@@ -89,9 +93,25 @@ public:
         btn_notificacoes = new QPushButton(telaCliente);
         btn_notificacoes->setObjectName("btn_notificacoes");
         btn_notificacoes->setGeometry(QRect(600, 140, 191, 51));
-        btn_avaliacoes = new QPushButton(telaCliente);
-        btn_avaliacoes->setObjectName("btn_avaliacoes");
-        btn_avaliacoes->setGeometry(QRect(600, 200, 191, 51));
+        btn_servico = new QPushButton(telaCliente);
+        btn_servico->setObjectName("btn_servico");
+        btn_servico->setGeometry(QRect(600, 200, 191, 51));
+        widget = new QWidget(telaCliente);
+        widget->setObjectName("widget");
+        widget->setGeometry(QRect(30, 500, 202, 31));
+        horizontalLayout_2 = new QHBoxLayout(widget);
+        horizontalLayout_2->setObjectName("horizontalLayout_2");
+        horizontalLayout_2->setContentsMargins(0, 0, 0, 0);
+        btn_filtrar = new QPushButton(widget);
+        btn_filtrar->setObjectName("btn_filtrar");
+
+        horizontalLayout_2->addWidget(btn_filtrar);
+
+        btn_aplicarFiltros = new QPushButton(widget);
+        btn_aplicarFiltros->setObjectName("btn_aplicarFiltros");
+
+        horizontalLayout_2->addWidget(btn_aplicarFiltros);
+
 
         retranslateUi(telaCliente);
 
@@ -100,14 +120,16 @@ public:
 
     void retranslateUi(QDialog *telaCliente)
     {
-        telaCliente->setWindowTitle(QCoreApplication::translate("telaCliente", "Dialog", nullptr));
+        telaCliente->setWindowTitle(QCoreApplication::translate("telaCliente", "Tela Inicial", nullptr));
         label_2->setText(QCoreApplication::translate("telaCliente", "Bem vindo ", nullptr));
         txt_nome->setText(QCoreApplication::translate("telaCliente", "Nome", nullptr));
         label->setText(QCoreApplication::translate("telaCliente", "ID:", nullptr));
         txt_id->setText(QCoreApplication::translate("telaCliente", "Nome", nullptr));
         btn_reservas->setText(QCoreApplication::translate("telaCliente", "Reservas", nullptr));
         btn_notificacoes->setText(QCoreApplication::translate("telaCliente", "Notifica\303\247\303\265es", nullptr));
-        btn_avaliacoes->setText(QCoreApplication::translate("telaCliente", "Avalia\303\247\303\265es", nullptr));
+        btn_servico->setText(QCoreApplication::translate("telaCliente", "Pedir servi\303\247o de limpeza", nullptr));
+        btn_filtrar->setText(QCoreApplication::translate("telaCliente", "Filtrar", nullptr));
+        btn_aplicarFiltros->setText(QCoreApplication::translate("telaCliente", "Aplicar Filtros", nullptr));
     } // retranslateUi
 
 };

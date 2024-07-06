@@ -25,7 +25,7 @@ class Ui_cadastroCliente
 {
 public:
     QPushButton *btn_cadastrar;
-    QWidget *widget;
+    QWidget *layoutWidget;
     QVBoxLayout *verticalLayout;
     QHBoxLayout *horizontalLayout_4;
     QLabel *label;
@@ -51,20 +51,20 @@ public:
         btn_cadastrar = new QPushButton(cadastroCliente);
         btn_cadastrar->setObjectName("btn_cadastrar");
         btn_cadastrar->setGeometry(QRect(140, 200, 151, 41));
-        widget = new QWidget(cadastroCliente);
-        widget->setObjectName("widget");
-        widget->setGeometry(QRect(10, 11, 401, 170));
-        verticalLayout = new QVBoxLayout(widget);
+        layoutWidget = new QWidget(cadastroCliente);
+        layoutWidget->setObjectName("layoutWidget");
+        layoutWidget->setGeometry(QRect(10, 11, 401, 170));
+        verticalLayout = new QVBoxLayout(layoutWidget);
         verticalLayout->setObjectName("verticalLayout");
         verticalLayout->setContentsMargins(0, 0, 0, 0);
         horizontalLayout_4 = new QHBoxLayout();
         horizontalLayout_4->setObjectName("horizontalLayout_4");
-        label = new QLabel(widget);
+        label = new QLabel(layoutWidget);
         label->setObjectName("label");
 
         horizontalLayout_4->addWidget(label);
 
-        txt_nome = new QLineEdit(widget);
+        txt_nome = new QLineEdit(layoutWidget);
         txt_nome->setObjectName("txt_nome");
 
         horizontalLayout_4->addWidget(txt_nome);
@@ -74,12 +74,12 @@ public:
 
         horizontalLayout_3 = new QHBoxLayout();
         horizontalLayout_3->setObjectName("horizontalLayout_3");
-        label_2 = new QLabel(widget);
+        label_2 = new QLabel(layoutWidget);
         label_2->setObjectName("label_2");
 
         horizontalLayout_3->addWidget(label_2);
 
-        txt_username = new QLineEdit(widget);
+        txt_username = new QLineEdit(layoutWidget);
         txt_username->setObjectName("txt_username");
 
         horizontalLayout_3->addWidget(txt_username);
@@ -89,12 +89,12 @@ public:
 
         horizontalLayout_2 = new QHBoxLayout();
         horizontalLayout_2->setObjectName("horizontalLayout_2");
-        label_3 = new QLabel(widget);
+        label_3 = new QLabel(layoutWidget);
         label_3->setObjectName("label_3");
 
         horizontalLayout_2->addWidget(label_3);
 
-        txt_senha = new QLineEdit(widget);
+        txt_senha = new QLineEdit(layoutWidget);
         txt_senha->setObjectName("txt_senha");
         txt_senha->setEchoMode(QLineEdit::Password);
 
@@ -105,12 +105,12 @@ public:
 
         horizontalLayout = new QHBoxLayout();
         horizontalLayout->setObjectName("horizontalLayout");
-        label_5 = new QLabel(widget);
+        label_5 = new QLabel(layoutWidget);
         label_5->setObjectName("label_5");
 
         horizontalLayout->addWidget(label_5);
 
-        txt_cpf = new QLineEdit(widget);
+        txt_cpf = new QLineEdit(layoutWidget);
         txt_cpf->setObjectName("txt_cpf");
         txt_cpf->setEchoMode(QLineEdit::Normal);
 
@@ -121,12 +121,12 @@ public:
 
         horizontalLayout_5 = new QHBoxLayout();
         horizontalLayout_5->setObjectName("horizontalLayout_5");
-        label_4 = new QLabel(widget);
+        label_4 = new QLabel(layoutWidget);
         label_4->setObjectName("label_4");
 
         horizontalLayout_5->addWidget(label_4);
 
-        txt_endereco = new QLineEdit(widget);
+        txt_endereco = new QLineEdit(layoutWidget);
         txt_endereco->setObjectName("txt_endereco");
 
         horizontalLayout_5->addWidget(txt_endereco);
@@ -142,7 +142,7 @@ public:
 
     void retranslateUi(QDialog *cadastroCliente)
     {
-        cadastroCliente->setWindowTitle(QCoreApplication::translate("cadastroCliente", "Dialog", nullptr));
+        cadastroCliente->setWindowTitle(QCoreApplication::translate("cadastroCliente", "Cadastro de Cliente", nullptr));
         btn_cadastrar->setText(QCoreApplication::translate("cadastroCliente", "Cadastrar", nullptr));
         label->setText(QCoreApplication::translate("cadastroCliente", "Nome:", nullptr));
         label_2->setText(QCoreApplication::translate("cadastroCliente", "Username:", nullptr));

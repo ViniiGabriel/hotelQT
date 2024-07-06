@@ -56,7 +56,7 @@ public:
 
     void retranslateUi(QDialog *telaNotificacoes)
     {
-        telaNotificacoes->setWindowTitle(QCoreApplication::translate("telaNotificacoes", "Dialog", nullptr));
+        telaNotificacoes->setWindowTitle(QCoreApplication::translate("telaNotificacoes", "Notifica\303\247\303\265es", nullptr));
         label->setText(QCoreApplication::translate("telaNotificacoes", "Notifica\303\247\303\265es", nullptr));
     } // retranslateUi
 

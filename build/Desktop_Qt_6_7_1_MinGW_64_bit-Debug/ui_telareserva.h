@@ -56,7 +56,7 @@ public:
 
     void retranslateUi(QDialog *telaReserva)
     {
-        telaReserva->setWindowTitle(QCoreApplication::translate("telaReserva", "Dialog", nullptr));
+        telaReserva->setWindowTitle(QCoreApplication::translate("telaReserva", "Reservas", nullptr));
         label->setText(QCoreApplication::translate("telaReserva", "Lista de Reservas", nullptr));
     } // retranslateUi
 

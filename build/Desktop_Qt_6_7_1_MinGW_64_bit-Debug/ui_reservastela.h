@@ -29,7 +29,7 @@ public:
     QDialogButtonBox *buttonBox;
     QTableWidget *tb_reservas;
     QLabel *label;
-    QWidget *widget;
+    QWidget *layoutWidget;
     QHBoxLayout *horizontalLayout;
     QPushButton *btn_cancelar;
     QPushButton *btn_checkin;
@@ -54,23 +54,23 @@ public:
         QFont font;
         font.setPointSize(26);
         label->setFont(font);
-        widget = new QWidget(reservasTela);
-        widget->setObjectName("widget");
-        widget->setGeometry(QRect(20, 440, 239, 26));
-        horizontalLayout = new QHBoxLayout(widget);
+        layoutWidget = new QWidget(reservasTela);
+        layoutWidget->setObjectName("layoutWidget");
+        layoutWidget->setGeometry(QRect(20, 440, 295, 31));
+        horizontalLayout = new QHBoxLayout(layoutWidget);
         horizontalLayout->setObjectName("horizontalLayout");
         horizontalLayout->setContentsMargins(0, 0, 0, 0);
-        btn_cancelar = new QPushButton(widget);
+        btn_cancelar = new QPushButton(layoutWidget);
         btn_cancelar->setObjectName("btn_cancelar");
 
         horizontalLayout->addWidget(btn_cancelar);
 
-        btn_checkin = new QPushButton(widget);
+        btn_checkin = new QPushButton(layoutWidget);
         btn_checkin->setObjectName("btn_checkin");
 
         horizontalLayout->addWidget(btn_checkin);
 
-        btn_checkout = new QPushButton(widget);
+        btn_checkout = new QPushButton(layoutWidget);
         btn_checkout->setObjectName("btn_checkout");
 
         horizontalLayout->addWidget(btn_checkout);
@@ -85,7 +85,7 @@ public:
 
     void retranslateUi(QDialog *reservasTela)
     {
-        reservasTela->setWindowTitle(QCoreApplication::translate("reservasTela", "Dialog", nullptr));
+        reservasTela->setWindowTitle(QCoreApplication::translate("reservasTela", "Reservas", nullptr));
         label->setText(QCoreApplication::translate("reservasTela", "Lista de Reservas", nullptr));
         btn_cancelar->setText(QCoreApplication::translate("reservasTela", "Cancelar", nullptr));
         btn_checkin->setText(QCoreApplication::translate("reservasTela", "Check-in", nullptr));

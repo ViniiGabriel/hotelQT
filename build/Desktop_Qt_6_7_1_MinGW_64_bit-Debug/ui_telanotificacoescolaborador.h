@@ -32,6 +32,7 @@ public:
         if (telaNotificacoesColaborador->objectName().isEmpty())
             telaNotificacoesColaborador->setObjectName("telaNotificacoesColaborador");
         telaNotificacoesColaborador->resize(651, 353);
+        telaNotificacoesColaborador->setAcceptDrops(false);
         buttonBox = new QDialogButtonBox(telaNotificacoesColaborador);
         buttonBox->setObjectName("buttonBox");
         buttonBox->setGeometry(QRect(290, 310, 341, 32));
@@ -56,7 +57,7 @@ public:
 
     void retranslateUi(QDialog *telaNotificacoesColaborador)
     {
-        telaNotificacoesColaborador->setWindowTitle(QCoreApplication::translate("telaNotificacoesColaborador", "Dialog", nullptr));
+        telaNotificacoesColaborador->setWindowTitle(QCoreApplication::translate("telaNotificacoesColaborador", "Notifica\303\247\303\265es", nullptr));
         label->setText(QCoreApplication::translate("telaNotificacoesColaborador", "Notifica\303\247\303\265es", nullptr));
     } // retranslateUi
 

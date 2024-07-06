@@ -7,11 +7,11 @@
     <x>0</x>
     <y>0</y>
     <width>804</width>
-    <height>535</height>
+    <height>551</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Dialog</string>
+   <string>Tela Inicial</string>
   </property>
   <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
@@ -130,7 +130,7 @@
     <string>Notificações</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="btn_avaliacoes">
+  <widget class="QPushButton" name="btn_servico">
    <property name="geometry">
     <rect>
      <x>600</x>
@@ -140,8 +140,34 @@
     </rect>
    </property>
    <property name="text">
-    <string>Avaliações</string>
+    <string>Pedir serviço de limpeza</string>
    </property>
+  </widget>
+  <widget class="QWidget" name="">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>500</y>
+     <width>202</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_2">
+    <item>
+     <widget class="QPushButton" name="btn_filtrar">
+      <property name="text">
+       <string>Filtrar</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="btn_aplicarFiltros">
+      <property name="text">
+       <string>Aplicar Filtros</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
   </widget>
  </widget>
  <resources/>

@@ -15,8 +15,13 @@ public:
     explicit reservasTela(QWidget *parent = nullptr);
     ~reservasTela();
 
+private slots:
+    void on_btn_checkin_clicked();
+    void on_btn_checkout_clicked();
+
 private:
     Ui::reservasTela *ui;
+    QString m_id;
 };
 
 #endif // RESERVASTELA_H

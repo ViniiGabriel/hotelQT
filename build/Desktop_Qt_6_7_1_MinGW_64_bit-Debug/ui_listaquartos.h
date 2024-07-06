@@ -33,7 +33,7 @@ public:
     QHBoxLayout *horizontalLayout;
     QPushButton *btn_editar;
     QPushButton *btn_excluir;
-    QWidget *widget;
+    QWidget *layoutWidget1;
     QHBoxLayout *horizontalLayout_2;
     QPushButton *btn_filtrar;
     QPushButton *btn_aplicarfiltros;
@@ -59,7 +59,7 @@ public:
         tb_listaQuartos->setGeometry(QRect(20, 90, 621, 361));
         layoutWidget = new QWidget(listaQuartos);
         layoutWidget->setObjectName("layoutWidget");
-        layoutWidget->setGeometry(QRect(20, 460, 158, 26));
+        layoutWidget->setGeometry(QRect(20, 460, 195, 31));
         horizontalLayout = new QHBoxLayout(layoutWidget);
         horizontalLayout->setObjectName("horizontalLayout");
         horizontalLayout->setContentsMargins(0, 0, 0, 0);
@@ -73,18 +73,18 @@ public:
 
         horizontalLayout->addWidget(btn_excluir);
 
-        widget = new QWidget(listaQuartos);
-        widget->setObjectName("widget");
-        widget->setGeometry(QRect(20, 60, 161, 26));
-        horizontalLayout_2 = new QHBoxLayout(widget);
+        layoutWidget1 = new QWidget(listaQuartos);
+        layoutWidget1->setObjectName("layoutWidget1");
+        layoutWidget1->setGeometry(QRect(20, 60, 200, 31));
+        horizontalLayout_2 = new QHBoxLayout(layoutWidget1);
         horizontalLayout_2->setObjectName("horizontalLayout_2");
         horizontalLayout_2->setContentsMargins(0, 0, 0, 0);
-        btn_filtrar = new QPushButton(widget);
+        btn_filtrar = new QPushButton(layoutWidget1);
         btn_filtrar->setObjectName("btn_filtrar");
 
         horizontalLayout_2->addWidget(btn_filtrar);
 
-        btn_aplicarfiltros = new QPushButton(widget);
+        btn_aplicarfiltros = new QPushButton(layoutWidget1);
         btn_aplicarfiltros->setObjectName("btn_aplicarfiltros");
 
         horizontalLayout_2->addWidget(btn_aplicarfiltros);
@@ -99,7 +99,7 @@ public:
 
     void retranslateUi(QDialog *listaQuartos)
     {
-        listaQuartos->setWindowTitle(QCoreApplication::translate("listaQuartos", "Dialog", nullptr));
+        listaQuartos->setWindowTitle(QCoreApplication::translate("listaQuartos", "Quartos", nullptr));
         label->setText(QCoreApplication::translate("listaQuartos", "Lista de Quartos", nullptr));
         btn_editar->setText(QCoreApplication::translate("listaQuartos", "Editar", nullptr));
         btn_excluir->setText(QCoreApplication::translate("listaQuartos", "Excluir", nullptr));

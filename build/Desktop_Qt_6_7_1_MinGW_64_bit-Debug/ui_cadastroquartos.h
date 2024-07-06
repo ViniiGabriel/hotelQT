@@ -60,7 +60,7 @@ public:
     QComboBox *boxTipoQuarto;
     QLabel *label;
     QToolButton *btn_imagen;
-    QWidget *widget;
+    QWidget *layoutWidget3;
     QHBoxLayout *horizontalLayout_2;
     QPushButton *btn_salvar;
     QPushButton *btn_cancelar;
@@ -72,7 +72,7 @@ public:
         cadastroQuartos->resize(635, 458);
         layoutWidget = new QWidget(cadastroQuartos);
         layoutWidget->setObjectName("layoutWidget");
-        layoutWidget->setGeometry(QRect(20, 310, 234, 24));
+        layoutWidget->setGeometry(QRect(20, 310, 234, 28));
         horizontalLayout_3 = new QHBoxLayout(layoutWidget);
         horizontalLayout_3->setObjectName("horizontalLayout_3");
         horizontalLayout_3->setContentsMargins(0, 0, 0, 0);
@@ -124,7 +124,7 @@ public:
 
         layoutWidget2 = new QWidget(cadastroQuartos);
         layoutWidget2->setObjectName("layoutWidget2");
-        layoutWidget2->setGeometry(QRect(20, 340, 524, 76));
+        layoutWidget2->setGeometry(QRect(20, 340, 641, 90));
         verticalLayout_4 = new QVBoxLayout(layoutWidget2);
         verticalLayout_4->setObjectName("verticalLayout_4");
         verticalLayout_4->setContentsMargins(0, 0, 0, 0);
@@ -216,18 +216,18 @@ public:
         btn_imagen = new QToolButton(cadastroQuartos);
         btn_imagen->setObjectName("btn_imagen");
         btn_imagen->setGeometry(QRect(570, 20, 22, 22));
-        widget = new QWidget(cadastroQuartos);
-        widget->setObjectName("widget");
-        widget->setGeometry(QRect(470, 430, 158, 26));
-        horizontalLayout_2 = new QHBoxLayout(widget);
+        layoutWidget3 = new QWidget(cadastroQuartos);
+        layoutWidget3->setObjectName("layoutWidget3");
+        layoutWidget3->setGeometry(QRect(470, 430, 195, 31));
+        horizontalLayout_2 = new QHBoxLayout(layoutWidget3);
         horizontalLayout_2->setObjectName("horizontalLayout_2");
         horizontalLayout_2->setContentsMargins(0, 0, 0, 0);
-        btn_salvar = new QPushButton(widget);
+        btn_salvar = new QPushButton(layoutWidget3);
         btn_salvar->setObjectName("btn_salvar");
 
         horizontalLayout_2->addWidget(btn_salvar);
 
-        btn_cancelar = new QPushButton(widget);
+        btn_cancelar = new QPushButton(layoutWidget3);
         btn_cancelar->setObjectName("btn_cancelar");
 
         horizontalLayout_2->addWidget(btn_cancelar);
@@ -240,7 +240,7 @@ public:
 
     void retranslateUi(QDialog *cadastroQuartos)
     {
-        cadastroQuartos->setWindowTitle(QCoreApplication::translate("cadastroQuartos", "Dialog", nullptr));
+        cadastroQuartos->setWindowTitle(QCoreApplication::translate("cadastroQuartos", "Cadastro de quartos", nullptr));
         label_4->setText(QCoreApplication::translate("cadastroQuartos", "Valor da di\303\241ria: R$", nullptr));
         label_2->setText(QCoreApplication::translate("cadastroQuartos", "Titulo do quarto:", nullptr));
         label_3->setText(QCoreApplication::translate("cadastroQuartos", "Descri\303\247\303\243o do quarto:", nullptr));

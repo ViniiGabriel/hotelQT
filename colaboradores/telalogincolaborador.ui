@@ -10,8 +10,11 @@
     <height>204</height>
    </rect>
   </property>
+  <property name="acceptDrops">
+   <bool>false</bool>
+  </property>
   <property name="windowTitle">
-   <string>Dialog</string>
+   <string>Login</string>
   </property>
   <widget class="QLabel" name="label_infoinvalida">
    <property name="geometry">

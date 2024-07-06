@@ -73,7 +73,7 @@ public:
 
     void retranslateUi(QDialog *listaClientes)
     {
-        listaClientes->setWindowTitle(QCoreApplication::translate("listaClientes", "Dialog", nullptr));
+        listaClientes->setWindowTitle(QCoreApplication::translate("listaClientes", "Clientes", nullptr));
         label->setText(QCoreApplication::translate("listaClientes", "Lista de Clientes", nullptr));
         btn_editar->setText(QCoreApplication::translate("listaClientes", "Editar", nullptr));
         btn_excluir->setText(QCoreApplication::translate("listaClientes", "Excluir", nullptr));

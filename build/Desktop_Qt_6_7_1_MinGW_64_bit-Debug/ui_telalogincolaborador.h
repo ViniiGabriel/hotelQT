@@ -41,6 +41,7 @@ public:
         if (telaLoginColaborador->objectName().isEmpty())
             telaLoginColaborador->setObjectName("telaLoginColaborador");
         telaLoginColaborador->resize(494, 204);
+        telaLoginColaborador->setAcceptDrops(false);
         label_infoinvalida = new QLabel(telaLoginColaborador);
         label_infoinvalida->setObjectName("label_infoinvalida");
         label_infoinvalida->setGeometry(QRect(150, 170, 201, 21));
@@ -105,7 +106,7 @@ public:
 
     void retranslateUi(QDialog *telaLoginColaborador)
     {
-        telaLoginColaborador->setWindowTitle(QCoreApplication::translate("telaLoginColaborador", "Dialog", nullptr));
+        telaLoginColaborador->setWindowTitle(QCoreApplication::translate("telaLoginColaborador", "Login", nullptr));
         label_infoinvalida->setText(QCoreApplication::translate("telaLoginColaborador", "Username ou senha inv\303\241lidos", nullptr));
         label->setText(QCoreApplication::translate("telaLoginColaborador", "Username:", nullptr));
         label_2->setText(QCoreApplication::translate("telaLoginColaborador", "Senha:", nullptr));

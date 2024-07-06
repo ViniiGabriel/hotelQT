@@ -62,7 +62,7 @@ public:
         telaInicial->setCentralWidget(centralwidget);
         menubar = new QMenuBar(telaInicial);
         menubar->setObjectName("menubar");
-        menubar->setGeometry(QRect(0, 0, 578, 25));
+        menubar->setGeometry(QRect(0, 0, 578, 26));
         telaInicial->setMenuBar(menubar);
         statusbar = new QStatusBar(telaInicial);
         statusbar->setObjectName("statusbar");
@@ -75,7 +75,7 @@ public:
 
     void retranslateUi(QMainWindow *telaInicial)
     {
-        telaInicial->setWindowTitle(QCoreApplication::translate("telaInicial", "telaInicial", nullptr));
+        telaInicial->setWindowTitle(QCoreApplication::translate("telaInicial", "Hotel ZZZoneca", nullptr));
         label->setText(QCoreApplication::translate("telaInicial", "Hotel ZZZoneca", nullptr));
         btn_cliente->setText(QCoreApplication::translate("telaInicial", "Sou cliente", nullptr));
         label_2->setText(QCoreApplication::translate("telaInicial", "Bem vindo, selecione uma op\303\247\303\243o para navegar:", nullptr));

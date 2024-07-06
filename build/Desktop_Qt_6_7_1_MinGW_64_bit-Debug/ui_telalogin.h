@@ -108,7 +108,7 @@ public:
 
     void retranslateUi(QDialog *telaLogin)
     {
-        telaLogin->setWindowTitle(QCoreApplication::translate("telaLogin", "Dialog", nullptr));
+        telaLogin->setWindowTitle(QCoreApplication::translate("telaLogin", "Login", nullptr));
         label_3->setText(QCoreApplication::translate("telaLogin", "N\303\243o \303\251 cliente? Cadastre-se", nullptr));
         btn_cadastro->setText(QCoreApplication::translate("telaLogin", "Cadastro", nullptr));
         label_infoinvalida->setText(QCoreApplication::translate("telaLogin", "Username ou senha inv\303\241lidos", nullptr));

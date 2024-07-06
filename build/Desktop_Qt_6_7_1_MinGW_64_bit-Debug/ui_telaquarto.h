@@ -131,7 +131,7 @@ public:
 
     void retranslateUi(QDialog *telaQuarto)
     {
-        telaQuarto->setWindowTitle(QCoreApplication::translate("telaQuarto", "Dialog", nullptr));
+        telaQuarto->setWindowTitle(QCoreApplication::translate("telaQuarto", "Quarto", nullptr));
         foto_pixmap->setText(QCoreApplication::translate("telaQuarto", "foto", nullptr));
         txt_titulo->setText(QCoreApplication::translate("telaQuarto", "Tipo quarto", nullptr));
         txt_decricao->setText(QCoreApplication::translate("telaQuarto", "TextLabel", nullptr));
