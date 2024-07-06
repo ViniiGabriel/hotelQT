@@ -84,4 +84,11 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 
 DISTFILES += \
-    dataBase/db_hotel
+    dataBase/db_hotel \
+    imagens/4231406 (1).jpg \
+    imagens/4231406 (1).jpg \
+    imagens/4231406 (1).jpg \
+    imagens/WhatsApp Image 2024-05-28 at 10.26.11.jpeg \
+    imagens/WhatsApp Image 2024-05-28 at 10.26.11.jpeg \
+    imagens/WhatsApp Image 2024-05-28 at 10.26.11.jpeg \
+    imagens/cv-492.jpg

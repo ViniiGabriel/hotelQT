@@ -36,14 +36,31 @@ public:
         if (telaInicial->objectName().isEmpty())
             telaInicial->setObjectName("telaInicial");
         telaInicial->resize(578, 348);
+        telaInicial->setStyleSheet(QString::fromUtf8("#telaInicial{\n"
+"	background-color: #cffdff;\n"
+"}\n"
+"\n"
+"QPushButton{\n"
+"	background-color: #afdcde;\n"
+"	border-radius: 14px;\n"
+"	border: 2px solid #3d5557;\n"
+"	color: #3d5557;\n"
+"	font-size: 16px;\n"
+"}\n"
+"\n"
+"\n"
+"QLabel{\n"
+"	color: #3d5557;\n"
+"}\n"
+""));
         centralwidget = new QWidget(telaInicial);
         centralwidget->setObjectName("centralwidget");
         label = new QLabel(centralwidget);
         label->setObjectName("label");
-        label->setGeometry(QRect(60, 20, 451, 81));
+        label->setGeometry(QRect(60, 40, 451, 81));
         QFont font;
         font.setFamilies({QString::fromUtf8("Impact")});
-        font.setPointSize(39);
+        font.setPointSize(52);
         label->setFont(font);
         label->setAlignment(Qt::AlignCenter);
         btn_cliente = new QPushButton(centralwidget);
@@ -51,7 +68,7 @@ public:
         btn_cliente->setGeometry(QRect(80, 200, 191, 71));
         label_2 = new QLabel(centralwidget);
         label_2->setObjectName("label_2");
-        label_2->setGeometry(QRect(120, 160, 381, 31));
+        label_2->setGeometry(QRect(140, 160, 291, 31));
         QFont font1;
         font1.setFamilies({QString::fromUtf8("Cambria Math")});
         font1.setPointSize(11);
@@ -62,7 +79,7 @@ public:
         telaInicial->setCentralWidget(centralwidget);
         menubar = new QMenuBar(telaInicial);
         menubar->setObjectName("menubar");
-        menubar->setGeometry(QRect(0, 0, 578, 26));
+        menubar->setGeometry(QRect(0, 0, 578, 22));
         telaInicial->setMenuBar(menubar);
         statusbar = new QStatusBar(telaInicial);
         statusbar->setObjectName("statusbar");
