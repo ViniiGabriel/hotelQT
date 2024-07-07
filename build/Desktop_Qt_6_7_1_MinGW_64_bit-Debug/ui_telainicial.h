@@ -64,10 +64,11 @@ public:
         centralwidget->setObjectName("centralwidget");
         label = new QLabel(centralwidget);
         label->setObjectName("label");
-        label->setGeometry(QRect(60, 40, 451, 81));
+        label->setGeometry(QRect(10, 40, 561, 81));
         QFont font;
-        font.setFamilies({QString::fromUtf8("Impact")});
+        font.setFamilies({QString::fromUtf8("Segoe UI Black")});
         font.setPointSize(52);
+        font.setBold(true);
         label->setFont(font);
         label->setAlignment(Qt::AlignCenter);
         btn_cliente = new QPushButton(centralwidget);

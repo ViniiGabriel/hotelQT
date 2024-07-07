@@ -43,16 +43,17 @@ QLabel{
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>60</x>
+      <x>10</x>
       <y>40</y>
-      <width>451</width>
+      <width>561</width>
       <height>81</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <family>Impact</family>
-      <pointsize>52</pointsize>
+      <family>Segoe UI Black</family>
+      <pointsize>45</pointsize>
+      <bold>true</bold>
      </font>
     </property>
     <property name="text">
@@ -80,7 +81,7 @@ QLabel{
      <rect>
       <x>140</x>
       <y>160</y>
-      <width>291</width>
+      <width>351</width>
       <height>31</height>
      </rect>
     </property>

@@ -2,7 +2,7 @@
 #define LISTAQUARTOS_H
 
 #include <QDialog>
-#include "listaquartos/telafiltrar.h"
+#include "listaQuartos/telafiltrar.h"
 #include <QtSql>
 
 namespace Ui {

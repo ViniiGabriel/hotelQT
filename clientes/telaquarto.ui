@@ -208,7 +208,7 @@ QComboBox {
     <rect>
      <x>12</x>
      <y>272</y>
-     <width>81</width>
+     <width>91</width>
      <height>16</height>
     </rect>
    </property>
@@ -221,7 +221,7 @@ QComboBox {
     <rect>
      <x>225</x>
      <y>270</y>
-     <width>21</width>
+     <width>71</width>
      <height>20</height>
     </rect>
    </property>
