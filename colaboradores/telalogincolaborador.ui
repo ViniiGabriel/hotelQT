@@ -16,6 +16,9 @@
   <property name="windowTitle">
    <string>Login</string>
   </property>
+  <property name="windowIcon">
+   <iconset theme="go-home"/>
+  </property>
   <property name="styleSheet">
    <string notr="true">#telaLoginColaborador{
 	background-color: #cffdff;

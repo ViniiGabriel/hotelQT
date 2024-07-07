@@ -10,6 +10,7 @@
 #define UI_TELAAVALIACAO_H
 
 #include <QtCore/QVariant>
+#include <QtGui/QIcon>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QDialog>
 #include <QtWidgets/QHBoxLayout>
@@ -43,6 +44,8 @@ public:
         if (telaAvaliacao->objectName().isEmpty())
             telaAvaliacao->setObjectName("telaAvaliacao");
         telaAvaliacao->resize(381, 206);
+        QIcon icon(QIcon::fromTheme(QString::fromUtf8("go-home")));
+        telaAvaliacao->setWindowIcon(icon);
         telaAvaliacao->setStyleSheet(QString::fromUtf8("QDialog{\n"
 "	background-color: #cffdff;\n"
 "}\n"

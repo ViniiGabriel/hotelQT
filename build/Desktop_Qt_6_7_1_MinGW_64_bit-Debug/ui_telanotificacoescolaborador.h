@@ -10,6 +10,7 @@
 #define UI_TELANOTIFICACOESCOLABORADOR_H
 
 #include <QtCore/QVariant>
+#include <QtGui/QIcon>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QDialog>
 #include <QtWidgets/QHeaderView>
@@ -32,6 +33,8 @@ public:
             telaNotificacoesColaborador->setObjectName("telaNotificacoesColaborador");
         telaNotificacoesColaborador->resize(651, 353);
         telaNotificacoesColaborador->setAcceptDrops(false);
+        QIcon icon(QIcon::fromTheme(QString::fromUtf8("go-home")));
+        telaNotificacoesColaborador->setWindowIcon(icon);
         telaNotificacoesColaborador->setStyleSheet(QString::fromUtf8("QDialog{\n"
 "	background-color: #cffdff;\n"
 "}\n"

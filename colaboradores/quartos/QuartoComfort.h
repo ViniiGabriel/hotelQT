@@ -17,8 +17,8 @@ public:
     QuartoComfort(QString tipo, QString titulo, QString descricao, QString valor, QString path, QString wifi, QString tv, QString ar, QString sacada,
                   QString banheira, QString roupao, QString higiene) :
         Quartos(tipo, titulo,descricao, valor, path), m_wifi(wifi), m_tv(tv), m_ar(ar), m_sacada(sacada), m_banheira(banheira),
-        m_roupao(roupao), m_higiene(higiene) {};
-    ~QuartoComfort() {};
+        m_roupao(roupao), m_higiene(higiene) {}
+    ~QuartoComfort() {}
 
     bool codigoQuery(){
         query.prepare("insert into tb_quartos (tipoQuarto, tituloQuarto, descricaoQuarto, valor, wifi, tv, ar, sacada, banheira, roupao, higiene, caminhoImagem) values"

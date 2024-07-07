@@ -10,6 +10,7 @@
 #define UI_TELALOGINCOLABORADOR_H
 
 #include <QtCore/QVariant>
+#include <QtGui/QIcon>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QDialog>
 #include <QtWidgets/QHBoxLayout>
@@ -42,6 +43,8 @@ public:
             telaLoginColaborador->setObjectName("telaLoginColaborador");
         telaLoginColaborador->resize(494, 204);
         telaLoginColaborador->setAcceptDrops(false);
+        QIcon icon(QIcon::fromTheme(QString::fromUtf8("go-home")));
+        telaLoginColaborador->setWindowIcon(icon);
         telaLoginColaborador->setStyleSheet(QString::fromUtf8("#telaLoginColaborador{\n"
 "	background-color: #cffdff;\n"
 "}\n"

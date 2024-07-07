@@ -10,6 +10,7 @@
 #define UI_TELANOTIFICACOES_H
 
 #include <QtCore/QVariant>
+#include <QtGui/QIcon>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QDialog>
 #include <QtWidgets/QHeaderView>
@@ -31,6 +32,8 @@ public:
         if (telaNotificacoes->objectName().isEmpty())
             telaNotificacoes->setObjectName("telaNotificacoes");
         telaNotificacoes->resize(653, 348);
+        QIcon icon(QIcon::fromTheme(QString::fromUtf8("go-home")));
+        telaNotificacoes->setWindowIcon(icon);
         telaNotificacoes->setStyleSheet(QString::fromUtf8("QDialog{\n"
 "	background-color: #cffdff;\n"
 "}\n"

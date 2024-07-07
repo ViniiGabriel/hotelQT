@@ -13,6 +13,9 @@
   <property name="windowTitle">
    <string>Filtrar</string>
   </property>
+  <property name="windowIcon">
+   <iconset theme="go-home"/>
+  </property>
   <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>

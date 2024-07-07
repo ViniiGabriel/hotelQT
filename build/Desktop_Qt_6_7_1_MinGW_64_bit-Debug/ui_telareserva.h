@@ -10,6 +10,7 @@
 #define UI_TELARESERVA_H
 
 #include <QtCore/QVariant>
+#include <QtGui/QIcon>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QDialog>
 #include <QtWidgets/QHeaderView>
@@ -31,6 +32,8 @@ public:
         if (telaReserva->objectName().isEmpty())
             telaReserva->setObjectName("telaReserva");
         telaReserva->resize(676, 461);
+        QIcon icon(QIcon::fromTheme(QString::fromUtf8("go-home")));
+        telaReserva->setWindowIcon(icon);
         telaReserva->setStyleSheet(QString::fromUtf8("QDialog{\n"
 "	background-color: #cffdff;\n"
 "}\n"

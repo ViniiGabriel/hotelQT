@@ -18,8 +18,8 @@ protected:
     QSqlQuery query;
 public:
     Quartos(QString tipo, QString titulo, QString descricao, QString valor, QString path) : m_tipoQuarto(tipo), m_tituloQuarto(titulo),
-        m_descricaoQuarto(descricao), m_valor(valor), m_imagemPath(path) {};
-    ~Quartos() {};
+        m_descricaoQuarto(descricao), m_valor(valor), m_imagemPath(path) {}
+    ~Quartos() {}
     virtual bool codigoQuery() = 0;
 };
 

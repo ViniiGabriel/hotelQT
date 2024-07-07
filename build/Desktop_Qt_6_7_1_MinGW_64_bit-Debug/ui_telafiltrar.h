@@ -10,6 +10,7 @@
 #define UI_TELAFILTRAR_H
 
 #include <QtCore/QVariant>
+#include <QtGui/QIcon>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QCheckBox>
 #include <QtWidgets/QDialog>
@@ -47,6 +48,8 @@ public:
         if (telaFiltrar->objectName().isEmpty())
             telaFiltrar->setObjectName("telaFiltrar");
         telaFiltrar->resize(361, 184);
+        QIcon icon(QIcon::fromTheme(QString::fromUtf8("go-home")));
+        telaFiltrar->setWindowIcon(icon);
         layoutWidget = new QWidget(telaFiltrar);
         layoutWidget->setObjectName("layoutWidget");
         layoutWidget->setGeometry(QRect(10, 10, 343, 127));

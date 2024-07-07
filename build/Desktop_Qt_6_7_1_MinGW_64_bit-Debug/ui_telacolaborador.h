@@ -10,6 +10,7 @@
 #define UI_TELACOLABORADOR_H
 
 #include <QtCore/QVariant>
+#include <QtGui/QIcon>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QDialog>
 #include <QtWidgets/QHBoxLayout>
@@ -43,6 +44,8 @@ public:
         if (telaColaborador->objectName().isEmpty())
             telaColaborador->setObjectName("telaColaborador");
         telaColaborador->resize(649, 403);
+        QIcon icon(QIcon::fromTheme(QString::fromUtf8("go-home")));
+        telaColaborador->setWindowIcon(icon);
         telaColaborador->setStyleSheet(QString::fromUtf8("#telaColaborador{\n"
 "	background-color: #cffdff;\n"
 "}\n"

@@ -10,6 +10,7 @@
 #define UI_EDITARCLIENTE_H
 
 #include <QtCore/QVariant>
+#include <QtGui/QIcon>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QDialog>
 #include <QtWidgets/QHBoxLayout>
@@ -48,6 +49,8 @@ public:
         if (editarCliente->objectName().isEmpty())
             editarCliente->setObjectName("editarCliente");
         editarCliente->resize(451, 271);
+        QIcon icon(QIcon::fromTheme(QString::fromUtf8("go-home")));
+        editarCliente->setWindowIcon(icon);
         editarCliente->setStyleSheet(QString::fromUtf8("QDialog{\n"
 "	background-color: #cffdff;\n"
 "}\n"

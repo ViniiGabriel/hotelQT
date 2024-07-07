@@ -10,6 +10,7 @@
 #define UI_CADASTROCOLABORADOR_H
 
 #include <QtCore/QVariant>
+#include <QtGui/QIcon>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QDialog>
 #include <QtWidgets/QHBoxLayout>
@@ -48,6 +49,8 @@ public:
         if (cadastroColaborador->objectName().isEmpty())
             cadastroColaborador->setObjectName("cadastroColaborador");
         cadastroColaborador->resize(465, 255);
+        QIcon icon(QIcon::fromTheme(QString::fromUtf8("go-home")));
+        cadastroColaborador->setWindowIcon(icon);
         cadastroColaborador->setStyleSheet(QString::fromUtf8("QDialog{\n"
 "	background-color: #cffdff;\n"
 "}\n"

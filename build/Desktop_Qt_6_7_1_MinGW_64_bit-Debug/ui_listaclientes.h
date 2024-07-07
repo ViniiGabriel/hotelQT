@@ -10,6 +10,7 @@
 #define UI_LISTACLIENTES_H
 
 #include <QtCore/QVariant>
+#include <QtGui/QIcon>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QDialog>
 #include <QtWidgets/QHBoxLayout>
@@ -37,6 +38,8 @@ public:
         if (listaClientes->objectName().isEmpty())
             listaClientes->setObjectName("listaClientes");
         listaClientes->resize(662, 530);
+        QIcon icon(QIcon::fromTheme(QString::fromUtf8("go-home")));
+        listaClientes->setWindowIcon(icon);
         listaClientes->setStyleSheet(QString::fromUtf8("QDialog{\n"
 "	background-color: #cffdff;\n"
 "}\n"

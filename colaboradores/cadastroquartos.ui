@@ -13,6 +13,9 @@
   <property name="windowTitle">
    <string>Cadastro de quartos</string>
   </property>
+  <property name="windowIcon">
+   <iconset theme="go-home"/>
+  </property>
   <property name="styleSheet">
    <string notr="true">#cadastroQuartos{
 	background-color: #cffdff;

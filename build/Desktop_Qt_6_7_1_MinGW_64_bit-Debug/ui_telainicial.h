@@ -10,6 +10,7 @@
 #define UI_TELAINICIAL_H
 
 #include <QtCore/QVariant>
+#include <QtGui/QIcon>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QMainWindow>
@@ -36,6 +37,8 @@ public:
         if (telaInicial->objectName().isEmpty())
             telaInicial->setObjectName("telaInicial");
         telaInicial->resize(578, 348);
+        QIcon icon(QIcon::fromTheme(QString::fromUtf8("go-home")));
+        telaInicial->setWindowIcon(icon);
         telaInicial->setStyleSheet(QString::fromUtf8("#telaInicial{\n"
 "	background-color: #cffdff;\n"
 "}\n"
@@ -83,7 +86,7 @@ public:
         telaInicial->setCentralWidget(centralwidget);
         menubar = new QMenuBar(telaInicial);
         menubar->setObjectName("menubar");
-        menubar->setGeometry(QRect(0, 0, 578, 26));
+        menubar->setGeometry(QRect(0, 0, 578, 22));
         telaInicial->setMenuBar(menubar);
         statusbar = new QStatusBar(telaInicial);
         statusbar->setObjectName("statusbar");

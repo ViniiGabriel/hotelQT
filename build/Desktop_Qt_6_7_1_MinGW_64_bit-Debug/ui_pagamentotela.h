@@ -10,6 +10,7 @@
 #define UI_PAGAMENTOTELA_H
 
 #include <QtCore/QVariant>
+#include <QtGui/QIcon>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QDialog>
 #include <QtWidgets/QHBoxLayout>
@@ -47,6 +48,8 @@ public:
         if (pagamentoTela->objectName().isEmpty())
             pagamentoTela->setObjectName("pagamentoTela");
         pagamentoTela->resize(540, 273);
+        QIcon icon(QIcon::fromTheme(QString::fromUtf8("go-home")));
+        pagamentoTela->setWindowIcon(icon);
         pagamentoTela->setStyleSheet(QString::fromUtf8("QDialog{\n"
 "	background-color: #cffdff;\n"
 "}\n"

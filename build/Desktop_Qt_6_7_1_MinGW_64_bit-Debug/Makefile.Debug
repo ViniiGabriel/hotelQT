@@ -434,7 +434,7 @@ debug/moc_cadastrocliente.cpp: ../../clientes/cadastrocliente.h \
 		C:/Qt/6.7.1/mingw_64/include/QtGui/qguiapplication_platform.h \
 		debug/moc_predefs.h \
 		C:/Qt/6.7.1/mingw_64/bin/moc.exe
-	C:\Qt\6.7.1\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/snowb/OneDrive/Documentos/GitHub/hotelQT/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/debug/moc_predefs.h -IC:/Qt/6.7.1/mingw_64/mkspecs/win32-g++ -IC:/Users/snowb/OneDrive/Documentos/GitHub/hotelQT -IC:/Qt/6.7.1/mingw_64/include -IC:/Qt/6.7.1/mingw_64/include/QtWidgets -IC:/Qt/6.7.1/mingw_64/include/QtGui -IC:/Qt/6.7.1/mingw_64/include/QtSql -IC:/Qt/6.7.1/mingw_64/include/QtCore -I. -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++ -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed -IC:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include ..\..\clientes\cadastrocliente.h -o debug\moc_cadastrocliente.cpp
+	C:\Qt\6.7.1\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/Usuario/Documents/GitHub/hotelQT/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/debug/moc_predefs.h -IC:/Qt/6.7.1/mingw_64/mkspecs/win32-g++ -IC:/Users/Usuario/Documents/GitHub/hotelQT -IC:/Qt/6.7.1/mingw_64/include -IC:/Qt/6.7.1/mingw_64/include/QtWidgets -IC:/Qt/6.7.1/mingw_64/include/QtGui -IC:/Qt/6.7.1/mingw_64/include/QtSql -IC:/Qt/6.7.1/mingw_64/include/QtCore -I. -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++ -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed -IC:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include ..\..\clientes\cadastrocliente.h -o debug\moc_cadastrocliente.cpp
 
 debug/moc_pagamentotela.cpp: ../../clientes/telaPagamento/pagamentotela.h \
 		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QDialog \
@@ -626,7 +626,7 @@ debug/moc_pagamentotela.cpp: ../../clientes/telaPagamento/pagamentotela.h \
 		C:/Qt/6.7.1/mingw_64/include/QtGui/qguiapplication_platform.h \
 		debug/moc_predefs.h \
 		C:/Qt/6.7.1/mingw_64/bin/moc.exe
-	C:\Qt\6.7.1\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/snowb/OneDrive/Documentos/GitHub/hotelQT/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/debug/moc_predefs.h -IC:/Qt/6.7.1/mingw_64/mkspecs/win32-g++ -IC:/Users/snowb/OneDrive/Documentos/GitHub/hotelQT -IC:/Qt/6.7.1/mingw_64/include -IC:/Qt/6.7.1/mingw_64/include/QtWidgets -IC:/Qt/6.7.1/mingw_64/include/QtGui -IC:/Qt/6.7.1/mingw_64/include/QtSql -IC:/Qt/6.7.1/mingw_64/include/QtCore -I. -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++ -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed -IC:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include ..\..\clientes\telaPagamento\pagamentotela.h -o debug\moc_pagamentotela.cpp
+	C:\Qt\6.7.1\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/Usuario/Documents/GitHub/hotelQT/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/debug/moc_predefs.h -IC:/Qt/6.7.1/mingw_64/mkspecs/win32-g++ -IC:/Users/Usuario/Documents/GitHub/hotelQT -IC:/Qt/6.7.1/mingw_64/include -IC:/Qt/6.7.1/mingw_64/include/QtWidgets -IC:/Qt/6.7.1/mingw_64/include/QtGui -IC:/Qt/6.7.1/mingw_64/include/QtSql -IC:/Qt/6.7.1/mingw_64/include/QtCore -I. -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++ -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed -IC:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include ..\..\clientes\telaPagamento\pagamentotela.h -o debug\moc_pagamentotela.cpp
 
 debug/moc_telaavaliacao.cpp: ../../clientes/telaavaliacao.h \
 		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QDialog \
@@ -818,7 +818,7 @@ debug/moc_telaavaliacao.cpp: ../../clientes/telaavaliacao.h \
 		C:/Qt/6.7.1/mingw_64/include/QtGui/qguiapplication_platform.h \
 		debug/moc_predefs.h \
 		C:/Qt/6.7.1/mingw_64/bin/moc.exe
-	C:\Qt\6.7.1\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/snowb/OneDrive/Documentos/GitHub/hotelQT/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/debug/moc_predefs.h -IC:/Qt/6.7.1/mingw_64/mkspecs/win32-g++ -IC:/Users/snowb/OneDrive/Documentos/GitHub/hotelQT -IC:/Qt/6.7.1/mingw_64/include -IC:/Qt/6.7.1/mingw_64/include/QtWidgets -IC:/Qt/6.7.1/mingw_64/include/QtGui -IC:/Qt/6.7.1/mingw_64/include/QtSql -IC:/Qt/6.7.1/mingw_64/include/QtCore -I. -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++ -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed -IC:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include ..\..\clientes\telaavaliacao.h -o debug\moc_telaavaliacao.cpp
+	C:\Qt\6.7.1\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/Usuario/Documents/GitHub/hotelQT/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/debug/moc_predefs.h -IC:/Qt/6.7.1/mingw_64/mkspecs/win32-g++ -IC:/Users/Usuario/Documents/GitHub/hotelQT -IC:/Qt/6.7.1/mingw_64/include -IC:/Qt/6.7.1/mingw_64/include/QtWidgets -IC:/Qt/6.7.1/mingw_64/include/QtGui -IC:/Qt/6.7.1/mingw_64/include/QtSql -IC:/Qt/6.7.1/mingw_64/include/QtCore -I. -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++ -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed -IC:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include ..\..\clientes\telaavaliacao.h -o debug\moc_telaavaliacao.cpp
 
 debug/moc_telacliente.cpp: ../../clientes/telacliente.h \
 		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QDialog \
@@ -1176,7 +1176,7 @@ debug/moc_telacliente.cpp: ../../clientes/telacliente.h \
 		../../colaboradores/listaQuartos/telafiltrar.h \
 		debug/moc_predefs.h \
 		C:/Qt/6.7.1/mingw_64/bin/moc.exe
-	C:\Qt\6.7.1\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/snowb/OneDrive/Documentos/GitHub/hotelQT/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/debug/moc_predefs.h -IC:/Qt/6.7.1/mingw_64/mkspecs/win32-g++ -IC:/Users/snowb/OneDrive/Documentos/GitHub/hotelQT -IC:/Qt/6.7.1/mingw_64/include -IC:/Qt/6.7.1/mingw_64/include/QtWidgets -IC:/Qt/6.7.1/mingw_64/include/QtGui -IC:/Qt/6.7.1/mingw_64/include/QtSql -IC:/Qt/6.7.1/mingw_64/include/QtCore -I. -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++ -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed -IC:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include ..\..\clientes\telacliente.h -o debug\moc_telacliente.cpp
+	C:\Qt\6.7.1\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/Usuario/Documents/GitHub/hotelQT/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/debug/moc_predefs.h -IC:/Qt/6.7.1/mingw_64/mkspecs/win32-g++ -IC:/Users/Usuario/Documents/GitHub/hotelQT -IC:/Qt/6.7.1/mingw_64/include -IC:/Qt/6.7.1/mingw_64/include/QtWidgets -IC:/Qt/6.7.1/mingw_64/include/QtGui -IC:/Qt/6.7.1/mingw_64/include/QtSql -IC:/Qt/6.7.1/mingw_64/include/QtCore -I. -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++ -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed -IC:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include ..\..\clientes\telacliente.h -o debug\moc_telacliente.cpp
 
 debug/moc_telalogin.cpp: ../../clientes/telalogin.h \
 		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QDialog \
@@ -1533,7 +1533,7 @@ debug/moc_telalogin.cpp: ../../clientes/telalogin.h \
 		C:/Qt/6.7.1/mingw_64/include/QtSql/qtsqlversion.h \
 		debug/moc_predefs.h \
 		C:/Qt/6.7.1/mingw_64/bin/moc.exe
-	C:\Qt\6.7.1\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/snowb/OneDrive/Documentos/GitHub/hotelQT/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/debug/moc_predefs.h -IC:/Qt/6.7.1/mingw_64/mkspecs/win32-g++ -IC:/Users/snowb/OneDrive/Documentos/GitHub/hotelQT -IC:/Qt/6.7.1/mingw_64/include -IC:/Qt/6.7.1/mingw_64/include/QtWidgets -IC:/Qt/6.7.1/mingw_64/include/QtGui -IC:/Qt/6.7.1/mingw_64/include/QtSql -IC:/Qt/6.7.1/mingw_64/include/QtCore -I. -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++ -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed -IC:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include ..\..\clientes\telalogin.h -o debug\moc_telalogin.cpp
+	C:\Qt\6.7.1\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/Usuario/Documents/GitHub/hotelQT/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/debug/moc_predefs.h -IC:/Qt/6.7.1/mingw_64/mkspecs/win32-g++ -IC:/Users/Usuario/Documents/GitHub/hotelQT -IC:/Qt/6.7.1/mingw_64/include -IC:/Qt/6.7.1/mingw_64/include/QtWidgets -IC:/Qt/6.7.1/mingw_64/include/QtGui -IC:/Qt/6.7.1/mingw_64/include/QtSql -IC:/Qt/6.7.1/mingw_64/include/QtCore -I. -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++ -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed -IC:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include ..\..\clientes\telalogin.h -o debug\moc_telalogin.cpp
 
 debug/moc_telanotificacoes.cpp: ../../clientes/telanotificacoes.h \
 		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QDialog \
@@ -1725,7 +1725,7 @@ debug/moc_telanotificacoes.cpp: ../../clientes/telanotificacoes.h \
 		C:/Qt/6.7.1/mingw_64/include/QtGui/qguiapplication_platform.h \
 		debug/moc_predefs.h \
 		C:/Qt/6.7.1/mingw_64/bin/moc.exe
-	C:\Qt\6.7.1\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/snowb/OneDrive/Documentos/GitHub/hotelQT/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/debug/moc_predefs.h -IC:/Qt/6.7.1/mingw_64/mkspecs/win32-g++ -IC:/Users/snowb/OneDrive/Documentos/GitHub/hotelQT -IC:/Qt/6.7.1/mingw_64/include -IC:/Qt/6.7.1/mingw_64/include/QtWidgets -IC:/Qt/6.7.1/mingw_64/include/QtGui -IC:/Qt/6.7.1/mingw_64/include/QtSql -IC:/Qt/6.7.1/mingw_64/include/QtCore -I. -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++ -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed -IC:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include ..\..\clientes\telanotificacoes.h -o debug\moc_telanotificacoes.cpp
+	C:\Qt\6.7.1\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/Usuario/Documents/GitHub/hotelQT/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/debug/moc_predefs.h -IC:/Qt/6.7.1/mingw_64/mkspecs/win32-g++ -IC:/Users/Usuario/Documents/GitHub/hotelQT -IC:/Qt/6.7.1/mingw_64/include -IC:/Qt/6.7.1/mingw_64/include/QtWidgets -IC:/Qt/6.7.1/mingw_64/include/QtGui -IC:/Qt/6.7.1/mingw_64/include/QtSql -IC:/Qt/6.7.1/mingw_64/include/QtCore -I. -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++ -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed -IC:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include ..\..\clientes\telanotificacoes.h -o debug\moc_telanotificacoes.cpp
 
 debug/moc_telaquarto.cpp: ../../clientes/telaquarto.h \
 		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QDialog \
@@ -1918,7 +1918,7 @@ debug/moc_telaquarto.cpp: ../../clientes/telaquarto.h \
 		../../clientes/telaPagamento/pagamentotela.h \
 		debug/moc_predefs.h \
 		C:/Qt/6.7.1/mingw_64/bin/moc.exe
-	C:\Qt\6.7.1\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/snowb/OneDrive/Documentos/GitHub/hotelQT/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/debug/moc_predefs.h -IC:/Qt/6.7.1/mingw_64/mkspecs/win32-g++ -IC:/Users/snowb/OneDrive/Documentos/GitHub/hotelQT -IC:/Qt/6.7.1/mingw_64/include -IC:/Qt/6.7.1/mingw_64/include/QtWidgets -IC:/Qt/6.7.1/mingw_64/include/QtGui -IC:/Qt/6.7.1/mingw_64/include/QtSql -IC:/Qt/6.7.1/mingw_64/include/QtCore -I. -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++ -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed -IC:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include ..\..\clientes\telaquarto.h -o debug\moc_telaquarto.cpp
+	C:\Qt\6.7.1\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/Usuario/Documents/GitHub/hotelQT/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/debug/moc_predefs.h -IC:/Qt/6.7.1/mingw_64/mkspecs/win32-g++ -IC:/Users/Usuario/Documents/GitHub/hotelQT -IC:/Qt/6.7.1/mingw_64/include -IC:/Qt/6.7.1/mingw_64/include/QtWidgets -IC:/Qt/6.7.1/mingw_64/include/QtGui -IC:/Qt/6.7.1/mingw_64/include/QtSql -IC:/Qt/6.7.1/mingw_64/include/QtCore -I. -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++ -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed -IC:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include ..\..\clientes\telaquarto.h -o debug\moc_telaquarto.cpp
 
 debug/moc_telareserva.cpp: ../../clientes/telareserva.h \
 		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QDialog \
@@ -2110,7 +2110,7 @@ debug/moc_telareserva.cpp: ../../clientes/telareserva.h \
 		C:/Qt/6.7.1/mingw_64/include/QtGui/qguiapplication_platform.h \
 		debug/moc_predefs.h \
 		C:/Qt/6.7.1/mingw_64/bin/moc.exe
-	C:\Qt\6.7.1\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/snowb/OneDrive/Documentos/GitHub/hotelQT/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/debug/moc_predefs.h -IC:/Qt/6.7.1/mingw_64/mkspecs/win32-g++ -IC:/Users/snowb/OneDrive/Documentos/GitHub/hotelQT -IC:/Qt/6.7.1/mingw_64/include -IC:/Qt/6.7.1/mingw_64/include/QtWidgets -IC:/Qt/6.7.1/mingw_64/include/QtGui -IC:/Qt/6.7.1/mingw_64/include/QtSql -IC:/Qt/6.7.1/mingw_64/include/QtCore -I. -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++ -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed -IC:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include ..\..\clientes\telareserva.h -o debug\moc_telareserva.cpp
+	C:\Qt\6.7.1\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/Usuario/Documents/GitHub/hotelQT/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/debug/moc_predefs.h -IC:/Qt/6.7.1/mingw_64/mkspecs/win32-g++ -IC:/Users/Usuario/Documents/GitHub/hotelQT -IC:/Qt/6.7.1/mingw_64/include -IC:/Qt/6.7.1/mingw_64/include/QtWidgets -IC:/Qt/6.7.1/mingw_64/include/QtGui -IC:/Qt/6.7.1/mingw_64/include/QtSql -IC:/Qt/6.7.1/mingw_64/include/QtCore -I. -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++ -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed -IC:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include ..\..\clientes\telareserva.h -o debug\moc_telareserva.cpp
 
 debug/moc_cadastrocolaborador.cpp: ../../colaboradores/cadastrocolaborador.h \
 		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QDialog \
@@ -2470,7 +2470,7 @@ debug/moc_cadastrocolaborador.cpp: ../../colaboradores/cadastrocolaborador.h \
 		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qdialogbuttonbox.h \
 		debug/moc_predefs.h \
 		C:/Qt/6.7.1/mingw_64/bin/moc.exe
-	C:\Qt\6.7.1\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/snowb/OneDrive/Documentos/GitHub/hotelQT/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/debug/moc_predefs.h -IC:/Qt/6.7.1/mingw_64/mkspecs/win32-g++ -IC:/Users/snowb/OneDrive/Documentos/GitHub/hotelQT -IC:/Qt/6.7.1/mingw_64/include -IC:/Qt/6.7.1/mingw_64/include/QtWidgets -IC:/Qt/6.7.1/mingw_64/include/QtGui -IC:/Qt/6.7.1/mingw_64/include/QtSql -IC:/Qt/6.7.1/mingw_64/include/QtCore -I. -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++ -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed -IC:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include ..\..\colaboradores\cadastrocolaborador.h -o debug\moc_cadastrocolaborador.cpp
+	C:\Qt\6.7.1\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/Usuario/Documents/GitHub/hotelQT/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/debug/moc_predefs.h -IC:/Qt/6.7.1/mingw_64/mkspecs/win32-g++ -IC:/Users/Usuario/Documents/GitHub/hotelQT -IC:/Qt/6.7.1/mingw_64/include -IC:/Qt/6.7.1/mingw_64/include/QtWidgets -IC:/Qt/6.7.1/mingw_64/include/QtGui -IC:/Qt/6.7.1/mingw_64/include/QtSql -IC:/Qt/6.7.1/mingw_64/include/QtCore -I. -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++ -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed -IC:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include ..\..\colaboradores\cadastrocolaborador.h -o debug\moc_cadastrocolaborador.cpp
 
 debug/moc_cadastroquartos.cpp: ../../colaboradores/cadastroquartos.h \
 		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QDialog \
@@ -2662,7 +2662,7 @@ debug/moc_cadastroquartos.cpp: ../../colaboradores/cadastroquartos.h \
 		C:/Qt/6.7.1/mingw_64/include/QtGui/qguiapplication_platform.h \
 		debug/moc_predefs.h \
 		C:/Qt/6.7.1/mingw_64/bin/moc.exe
-	C:\Qt\6.7.1\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/snowb/OneDrive/Documentos/GitHub/hotelQT/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/debug/moc_predefs.h -IC:/Qt/6.7.1/mingw_64/mkspecs/win32-g++ -IC:/Users/snowb/OneDrive/Documentos/GitHub/hotelQT -IC:/Qt/6.7.1/mingw_64/include -IC:/Qt/6.7.1/mingw_64/include/QtWidgets -IC:/Qt/6.7.1/mingw_64/include/QtGui -IC:/Qt/6.7.1/mingw_64/include/QtSql -IC:/Qt/6.7.1/mingw_64/include/QtCore -I. -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++ -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed -IC:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include ..\..\colaboradores\cadastroquartos.h -o debug\moc_cadastroquartos.cpp
+	C:\Qt\6.7.1\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/Usuario/Documents/GitHub/hotelQT/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/debug/moc_predefs.h -IC:/Qt/6.7.1/mingw_64/mkspecs/win32-g++ -IC:/Users/Usuario/Documents/GitHub/hotelQT -IC:/Qt/6.7.1/mingw_64/include -IC:/Qt/6.7.1/mingw_64/include/QtWidgets -IC:/Qt/6.7.1/mingw_64/include/QtGui -IC:/Qt/6.7.1/mingw_64/include/QtSql -IC:/Qt/6.7.1/mingw_64/include/QtCore -I. -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++ -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed -IC:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include ..\..\colaboradores\cadastroquartos.h -o debug\moc_cadastroquartos.cpp
 
 debug/moc_editarcliente.cpp: ../../colaboradores/editarcliente.h \
 		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QDialog \
@@ -2854,7 +2854,7 @@ debug/moc_editarcliente.cpp: ../../colaboradores/editarcliente.h \
 		C:/Qt/6.7.1/mingw_64/include/QtGui/qguiapplication_platform.h \
 		debug/moc_predefs.h \
 		C:/Qt/6.7.1/mingw_64/bin/moc.exe
-	C:\Qt\6.7.1\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/snowb/OneDrive/Documentos/GitHub/hotelQT/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/debug/moc_predefs.h -IC:/Qt/6.7.1/mingw_64/mkspecs/win32-g++ -IC:/Users/snowb/OneDrive/Documentos/GitHub/hotelQT -IC:/Qt/6.7.1/mingw_64/include -IC:/Qt/6.7.1/mingw_64/include/QtWidgets -IC:/Qt/6.7.1/mingw_64/include/QtGui -IC:/Qt/6.7.1/mingw_64/include/QtSql -IC:/Qt/6.7.1/mingw_64/include/QtCore -I. -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++ -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed -IC:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include ..\..\colaboradores\editarcliente.h -o debug\moc_editarcliente.cpp
+	C:\Qt\6.7.1\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/Usuario/Documents/GitHub/hotelQT/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/debug/moc_predefs.h -IC:/Qt/6.7.1/mingw_64/mkspecs/win32-g++ -IC:/Users/Usuario/Documents/GitHub/hotelQT -IC:/Qt/6.7.1/mingw_64/include -IC:/Qt/6.7.1/mingw_64/include/QtWidgets -IC:/Qt/6.7.1/mingw_64/include/QtGui -IC:/Qt/6.7.1/mingw_64/include/QtSql -IC:/Qt/6.7.1/mingw_64/include/QtCore -I. -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++ -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed -IC:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include ..\..\colaboradores\editarcliente.h -o debug\moc_editarcliente.cpp
 
 debug/moc_telafiltrar.cpp: ../../colaboradores/listaQuartos/telafiltrar.h \
 		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QDialog \
@@ -3046,7 +3046,7 @@ debug/moc_telafiltrar.cpp: ../../colaboradores/listaQuartos/telafiltrar.h \
 		C:/Qt/6.7.1/mingw_64/include/QtGui/qguiapplication_platform.h \
 		debug/moc_predefs.h \
 		C:/Qt/6.7.1/mingw_64/bin/moc.exe
-	C:\Qt\6.7.1\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/snowb/OneDrive/Documentos/GitHub/hotelQT/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/debug/moc_predefs.h -IC:/Qt/6.7.1/mingw_64/mkspecs/win32-g++ -IC:/Users/snowb/OneDrive/Documentos/GitHub/hotelQT -IC:/Qt/6.7.1/mingw_64/include -IC:/Qt/6.7.1/mingw_64/include/QtWidgets -IC:/Qt/6.7.1/mingw_64/include/QtGui -IC:/Qt/6.7.1/mingw_64/include/QtSql -IC:/Qt/6.7.1/mingw_64/include/QtCore -I. -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++ -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed -IC:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include ..\..\colaboradores\listaQuartos\telafiltrar.h -o debug\moc_telafiltrar.cpp
+	C:\Qt\6.7.1\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/Usuario/Documents/GitHub/hotelQT/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/debug/moc_predefs.h -IC:/Qt/6.7.1/mingw_64/mkspecs/win32-g++ -IC:/Users/Usuario/Documents/GitHub/hotelQT -IC:/Qt/6.7.1/mingw_64/include -IC:/Qt/6.7.1/mingw_64/include/QtWidgets -IC:/Qt/6.7.1/mingw_64/include/QtGui -IC:/Qt/6.7.1/mingw_64/include/QtSql -IC:/Qt/6.7.1/mingw_64/include/QtCore -I. -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++ -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed -IC:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include ..\..\colaboradores\listaQuartos\telafiltrar.h -o debug\moc_telafiltrar.cpp
 
 debug/moc_listaclientes.cpp: ../../colaboradores/listaclientes.h \
 		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QDialog \
@@ -3238,7 +3238,7 @@ debug/moc_listaclientes.cpp: ../../colaboradores/listaclientes.h \
 		C:/Qt/6.7.1/mingw_64/include/QtGui/qguiapplication_platform.h \
 		debug/moc_predefs.h \
 		C:/Qt/6.7.1/mingw_64/bin/moc.exe
-	C:\Qt\6.7.1\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/snowb/OneDrive/Documentos/GitHub/hotelQT/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/debug/moc_predefs.h -IC:/Qt/6.7.1/mingw_64/mkspecs/win32-g++ -IC:/Users/snowb/OneDrive/Documentos/GitHub/hotelQT -IC:/Qt/6.7.1/mingw_64/include -IC:/Qt/6.7.1/mingw_64/include/QtWidgets -IC:/Qt/6.7.1/mingw_64/include/QtGui -IC:/Qt/6.7.1/mingw_64/include/QtSql -IC:/Qt/6.7.1/mingw_64/include/QtCore -I. -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++ -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed -IC:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include ..\..\colaboradores\listaclientes.h -o debug\moc_listaclientes.cpp
+	C:\Qt\6.7.1\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/Usuario/Documents/GitHub/hotelQT/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/debug/moc_predefs.h -IC:/Qt/6.7.1/mingw_64/mkspecs/win32-g++ -IC:/Users/Usuario/Documents/GitHub/hotelQT -IC:/Qt/6.7.1/mingw_64/include -IC:/Qt/6.7.1/mingw_64/include/QtWidgets -IC:/Qt/6.7.1/mingw_64/include/QtGui -IC:/Qt/6.7.1/mingw_64/include/QtSql -IC:/Qt/6.7.1/mingw_64/include/QtCore -I. -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++ -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed -IC:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include ..\..\colaboradores\listaclientes.h -o debug\moc_listaclientes.cpp
 
 debug/moc_listaquartos.cpp: ../../colaboradores/listaquartos.h \
 		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QDialog \
@@ -3596,7 +3596,7 @@ debug/moc_listaquartos.cpp: ../../colaboradores/listaquartos.h \
 		C:/Qt/6.7.1/mingw_64/include/QtSql/qtsqlversion.h \
 		debug/moc_predefs.h \
 		C:/Qt/6.7.1/mingw_64/bin/moc.exe
-	C:\Qt\6.7.1\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/snowb/OneDrive/Documentos/GitHub/hotelQT/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/debug/moc_predefs.h -IC:/Qt/6.7.1/mingw_64/mkspecs/win32-g++ -IC:/Users/snowb/OneDrive/Documentos/GitHub/hotelQT -IC:/Qt/6.7.1/mingw_64/include -IC:/Qt/6.7.1/mingw_64/include/QtWidgets -IC:/Qt/6.7.1/mingw_64/include/QtGui -IC:/Qt/6.7.1/mingw_64/include/QtSql -IC:/Qt/6.7.1/mingw_64/include/QtCore -I. -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++ -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed -IC:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include ..\..\colaboradores\listaquartos.h -o debug\moc_listaquartos.cpp
+	C:\Qt\6.7.1\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/Usuario/Documents/GitHub/hotelQT/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/debug/moc_predefs.h -IC:/Qt/6.7.1/mingw_64/mkspecs/win32-g++ -IC:/Users/Usuario/Documents/GitHub/hotelQT -IC:/Qt/6.7.1/mingw_64/include -IC:/Qt/6.7.1/mingw_64/include/QtWidgets -IC:/Qt/6.7.1/mingw_64/include/QtGui -IC:/Qt/6.7.1/mingw_64/include/QtSql -IC:/Qt/6.7.1/mingw_64/include/QtCore -I. -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++ -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed -IC:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include ..\..\colaboradores\listaquartos.h -o debug\moc_listaquartos.cpp
 
 debug/moc_reservastela.cpp: ../../colaboradores/reservastela.h \
 		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QDialog \
@@ -3788,7 +3788,7 @@ debug/moc_reservastela.cpp: ../../colaboradores/reservastela.h \
 		C:/Qt/6.7.1/mingw_64/include/QtGui/qguiapplication_platform.h \
 		debug/moc_predefs.h \
 		C:/Qt/6.7.1/mingw_64/bin/moc.exe
-	C:\Qt\6.7.1\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/snowb/OneDrive/Documentos/GitHub/hotelQT/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/debug/moc_predefs.h -IC:/Qt/6.7.1/mingw_64/mkspecs/win32-g++ -IC:/Users/snowb/OneDrive/Documentos/GitHub/hotelQT -IC:/Qt/6.7.1/mingw_64/include -IC:/Qt/6.7.1/mingw_64/include/QtWidgets -IC:/Qt/6.7.1/mingw_64/include/QtGui -IC:/Qt/6.7.1/mingw_64/include/QtSql -IC:/Qt/6.7.1/mingw_64/include/QtCore -I. -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++ -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed -IC:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include ..\..\colaboradores\reservastela.h -o debug\moc_reservastela.cpp
+	C:\Qt\6.7.1\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/Usuario/Documents/GitHub/hotelQT/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/debug/moc_predefs.h -IC:/Qt/6.7.1/mingw_64/mkspecs/win32-g++ -IC:/Users/Usuario/Documents/GitHub/hotelQT -IC:/Qt/6.7.1/mingw_64/include -IC:/Qt/6.7.1/mingw_64/include/QtWidgets -IC:/Qt/6.7.1/mingw_64/include/QtGui -IC:/Qt/6.7.1/mingw_64/include/QtSql -IC:/Qt/6.7.1/mingw_64/include/QtCore -I. -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++ -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed -IC:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include ..\..\colaboradores\reservastela.h -o debug\moc_reservastela.cpp
 
 debug/moc_telacolaborador.cpp: ../../colaboradores/telacolaborador.h \
 		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QDialog \
@@ -4145,7 +4145,7 @@ debug/moc_telacolaborador.cpp: ../../colaboradores/telacolaborador.h \
 		C:/Qt/6.7.1/mingw_64/include/QtSql/qtsqlversion.h \
 		debug/moc_predefs.h \
 		C:/Qt/6.7.1/mingw_64/bin/moc.exe
-	C:\Qt\6.7.1\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/snowb/OneDrive/Documentos/GitHub/hotelQT/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/debug/moc_predefs.h -IC:/Qt/6.7.1/mingw_64/mkspecs/win32-g++ -IC:/Users/snowb/OneDrive/Documentos/GitHub/hotelQT -IC:/Qt/6.7.1/mingw_64/include -IC:/Qt/6.7.1/mingw_64/include/QtWidgets -IC:/Qt/6.7.1/mingw_64/include/QtGui -IC:/Qt/6.7.1/mingw_64/include/QtSql -IC:/Qt/6.7.1/mingw_64/include/QtCore -I. -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++ -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed -IC:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include ..\..\colaboradores\telacolaborador.h -o debug\moc_telacolaborador.cpp
+	C:\Qt\6.7.1\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/Usuario/Documents/GitHub/hotelQT/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/debug/moc_predefs.h -IC:/Qt/6.7.1/mingw_64/mkspecs/win32-g++ -IC:/Users/Usuario/Documents/GitHub/hotelQT -IC:/Qt/6.7.1/mingw_64/include -IC:/Qt/6.7.1/mingw_64/include/QtWidgets -IC:/Qt/6.7.1/mingw_64/include/QtGui -IC:/Qt/6.7.1/mingw_64/include/QtSql -IC:/Qt/6.7.1/mingw_64/include/QtCore -I. -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++ -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed -IC:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include ..\..\colaboradores\telacolaborador.h -o debug\moc_telacolaborador.cpp
 
 debug/moc_telalogincolaborador.cpp: ../../colaboradores/telalogincolaborador.h \
 		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QDialog \
@@ -4502,7 +4502,7 @@ debug/moc_telalogincolaborador.cpp: ../../colaboradores/telalogincolaborador.h \
 		C:/Qt/6.7.1/mingw_64/include/QtSql/qtsqlversion.h \
 		debug/moc_predefs.h \
 		C:/Qt/6.7.1/mingw_64/bin/moc.exe
-	C:\Qt\6.7.1\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/snowb/OneDrive/Documentos/GitHub/hotelQT/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/debug/moc_predefs.h -IC:/Qt/6.7.1/mingw_64/mkspecs/win32-g++ -IC:/Users/snowb/OneDrive/Documentos/GitHub/hotelQT -IC:/Qt/6.7.1/mingw_64/include -IC:/Qt/6.7.1/mingw_64/include/QtWidgets -IC:/Qt/6.7.1/mingw_64/include/QtGui -IC:/Qt/6.7.1/mingw_64/include/QtSql -IC:/Qt/6.7.1/mingw_64/include/QtCore -I. -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++ -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed -IC:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include ..\..\colaboradores\telalogincolaborador.h -o debug\moc_telalogincolaborador.cpp
+	C:\Qt\6.7.1\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/Usuario/Documents/GitHub/hotelQT/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/debug/moc_predefs.h -IC:/Qt/6.7.1/mingw_64/mkspecs/win32-g++ -IC:/Users/Usuario/Documents/GitHub/hotelQT -IC:/Qt/6.7.1/mingw_64/include -IC:/Qt/6.7.1/mingw_64/include/QtWidgets -IC:/Qt/6.7.1/mingw_64/include/QtGui -IC:/Qt/6.7.1/mingw_64/include/QtSql -IC:/Qt/6.7.1/mingw_64/include/QtCore -I. -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++ -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed -IC:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include ..\..\colaboradores\telalogincolaborador.h -o debug\moc_telalogincolaborador.cpp
 
 debug/moc_telanotificacoescolaborador.cpp: ../../colaboradores/telanotificacoescolaborador.h \
 		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QDialog \
@@ -4694,7 +4694,7 @@ debug/moc_telanotificacoescolaborador.cpp: ../../colaboradores/telanotificacoesc
 		C:/Qt/6.7.1/mingw_64/include/QtGui/qguiapplication_platform.h \
 		debug/moc_predefs.h \
 		C:/Qt/6.7.1/mingw_64/bin/moc.exe
-	C:\Qt\6.7.1\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/snowb/OneDrive/Documentos/GitHub/hotelQT/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/debug/moc_predefs.h -IC:/Qt/6.7.1/mingw_64/mkspecs/win32-g++ -IC:/Users/snowb/OneDrive/Documentos/GitHub/hotelQT -IC:/Qt/6.7.1/mingw_64/include -IC:/Qt/6.7.1/mingw_64/include/QtWidgets -IC:/Qt/6.7.1/mingw_64/include/QtGui -IC:/Qt/6.7.1/mingw_64/include/QtSql -IC:/Qt/6.7.1/mingw_64/include/QtCore -I. -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++ -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed -IC:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include ..\..\colaboradores\telanotificacoescolaborador.h -o debug\moc_telanotificacoescolaborador.cpp
+	C:\Qt\6.7.1\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/Usuario/Documents/GitHub/hotelQT/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/debug/moc_predefs.h -IC:/Qt/6.7.1/mingw_64/mkspecs/win32-g++ -IC:/Users/Usuario/Documents/GitHub/hotelQT -IC:/Qt/6.7.1/mingw_64/include -IC:/Qt/6.7.1/mingw_64/include/QtWidgets -IC:/Qt/6.7.1/mingw_64/include/QtGui -IC:/Qt/6.7.1/mingw_64/include/QtSql -IC:/Qt/6.7.1/mingw_64/include/QtCore -I. -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++ -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed -IC:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include ..\..\colaboradores\telanotificacoescolaborador.h -o debug\moc_telanotificacoescolaborador.cpp
 
 debug/moc_telainicial.cpp: ../../telainicial.h \
 		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QMainWindow \
@@ -5051,7 +5051,7 @@ debug/moc_telainicial.cpp: ../../telainicial.h \
 		C:/Qt/6.7.1/mingw_64/include/QtSql/qtsqlversion.h \
 		debug/moc_predefs.h \
 		C:/Qt/6.7.1/mingw_64/bin/moc.exe
-	C:\Qt\6.7.1\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/snowb/OneDrive/Documentos/GitHub/hotelQT/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/debug/moc_predefs.h -IC:/Qt/6.7.1/mingw_64/mkspecs/win32-g++ -IC:/Users/snowb/OneDrive/Documentos/GitHub/hotelQT -IC:/Qt/6.7.1/mingw_64/include -IC:/Qt/6.7.1/mingw_64/include/QtWidgets -IC:/Qt/6.7.1/mingw_64/include/QtGui -IC:/Qt/6.7.1/mingw_64/include/QtSql -IC:/Qt/6.7.1/mingw_64/include/QtCore -I. -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++ -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed -IC:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include ..\..\telainicial.h -o debug\moc_telainicial.cpp
+	C:\Qt\6.7.1\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/Usuario/Documents/GitHub/hotelQT/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/debug/moc_predefs.h -IC:/Qt/6.7.1/mingw_64/mkspecs/win32-g++ -IC:/Users/Usuario/Documents/GitHub/hotelQT -IC:/Qt/6.7.1/mingw_64/include -IC:/Qt/6.7.1/mingw_64/include/QtWidgets -IC:/Qt/6.7.1/mingw_64/include/QtGui -IC:/Qt/6.7.1/mingw_64/include/QtSql -IC:/Qt/6.7.1/mingw_64/include/QtCore -I. -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++ -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed -IC:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include ..\..\telainicial.h -o debug\moc_telainicial.cpp
 
 compiler_moc_objc_header_make_all:
 compiler_moc_objc_header_clean:
@@ -7081,12 +7081,8 @@ debug/telanotificacoes.o: ../../clientes/telanotificacoes.cpp ../../clientes/tel
 		C:/Qt/6.7.1/mingw_64/include/QtGui/qguiapplication_platform.h \
 		ui_telanotificacoes.h \
 		C:/Qt/6.7.1/mingw_64/include/QtCore/QVariant \
-		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QAbstractButton \
-		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qabstractbutton.h \
 		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QApplication \
 		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qapplication.h \
-		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QDialogButtonBox \
-		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qdialogbuttonbox.h \
 		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QHeaderView \
 		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qheaderview.h \
 		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qabstractitemview.h \
@@ -7109,6 +7105,9 @@ debug/telanotificacoes.o: ../../clientes/telanotificacoes.cpp ../../clientes/tel
 		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qlabel.h \
 		C:/Qt/6.7.1/mingw_64/include/QtGui/qpicture.h \
 		C:/Qt/6.7.1/mingw_64/include/QtGui/qtextdocument.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QPushButton \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qpushbutton.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qabstractbutton.h \
 		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QTableWidget \
 		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qtablewidget.h \
 		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qtableview.h \
@@ -7453,12 +7452,8 @@ debug/telaquarto.o: ../../clientes/telaquarto.cpp ../../clientes/telaquarto.h \
 		../../clientes/telaPagamento/pagamentotela.h \
 		ui_telaquarto.h \
 		C:/Qt/6.7.1/mingw_64/include/QtCore/QVariant \
-		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QAbstractButton \
-		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qabstractbutton.h \
 		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QApplication \
 		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qapplication.h \
-		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QDialogButtonBox \
-		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qdialogbuttonbox.h \
 		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QLabel \
 		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qlabel.h \
 		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qframe.h \
@@ -7472,6 +7467,7 @@ debug/telaquarto.o: ../../clientes/telaquarto.cpp ../../clientes/telaquarto.h \
 		C:/Qt/6.7.1/mingw_64/include/QtGui/qtextoption.h \
 		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QPushButton \
 		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qpushbutton.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qabstractbutton.h \
 		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QVBoxLayout \
 		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qboxlayout.h \
 		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qlayout.h \
@@ -7644,7 +7640,8 @@ debug/telaquarto.o: ../../clientes/telaquarto.cpp ../../clientes/telaquarto.h \
 		C:/Qt/6.7.1/mingw_64/include/QtGui/QPixmap \
 		../../clientes/reservas/reservas.h \
 		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QMessageBox \
-		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qmessagebox.h
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qmessagebox.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qdialogbuttonbox.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\telaquarto.o ..\..\clientes\telaquarto.cpp
 
 debug/telareserva.o: ../../clientes/telareserva.cpp ../../clientes/telareserva.h \
@@ -7837,12 +7834,8 @@ debug/telareserva.o: ../../clientes/telareserva.cpp ../../clientes/telareserva.h
 		C:/Qt/6.7.1/mingw_64/include/QtGui/qguiapplication_platform.h \
 		ui_telareserva.h \
 		C:/Qt/6.7.1/mingw_64/include/QtCore/QVariant \
-		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QAbstractButton \
-		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qabstractbutton.h \
 		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QApplication \
 		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qapplication.h \
-		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QDialogButtonBox \
-		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qdialogbuttonbox.h \
 		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QHeaderView \
 		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qheaderview.h \
 		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qabstractitemview.h \
@@ -7865,6 +7858,9 @@ debug/telareserva.o: ../../clientes/telareserva.cpp ../../clientes/telareserva.h
 		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qlabel.h \
 		C:/Qt/6.7.1/mingw_64/include/QtGui/qpicture.h \
 		C:/Qt/6.7.1/mingw_64/include/QtGui/qtextdocument.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QPushButton \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qpushbutton.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qabstractbutton.h \
 		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QTableWidget \
 		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qtablewidget.h \
 		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qtableview.h \
@@ -8017,7 +8013,8 @@ debug/telareserva.o: ../../clientes/telareserva.cpp ../../clientes/telareserva.h
 		C:/Qt/6.7.1/mingw_64/include/QtSql/qsqlresult.h \
 		C:/Qt/6.7.1/mingw_64/include/QtSql/qtsqlversion.h \
 		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QMessageBox \
-		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qmessagebox.h
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qmessagebox.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qdialogbuttonbox.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\telareserva.o ..\..\clientes\telareserva.cpp
 
 debug/cadastrocolaborador.o: ../../colaboradores/cadastrocolaborador.cpp ../../colaboradores/cadastrocolaborador.h \
@@ -9368,19 +9365,18 @@ debug/telafiltrar.o: ../../colaboradores/listaQuartos/telafiltrar.cpp ../../cola
 		C:/Qt/6.7.1/mingw_64/include/QtGui/qguiapplication_platform.h \
 		ui_telafiltrar.h \
 		C:/Qt/6.7.1/mingw_64/include/QtCore/QVariant \
-		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QAbstractButton \
-		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qabstractbutton.h \
 		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QApplication \
 		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qapplication.h \
 		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QCheckBox \
 		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qcheckbox.h \
-		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QDialogButtonBox \
-		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qdialogbuttonbox.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qabstractbutton.h \
 		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QHBoxLayout \
 		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qboxlayout.h \
 		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qlayout.h \
 		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qlayoutitem.h \
 		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qgridlayout.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QPushButton \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qpushbutton.h \
 		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QVBoxLayout \
 		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QWidget
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\telafiltrar.o ..\..\colaboradores\listaQuartos\telafiltrar.cpp
@@ -10120,17 +10116,8 @@ debug/listaquartos.o: ../../colaboradores/listaquartos.cpp ../../colaboradores/l
 		C:/Qt/6.7.1/mingw_64/include/QtSql/qsqlresult.h \
 		C:/Qt/6.7.1/mingw_64/include/QtSql/qtsqlversion.h \
 		ui_listaquartos.h \
-		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QAbstractButton \
-		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qabstractbutton.h \
 		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QApplication \
 		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qapplication.h \
-		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QDialogButtonBox \
-		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qdialogbuttonbox.h \
-		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QHBoxLayout \
-		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qboxlayout.h \
-		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qlayout.h \
-		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qlayoutitem.h \
-		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qgridlayout.h \
 		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QHeaderView \
 		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qheaderview.h \
 		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QLabel \
@@ -10139,12 +10126,13 @@ debug/listaquartos.o: ../../colaboradores/listaquartos.cpp ../../colaboradores/l
 		C:/Qt/6.7.1/mingw_64/include/QtGui/qtextdocument.h \
 		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QPushButton \
 		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qpushbutton.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qabstractbutton.h \
 		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QTableWidget \
 		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qtablewidget.h \
 		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qtableview.h \
-		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QWidget \
 		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QMessageBox \
 		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qmessagebox.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qdialogbuttonbox.h \
 		C:/Qt/6.7.1/mingw_64/include/QtCore/QDebug
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\listaquartos.o ..\..\colaboradores\listaquartos.cpp
 
@@ -10338,12 +10326,8 @@ debug/reservastela.o: ../../colaboradores/reservastela.cpp ../../colaboradores/r
 		C:/Qt/6.7.1/mingw_64/include/QtGui/qguiapplication_platform.h \
 		ui_reservastela.h \
 		C:/Qt/6.7.1/mingw_64/include/QtCore/QVariant \
-		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QAbstractButton \
-		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qabstractbutton.h \
 		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QApplication \
 		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qapplication.h \
-		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QDialogButtonBox \
-		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qdialogbuttonbox.h \
 		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QHBoxLayout \
 		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qboxlayout.h \
 		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qlayout.h \
@@ -10373,6 +10357,7 @@ debug/reservastela.o: ../../colaboradores/reservastela.cpp ../../colaboradores/r
 		C:/Qt/6.7.1/mingw_64/include/QtGui/qtextdocument.h \
 		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QPushButton \
 		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qpushbutton.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qabstractbutton.h \
 		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QTableWidget \
 		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qtablewidget.h \
 		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qtableview.h \
@@ -10526,7 +10511,8 @@ debug/reservastela.o: ../../colaboradores/reservastela.cpp ../../colaboradores/r
 		C:/Qt/6.7.1/mingw_64/include/QtSql/qsqlresult.h \
 		C:/Qt/6.7.1/mingw_64/include/QtSql/qtsqlversion.h \
 		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QMessageBox \
-		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qmessagebox.h
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qmessagebox.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qdialogbuttonbox.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\reservastela.o ..\..\colaboradores\reservastela.cpp
 
 debug/telacolaborador.o: ../../colaboradores/telacolaborador.cpp ../../colaboradores/telacolaborador.h \
@@ -11481,12 +11467,8 @@ debug/telanotificacoescolaborador.o: ../../colaboradores/telanotificacoescolabor
 		C:/Qt/6.7.1/mingw_64/include/QtGui/qguiapplication_platform.h \
 		ui_telanotificacoescolaborador.h \
 		C:/Qt/6.7.1/mingw_64/include/QtCore/QVariant \
-		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QAbstractButton \
-		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qabstractbutton.h \
 		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QApplication \
 		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qapplication.h \
-		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QDialogButtonBox \
-		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qdialogbuttonbox.h \
 		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QHeaderView \
 		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qheaderview.h \
 		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qabstractitemview.h \
@@ -11509,6 +11491,9 @@ debug/telanotificacoescolaborador.o: ../../colaboradores/telanotificacoescolabor
 		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qlabel.h \
 		C:/Qt/6.7.1/mingw_64/include/QtGui/qpicture.h \
 		C:/Qt/6.7.1/mingw_64/include/QtGui/qtextdocument.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QPushButton \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qpushbutton.h \
+		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qabstractbutton.h \
 		C:/Qt/6.7.1/mingw_64/include/QtWidgets/QTableWidget \
 		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qtablewidget.h \
 		C:/Qt/6.7.1/mingw_64/include/QtWidgets/qtableview.h \

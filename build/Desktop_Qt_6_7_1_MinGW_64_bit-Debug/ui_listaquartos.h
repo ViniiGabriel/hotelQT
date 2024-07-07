@@ -10,6 +10,7 @@
 #define UI_LISTAQUARTOS_H
 
 #include <QtCore/QVariant>
+#include <QtGui/QIcon>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QDialog>
 #include <QtWidgets/QHeaderView>
@@ -34,6 +35,8 @@ public:
         if (listaQuartos->objectName().isEmpty())
             listaQuartos->setObjectName("listaQuartos");
         listaQuartos->resize(664, 525);
+        QIcon icon(QIcon::fromTheme(QString::fromUtf8("go-home")));
+        listaQuartos->setWindowIcon(icon);
         listaQuartos->setStyleSheet(QString::fromUtf8("QDialog{\n"
 "	background-color: #cffdff;\n"
 "}\n"

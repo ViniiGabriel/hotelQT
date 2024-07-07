@@ -10,6 +10,7 @@
 #define UI_TELACLIENTE_H
 
 #include <QtCore/QVariant>
+#include <QtGui/QIcon>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QDialog>
 #include <QtWidgets/QHBoxLayout>
@@ -46,6 +47,8 @@ public:
         if (telaCliente->objectName().isEmpty())
             telaCliente->setObjectName("telaCliente");
         telaCliente->resize(804, 551);
+        QIcon icon(QIcon::fromTheme(QString::fromUtf8("go-home")));
+        telaCliente->setWindowIcon(icon);
         telaCliente->setStyleSheet(QString::fromUtf8("QDialog{\n"
 "	background-color: #cffdff;\n"
 "}\n"

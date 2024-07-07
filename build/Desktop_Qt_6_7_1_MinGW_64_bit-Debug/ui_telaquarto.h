@@ -10,6 +10,7 @@
 #define UI_TELAQUARTO_H
 
 #include <QtCore/QVariant>
+#include <QtGui/QIcon>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QDialog>
 #include <QtWidgets/QLabel>
@@ -45,6 +46,8 @@ public:
         if (telaQuarto->objectName().isEmpty())
             telaQuarto->setObjectName("telaQuarto");
         telaQuarto->resize(488, 410);
+        QIcon icon(QIcon::fromTheme(QString::fromUtf8("go-home")));
+        telaQuarto->setWindowIcon(icon);
         telaQuarto->setStyleSheet(QString::fromUtf8("QDialog{\n"
 "	background-color: #cffdff;\n"
 "}\n"

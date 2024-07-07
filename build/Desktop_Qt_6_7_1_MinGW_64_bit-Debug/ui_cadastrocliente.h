@@ -10,6 +10,7 @@
 #define UI_CADASTROCLIENTE_H
 
 #include <QtCore/QVariant>
+#include <QtGui/QIcon>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QDialog>
 #include <QtWidgets/QHBoxLayout>
@@ -48,6 +49,8 @@ public:
         if (cadastroCliente->objectName().isEmpty())
             cadastroCliente->setObjectName("cadastroCliente");
         cadastroCliente->resize(428, 261);
+        QIcon icon(QIcon::fromTheme(QString::fromUtf8("go-home")));
+        cadastroCliente->setWindowIcon(icon);
         cadastroCliente->setStyleSheet(QString::fromUtf8("QDialog{\n"
 "	background-color: #cffdff;\n"
 "}\n"

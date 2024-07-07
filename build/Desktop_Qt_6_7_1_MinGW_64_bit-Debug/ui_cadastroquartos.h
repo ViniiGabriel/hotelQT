@@ -10,6 +10,7 @@
 #define UI_CADASTROQUARTOS_H
 
 #include <QtCore/QVariant>
+#include <QtGui/QIcon>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QCheckBox>
 #include <QtWidgets/QComboBox>
@@ -71,6 +72,8 @@ public:
         if (cadastroQuartos->objectName().isEmpty())
             cadastroQuartos->setObjectName("cadastroQuartos");
         cadastroQuartos->resize(679, 465);
+        QIcon icon(QIcon::fromTheme(QString::fromUtf8("go-home")));
+        cadastroQuartos->setWindowIcon(icon);
         cadastroQuartos->setStyleSheet(QString::fromUtf8("#cadastroQuartos{\n"
 "	background-color: #cffdff;\n"
 "}\n"

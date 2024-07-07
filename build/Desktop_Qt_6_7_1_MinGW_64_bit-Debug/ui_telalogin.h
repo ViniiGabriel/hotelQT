@@ -10,6 +10,7 @@
 #define UI_TELALOGIN_H
 
 #include <QtCore/QVariant>
+#include <QtGui/QIcon>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QDialog>
 #include <QtWidgets/QHBoxLayout>
@@ -43,6 +44,8 @@ public:
         if (telaLogin->objectName().isEmpty())
             telaLogin->setObjectName("telaLogin");
         telaLogin->resize(473, 251);
+        QIcon icon(QIcon::fromTheme(QString::fromUtf8("go-home")));
+        telaLogin->setWindowIcon(icon);
         telaLogin->setStyleSheet(QString::fromUtf8("QDialog{\n"
 "	background-color: #cffdff;\n"
 "}\n"
