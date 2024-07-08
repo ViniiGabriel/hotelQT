@@ -13,6 +13,7 @@ telaQuarto::telaQuarto(QWidget *parent, int id, int idCliente)
 {
     tela = new pagamentoTela(this);
     ui->setupUi(this);
+    ui->txt_diaInicial->setFocus();
     QSqlQuery query;
     query.prepare("select * from tb_quartos where id="+QString::number(m_id));
     query.exec();

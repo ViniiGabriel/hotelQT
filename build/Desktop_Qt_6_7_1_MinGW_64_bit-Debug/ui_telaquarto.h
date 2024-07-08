@@ -156,7 +156,7 @@ public:
         label_3->setGeometry(QRect(12, 272, 91, 16));
         label_4 = new QLabel(telaQuarto);
         label_4->setObjectName("label_4");
-        label_4->setGeometry(QRect(225, 270, 71, 20));
+        label_4->setGeometry(QRect(225, 270, 31, 21));
         txt_diaInicial = new QLineEdit(telaQuarto);
         txt_diaInicial->setObjectName("txt_diaInicial");
         txt_diaInicial->setGeometry(QRect(100, 270, 31, 21));
@@ -167,6 +167,19 @@ public:
         btn_voltar = new QPushButton(telaQuarto);
         btn_voltar->setObjectName("btn_voltar");
         btn_voltar->setGeometry(QRect(380, 370, 93, 29));
+        foto_pixmap->raise();
+        layoutWidget->raise();
+        txt_mesInicial->raise();
+        txt_anoInicial->raise();
+        txt_mesFinal->raise();
+        txt_anoFinal->raise();
+        btn_reserva->raise();
+        label_3->raise();
+        label_4->raise();
+        txt_diaInicial->raise();
+        txt_avisoData->raise();
+        btn_voltar->raise();
+        txt_diaFinal->raise();
 
         retranslateUi(telaQuarto);
 

@@ -146,3 +146,20 @@ void reservasTela::on_btn_voltar_clicked()
     this->close();
 }
 
+
+void reservasTela::on_btn_cancelar_clicked()
+{
+    int linha=ui->tb_reservas->currentRow();
+    int id=ui->tb_reservas->item(linha, 5)->text().toInt();
+
+    QSqlQuery query;
+    query.prepare("delete from tb_reservas where idReserva="+QString::number(id));
+    if(query.exec())
+    {
+        ui->tb_reservas->removeRow(linha);
+        QMessageBox::information(this,"SUCESSO","Reserva excluida com sucesso");
+    } else {
+        QMessageBox::warning(this, "ERRO", "Erro ao excluir reserva");
+    }
+}
+

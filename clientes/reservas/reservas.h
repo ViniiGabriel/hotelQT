@@ -14,6 +14,7 @@ private:
     int DiaFinalReserva;
     int MesFinalReserva;
     int AnoFinalReserva;
+    QString estado;
 
 
 public:
@@ -43,6 +44,8 @@ public:
             int DiaFinalExistente = query.value(4).toInt();
             int MesFinalExistente = query.value(5).toInt();
             int AnoFinalExistente = query.value(6).toInt();
+
+            estado = query.value(9).toString();
 
             if(AnoInicialReserva >= AnoInicialExistente && AnoFinalReserva <= AnoFinalExistente){
             if(MesInicialReserva == MesInicialExistente && MesFinalReserva == MesInicialExistente && DiaFinalReserva < DiaInicialExistente)
@@ -133,6 +136,10 @@ public:
         }
 
         if(contRet == tamanhoQuery){
+            return 0;
+        }
+
+        if(estado == "concluido"){
             return 0;
         }
 

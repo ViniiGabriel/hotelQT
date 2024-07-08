@@ -21,6 +21,8 @@ private slots:
 
     void on_btn_voltar_clicked();
 
+    void on_btn_cancelar_clicked();
+
 private:
     Ui::reservasTela *ui;
     QString m_id;

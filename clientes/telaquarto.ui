@@ -221,8 +221,8 @@ QComboBox {
     <rect>
      <x>225</x>
      <y>270</y>
-     <width>71</width>
-     <height>20</height>
+     <width>31</width>
+     <height>21</height>
     </rect>
    </property>
    <property name="text">
@@ -268,6 +268,19 @@ QComboBox {
     <string>Voltar</string>
    </property>
   </widget>
+  <zorder>foto_pixmap</zorder>
+  <zorder>layoutWidget</zorder>
+  <zorder>txt_mesInicial</zorder>
+  <zorder>txt_anoInicial</zorder>
+  <zorder>txt_mesFinal</zorder>
+  <zorder>txt_anoFinal</zorder>
+  <zorder>btn_reserva</zorder>
+  <zorder>label_3</zorder>
+  <zorder>label_4</zorder>
+  <zorder>txt_diaInicial</zorder>
+  <zorder>txt_avisoData</zorder>
+  <zorder>btn_voltar</zorder>
+  <zorder>txt_diaFinal</zorder>
  </widget>
  <resources/>
  <connections/>
