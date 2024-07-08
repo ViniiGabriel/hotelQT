@@ -43,7 +43,7 @@ QLabel{
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>40</x>
+      <x>50</x>
       <y>60</y>
       <width>481</width>
       <height>71</height>
@@ -79,16 +79,16 @@ QLabel{
    <widget class="QLabel" name="label_2">
     <property name="geometry">
      <rect>
-      <x>130</x>
-      <y>160</y>
-      <width>351</width>
-      <height>31</height>
+      <x>120</x>
+      <y>150</y>
+      <width>401</width>
+      <height>51</height>
      </rect>
     </property>
     <property name="font">
      <font>
       <family>Cambria Math</family>
-      <pointsize>10</pointsize>
+      <pointsize>12</pointsize>
      </font>
     </property>
     <property name="text">

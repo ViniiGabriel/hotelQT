@@ -74,7 +74,7 @@ public:
 ""));
         label_2 = new QLabel(telaAvaliacao);
         label_2->setObjectName("label_2");
-        label_2->setGeometry(QRect(80, 20, 231, 51));
+        label_2->setGeometry(QRect(40, 20, 301, 51));
         QFont font;
         font.setPointSize(21);
         font.setBold(true);

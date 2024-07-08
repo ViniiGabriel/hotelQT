@@ -70,7 +70,7 @@ public:
 "}"));
         label = new QLabel(listaQuartos);
         label->setObjectName("label");
-        label->setGeometry(QRect(20, 0, 281, 41));
+        label->setGeometry(QRect(20, 0, 341, 41));
         QFont font;
         font.setPointSize(26);
         font.setBold(true);

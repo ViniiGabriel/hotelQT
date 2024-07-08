@@ -73,7 +73,7 @@ public:
 ""));
         label_infoinvalida = new QLabel(telaLoginColaborador);
         label_infoinvalida->setObjectName("label_infoinvalida");
-        label_infoinvalida->setGeometry(QRect(150, 170, 201, 21));
+        label_infoinvalida->setGeometry(QRect(150, 170, 211, 21));
         layoutWidget = new QWidget(telaLoginColaborador);
         layoutWidget->setObjectName("layoutWidget");
         layoutWidget->setGeometry(QRect(20, 10, 441, 151));

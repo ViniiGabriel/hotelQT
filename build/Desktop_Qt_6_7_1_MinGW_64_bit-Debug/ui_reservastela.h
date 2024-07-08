@@ -77,7 +77,7 @@ public:
         tb_reservas->setGeometry(QRect(20, 70, 651, 361));
         label = new QLabel(reservasTela);
         label->setObjectName("label");
-        label->setGeometry(QRect(20, 20, 281, 41));
+        label->setGeometry(QRect(20, 20, 351, 41));
         QFont font;
         font.setPointSize(26);
         font.setBold(true);

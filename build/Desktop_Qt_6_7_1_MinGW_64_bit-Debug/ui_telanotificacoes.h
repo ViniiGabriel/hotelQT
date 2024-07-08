@@ -70,7 +70,7 @@ public:
         tb_notificacoes->setGeometry(QRect(10, 50, 631, 251));
         label = new QLabel(telaNotificacoes);
         label->setObjectName("label");
-        label->setGeometry(QRect(10, 0, 281, 41));
+        label->setGeometry(QRect(10, -10, 281, 61));
         QFont font;
         font.setPointSize(26);
         font.setBold(true);

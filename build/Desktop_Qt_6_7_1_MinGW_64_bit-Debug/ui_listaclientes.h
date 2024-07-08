@@ -73,7 +73,7 @@ public:
 "}"));
         label = new QLabel(listaClientes);
         label->setObjectName("label");
-        label->setGeometry(QRect(10, 0, 281, 41));
+        label->setGeometry(QRect(10, 20, 331, 41));
         QFont font;
         font.setPointSize(26);
         font.setBold(true);

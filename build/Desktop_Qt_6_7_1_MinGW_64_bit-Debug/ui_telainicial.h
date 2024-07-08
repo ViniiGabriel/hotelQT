@@ -64,10 +64,10 @@ public:
         centralwidget->setObjectName("centralwidget");
         label = new QLabel(centralwidget);
         label->setObjectName("label");
-        label->setGeometry(QRect(10, 40, 561, 81));
+        label->setGeometry(QRect(50, 60, 481, 71));
         QFont font;
         font.setFamilies({QString::fromUtf8("Segoe UI Black")});
-        font.setPointSize(52);
+        font.setPointSize(36);
         font.setBold(true);
         label->setFont(font);
         label->setAlignment(Qt::AlignCenter);
@@ -76,10 +76,10 @@ public:
         btn_cliente->setGeometry(QRect(80, 200, 191, 71));
         label_2 = new QLabel(centralwidget);
         label_2->setObjectName("label_2");
-        label_2->setGeometry(QRect(140, 160, 291, 31));
+        label_2->setGeometry(QRect(120, 150, 401, 51));
         QFont font1;
         font1.setFamilies({QString::fromUtf8("Cambria Math")});
-        font1.setPointSize(11);
+        font1.setPointSize(12);
         label_2->setFont(font1);
         btn_colaborador = new QPushButton(centralwidget);
         btn_colaborador->setObjectName("btn_colaborador");
@@ -87,7 +87,7 @@ public:
         telaInicial->setCentralWidget(centralwidget);
         menubar = new QMenuBar(telaInicial);
         menubar->setObjectName("menubar");
-        menubar->setGeometry(QRect(0, 0, 578, 22));
+        menubar->setGeometry(QRect(0, 0, 578, 26));
         telaInicial->setMenuBar(menubar);
         statusbar = new QStatusBar(telaInicial);
         statusbar->setObjectName("statusbar");

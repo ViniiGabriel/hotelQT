@@ -80,7 +80,7 @@ public:
         btn_cadastro->setGeometry(QRect(100, 220, 281, 29));
         label_infoinvalida = new QLabel(telaLogin);
         label_infoinvalida->setObjectName("label_infoinvalida");
-        label_infoinvalida->setGeometry(QRect(140, 170, 201, 21));
+        label_infoinvalida->setGeometry(QRect(140, 170, 221, 21));
         layoutWidget = new QWidget(telaLogin);
         layoutWidget->setObjectName("layoutWidget");
         layoutWidget->setGeometry(QRect(20, 20, 441, 151));
