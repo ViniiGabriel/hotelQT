@@ -14,9 +14,7 @@
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QMainWindow>
-#include <QtWidgets/QMenuBar>
 #include <QtWidgets/QPushButton>
-#include <QtWidgets/QStatusBar>
 #include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -29,8 +27,6 @@ public:
     QPushButton *btn_cliente;
     QLabel *label_2;
     QPushButton *btn_colaborador;
-    QMenuBar *menubar;
-    QStatusBar *statusbar;
 
     void setupUi(QMainWindow *telaInicial)
     {
@@ -76,7 +72,7 @@ public:
         btn_cliente->setGeometry(QRect(80, 200, 191, 71));
         label_2 = new QLabel(centralwidget);
         label_2->setObjectName("label_2");
-        label_2->setGeometry(QRect(120, 150, 401, 51));
+        label_2->setGeometry(QRect(90, 150, 401, 51));
         QFont font1;
         font1.setFamilies({QString::fromUtf8("Cambria Math")});
         font1.setPointSize(12);
@@ -85,13 +81,6 @@ public:
         btn_colaborador->setObjectName("btn_colaborador");
         btn_colaborador->setGeometry(QRect(310, 200, 191, 71));
         telaInicial->setCentralWidget(centralwidget);
-        menubar = new QMenuBar(telaInicial);
-        menubar->setObjectName("menubar");
-        menubar->setGeometry(QRect(0, 0, 578, 26));
-        telaInicial->setMenuBar(menubar);
-        statusbar = new QStatusBar(telaInicial);
-        statusbar->setObjectName("statusbar");
-        telaInicial->setStatusBar(statusbar);
 
         retranslateUi(telaInicial);
 
