@@ -53,8 +53,8 @@ QHeaderView::section{
    <property name="geometry">
     <rect>
      <x>10</x>
-     <y>0</y>
-     <width>281</width>
+     <y>20</y>
+     <width>331</width>
      <height>41</height>
     </rect>
    </property>

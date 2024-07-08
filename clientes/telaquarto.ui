@@ -242,9 +242,9 @@ QComboBox {
   <widget class="QLabel" name="txt_avisoData">
    <property name="geometry">
     <rect>
-     <x>130</x>
+     <x>100</x>
      <y>310</y>
-     <width>211</width>
+     <width>281</width>
      <height>16</height>
     </rect>
    </property>
