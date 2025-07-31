@@ -1,75 +1,112 @@
-# hotelQT
-Sistema de Gestão de Hotelaria em C++/Qt
-Este projeto é um sistema de gerenciamento de hotelaria desenvolvido em C++ com o framework Qt. A aplicação oferece uma interface gráfica completa e funcionalidades distintas para dois tipos de usuários: clientes e colaboradores, conectando-se a um banco de dados SQLite para gerenciar todas as operações.
+🏨 Sistema de Gestão de Hotelaria
+<p align="center">
+Um sistema desktop completo para gerenciamento de hotéis, com portais dedicados para clientes e colaboradores.
+</p>
 
-Funcionalidades Principais
-O sistema é dividido em dois módulos principais:
+📋 Sobre o Projeto
+Este projeto é um sistema de gerenciamento de hotelaria desenvolvido em 
 
-Portal do Cliente
+C++ com o framework Qt. A aplicação oferece uma interface gráfica completa e funcionalidades distintas para dois tipos de usuários: 
 
+clientes e colaboradores, conectando-se a um banco de dados SQLite para gerenciar todas as operações.
+
+✨ Funcionalidades Principais
+O sistema é dividido em dois módulos principais, acessíveis a partir de uma tela de seleção inicial.
+
+👤 Portal do Cliente
 Login e Cadastro: Clientes podem criar uma conta e fazer login no sistema.
-
 
 Visualização de Quartos: Permite aos clientes ver os detalhes dos quartos disponíveis.
 
-
 Reservas: Funcionalidade para o cliente realizar e gerenciar suas próprias reservas.
-
 
 Pagamento: Uma interface dedicada para a realização de pagamentos das reservas.
 
-
 Avaliação: Tela para que os clientes possam avaliar sua estadia.
-
 
 Notificações: Área para o cliente visualizar notificações importantes.
 
-Painel do Colaborador
+👨‍💼 Painel do Colaborador
+Login Restrito: Acesso seguro para funcionários do hotel.
 
-Login de Colaborador: Acesso restrito para funcionários do hotel.
-
-
-Gestão de Clientes: Os colaboradores podem cadastrar novos clientes e editar informações dos clientes existentes.
+Gestão de Clientes: Os colaboradores podem cadastrar novos clientes e editar informações dos existentes.
 
 Gestão de Quartos:
 
 Cadastro de novos quartos no sistema.
 
-Uma lista detalhada dos quartos, com opções de filtro.
+Lista detalhada dos quartos com opções de filtro.
 
-O sistema suporta diferentes tipos de quartos, como Simples, Comfort, Suíte e Master.
+Suporte a diferentes tipos de quartos: 
 
+QuartoSimples, QuartoComfort, QuartoSuite e QuartoMaster.
 
 Gestão de Reservas: Visualização e gerenciamento de todas as reservas feitas pelos clientes.
 
-
 Painel de Controle: Uma tela principal que centraliza as funções do colaborador.
 
-Tecnologias Utilizadas
+🛠️ Tecnologias Utilizadas
+Tecnologia	Descrição
+C++17	
+Linguagem principal utilizada para toda a lógica do sistema.
 
-Linguagem: C++17 
+Qt 6	
+Framework utilizado para a criação das interfaces gráficas (
 
+Widgets) e interação com o banco de dados (SQL).
 
-Framework: Qt 6 (com módulos Core, GUI, Widgets e SQL) 
+SQLite	Sistema de banco de dados leve e baseado em arquivo, utilizado para armazenar todos os dados da aplicação.
+Qt Creator	IDE recomendada para compilar e executar o projeto.
 
+Exportar para as Planilhas
+🚀 Como Executar
+Siga os passos abaixo para compilar e executar o projeto localmente.
 
-Banco de Dados: SQLite, com o arquivo de banco de dados localizado em dataBase/db_hotel.
+Pré-requisitos
+Qt 6 ou superior: Link para download do Qt
 
-IDE: Desenvolvido para ser compilado e executado com o Qt Creator.
+Compilador C++: (MSVC no Windows, GCC no Linux ou Clang no macOS)
 
-Estrutura do Projeto
-O código-fonte é organizado de forma modular para facilitar a manutenção e o desenvolvimento:
+Qt Creator: Geralmente instalado junto com o Qt.
 
-main.cpp: Ponto de entrada da aplicação.
+Passos
+Clone o repositório:
 
-telainicial: Janela inicial que direciona o usuário para a área do cliente ou do colaborador.
+Bash
 
-/clientes: Contém todos os arquivos de código-fonte (.cpp, .h) e de interface (.ui) relacionados às funcionalidades do cliente.
+git clone https://github.com/seu-usuario/seu-repositorio.git
+Abra o projeto no Qt Creator:
 
-/colaboradores: Contém todos os arquivos (.cpp, .h, .ui) relacionados às funcionalidades dos funcionários.
+Abra o Qt Creator.
 
-/dataBase: Inclui o arquivo do banco de dados SQLite.
+Vá em File > Open File or Project....
 
-/imagens: Armazena as imagens utilizadas na interface do usuário.
+Navegue até a pasta clonada e selecione o arquivo hotelQT.pro.
 
-Este projeto serve como um exemplo prático de uma aplicação desktop robusta, demonstrando o uso de banco de dados, programação orientada a objetos e design de interfaces gráficas com C++ e Qt.
+Configure o Kit:
+
+O Qt Creator deve detectar automaticamente os kits de compilação instalados. Selecione um kit compatível (ex: Desktop Qt 6.x.x).
+
+Verifique o Banco de Dados:
+
+Certifique-se de que o arquivo de banco de dados db_hotel está presente na pasta dataBase. O projeto está configurado para encontrá-lo no caminho relativo ../../dataBase/db_hotel a partir do diretório de compilação.
+
+Compile e Execute:
+
+Clique no botão Build (ícone de martelo) ou pressione Ctrl+B.
+
+Clique no botão Run (ícone de play verde) ou pressione Ctrl+R.
+
+📂 Estrutura do Projeto
+A estrutura de arquivos foi pensada para ser modular e organizada, separando as responsabilidades de cada parte do sistema.
+
+.
+├── 📂 clientes/          # Fontes e UIs do portal do cliente
+├── 📂 colaboradores/     # Fontes e UIs do painel do colaborador
+├── 📂 dataBase/          # Contém o arquivo do banco de dados SQLite
+├── 📂 imagens/           # Imagens usadas na interface
+├── 📜 hotelQT.pro         # Arquivo principal de configuração do projeto Qt
+├── 📜 main.cpp            # Ponto de entrada da aplicação
+└── 📜 telainicial.h/.cpp/.ui # Tela de seleção inicial
+<p align="center">
+</p>
