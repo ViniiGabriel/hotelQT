@@ -62,7 +62,7 @@ Siga os passos abaixo para compilar e executar o projeto localmente.
 ### Passos
 1.  **Clone o repositório:**
     ```bash
-    git clone [https://github.com/seu-usuario/seu-repositorio.git](https://github.com/seu-usuario/seu-repositorio.git)
+    git clone [https://github.com/ViniiGabriel/hotelQT.git](https://github.com/ViniiGabriel/hotelQT.git)
     ```
 2.  **Abra o projeto no Qt Creator:**
     -   Abra o Qt Creator.
