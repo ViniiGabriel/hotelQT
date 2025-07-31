@@ -5,9 +5,7 @@
 ![Database](https://img.shields.io/badge/database-SQLite-orange.svg)
 ![License](https://img.shields.io/badge/license-MIT-lightgrey.svg)
 
-<p align="center">
   Um sistema desktop completo para gerenciamento de hotéis, com portais dedicados para clientes e colaboradores.
-</p>
 
 ---
 
