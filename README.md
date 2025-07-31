@@ -89,4 +89,3 @@ A estrutura de arquivos foi pensada para ser modular e organizada, separando as 
 | `imagens/` | Armazena as imagens utilizadas na interface do usuário. |
 | `hotelQT.pro` | Arquivo principal de configuração do projeto Qt. |
 | `main.cpp` | Ponto de entrada da aplicação, onde a janela principal é iniciada. |
-| `telainicial.*` | Arquivos (`.h`, `.cpp`, `.ui`) da tela inicial que direciona para os portais. |
